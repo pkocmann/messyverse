@@ -75,6 +75,8 @@ Diese Auflagen aus dem Plan-Review sind vor der P1-Befüllung verbindlich. Sie b
 
 - Namens-Hygiene-Gate (E3): Alle erfundenen Eigennamen — Lieferanten, Sachbearbeiter, der Org-Name — werden vor P1 gegen Handelsregister und Web geprüft. Die Regel steht im Kanon (`WELT.md`, Daten-Hygiene). Erledigt für Quellmann Fachbuch GmbH und das Institut; jeder weitere Name durchläuft den Check.
 - Querverweis-Kette (E2): Die Verbindung Rechnung — Katalog — Haushalt — Vermerk läuft über eine eindeutige Schlüsselspalte (Rechnungs-Nummer oder ISBN), identisch auf beiden Seiten; Betrag und Datum sind nur Plausi-Kontrolle (nie auf nicht-eindeutige Attribute joinen). Die Rechnung trägt je Buch eine Positionszeile mit ISBN, Kurztitel und Einzelpreis. Der Generator prüft die Schlüssel-Eindeutigkeit als Assertion. Edge-Cases sitzen an festen Positionen, damit `loesungen/` über Regenerationen stabil bleibt. Umfang: rund 8 bis 10 vollständige Ketten plus 2 bis 3 bewusst unvollständige. Werte und Anatomie sind im Kanon (`WELT.md`) definiert.
+- PDF-Scope (E9): Die erste Welle baut Rechnungen und Bestätigungen als PDF. „Digitale Aktenausdrucke" aus der Kursbeschreibung kommen entweder als dritter PDF-Typ in P1 hinzu oder werden bewusst gegen die fixierte Kursbeschreibung als Auslassung dokumentiert — keine stille Lücke.
+- Pagination-Fixtures (E9): `api-fixtures/crossref/` enthält ein Werk-Suche-Set mit rows/offset über 2 bis 3 Seiten (Tag 1 nur rows/offset, nicht cursor), damit das Kursversprechen „Web-Abfragen mit Pagination" gedeckt ist — oder die Auslassung wird bewusst dokumentiert. Koppelt an den offen deklarierten Live-Bonus (E14).
 
 ## Lizenz
 

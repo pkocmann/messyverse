@@ -49,7 +49,7 @@ Die Dateinamen im `magazin/` sind gewachsen: `Scan_2025_03_final_FINAL_v2.pdf`, 
 
 ## Bewusste Edge-Cases — sie zielen auf die Tag-2-Fehlerklassen
 
-Die Kursbeschreibung nennt als Lernziel unter anderem „fehlende Behandlung leerer Einträge, übersehene Sonderfälle". Die Welt enthält daher absichtlich eine leere Datei (0 Byte) im `magazin/`, eine Rechnung ohne Betragszeile, einen Titel mit „z.B." (verfälscht eine naive Satz- oder Tokenzählung) und einen Eintrag mit Umlauten und Sonderzeichen im Namen. Diese Fälle sind kein Defekt, sondern der Lernanlass: KI-generierter Code übersieht sie typischerweise, und genau das soll im Kurs auffallen.
+Die Kursbeschreibung nennt als Lernziel unter anderem „fehlende Behandlung leerer Einträge, übersehene Sonderfälle". Die Welt enthält daher absichtlich leere Einträge — etwa eine 0-Byte-Datei im `magazin/` —, eine Rechnung ohne Betragszeile, einen Titel mit „z.B." (verfälscht eine naive Satz- oder Tokenzählung) und einen Eintrag mit Umlauten und Sonderzeichen im Namen. Diese Fälle sind kein Defekt, sondern der Lernanlass: KI-generierter Code übersieht sie typischerweise, und genau das soll im Kurs auffallen.
 
 ## Änderungs-Disziplin
 
