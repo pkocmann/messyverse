@@ -1,0 +1,20 @@
+# messyverse ist ein OEFFENTLICHES Repo (Teilnehmende klonen es).
+# Die briefer-/Authoring-Infrastruktur bleibt LOKAL und kommt nie ins Repo
+# (PK-Entscheid 2026-06-22: gitignore loest die public-vs-briefer-Struktur).
+# Diese Dateien existieren auf der Platte (Onboarding-Lint prueft Praesenz,
+# nicht git-Tracking) und wirken lokal, werden aber nicht versioniert.
+.mcp.json
+.vscode/
+.claude/
+.github/
+reindex.sh
+rules.yaml
+
+# Briefer-DBs liegen zentral in ~/.briefer-data, nie im Repo.
+
+# Standard
+.venv/
+__pycache__/
+**/.DS_Store
+_site/
+**/.ipynb_checkpoints/
