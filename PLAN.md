@@ -30,9 +30,9 @@ Definiert im Kanon `WELT.md` (Stelle der Wahrheit). Kurz: Bibliothek und Archiv 
 
 ## 5. Zugriff und Methode
 
-- Open-in-Colab-Badge pro Übungs-Notebook plus Daten per Raw-URL (kein Klonen als gelehrtes Konzept).
-- Für Datei-Baum-Aufgaben eine bereitgestellte idempotente Setup-Zelle als Black Box (vor dem Klonen `rm -rf`, dann clone, „jetzt hast du deine Arbeitskopie").
-- Fixtures-first für alles mit API: Übung läuft deterministisch gegen `api-fixtures/`, die Live-Abfrage ist die Kür.
+- Open-in-Colab-Badge pro Übungs-Notebook. Daten-Bezug (E13): git clone in einen festen, branch-gepinnten Ordner für den Mehrdatei-/Baum-Fall (als Black Box, „jetzt hast du deine Arbeitskopie"); einzelne Fixtures dürfen per Raw-URL kommen; zip nur als dokumentierter Fallback. Detail in den P2-Akzeptanzkriterien.
+- Für Datei-Baum-Aufgaben eine bereitgestellte idempotente Setup-Zelle als Black Box (`rm -rf` auf den festen Zielordner, dann clone, Abschlusszeile „Arbeitskopie: N Dateien").
+- Fixtures-first für alles mit API (E14): die Übung läuft deterministisch gegen `api-fixtures/` über einen offengelegten requests-Mock; die Live-Abfrage ist die offen deklarierte Kür. Detail in den P2-Akzeptanzkriterien.
 - Steuern statt schreiben: Lage anschauen, KI prompten, Code lesen und prüfen, bei Fehler re-prompten statt von Hand fixen. Pro Übung ein erwartetes Ergebnis in der Lösungs-Ablage, damit das Prüfen gegen das Universum objektiv ist.
 - Zwei Prüf-Modi (E12): (a) exaktes Soll für ISBN/DOI-Abfrage, PDF-Extraktion und Datei-Sortieren; (b) Constraint-Prüfung für die KI-Verschlagwortung — alle Schlagworte stammen aus dem kontrollierten Vokabular, die Pflicht-Facetten sind besetzt. Ein nicht maschinenprüfbares Soll würde das Versprechen „prüfen gegen das Universum" untergraben.
 
@@ -81,6 +81,14 @@ Diese Auflagen aus dem Plan-Review sind vor der P1-Befüllung verbindlich. Sie b
 - Drift-Schutz für Generator und Output (E6): Generator und erzeugtes Universum werden beide committet, deshalb braucht es einen Schutz gegen stillen Drift zwischen Code und Artefakt. (1) Feste Seed-Zahl fixieren. (2) Marker „GENERIERT — nicht editieren" in erzeugte Dateien und Header. (3) Reproduzieren-Gate: ein Generator-Lauf gefolgt von `git diff --exit-code` muss sauber bleiben. (4) PDF- und xlsx-Timestamps deterministisch setzen, sonst ändern sich die Bytes trotz fixem Seed. (5) Generator-Wartungs- und Regenerations-Doku für Schema-Änderungen.
 - schlagworte-Kanonisierung (E8): Das Verschlagwortungs-Mapping zeigt auf `katalog/schlagworte.csv` statt auf einen nicht-kanonischen Ordner `schlagworte/`. Diese CSV ist zugleich das kontrollierte Vokabular (E12). Die Variante bleibt robust, ob die KI-Verschlagwortung in der ersten Welle bleibt oder nicht: das Mapping zeigt in beiden Fällen auf den kanonischen `katalog/`.
 - Kontrolliertes Vokabular und Golden-Schema (E12): Das kontrollierte Vokabular `katalog/schlagworte.csv` ist ein P1-/Kanon-Artefakt, falls die KI-Verschlagwortung in der ersten Welle bleibt — sonst wird die Verschlagwortung explizit aus der ersten Tag-2-Welle ausgeklammert (koppelt an den offenen Umfangs-Punkt in §9). Pro Übung wird ein Golden-Output-Schema definiert (Golden CSV/JSON/Markdown bzw. `loesungen/`-Manifest), nicht erst als spätere Ablage — verbindet sich mit dem Verifikations-Layer (E15).
+
+## Akzeptanzkriterien P2 und Zugriff (Plan-Review 2026-06-22)
+
+Diese Auflagen betreffen die Übungs-Notebooks, den Daten-Bezug in Colab und die Veröffentlichung; sie gelten vor P2-Beginn.
+
+- Public-Repo Live-Zugriff-Gate (E1, vor P2): (1) Repo öffentlich schalten und git-Remote setzen; owner/repo/branch stehen als EINE fixierte Konstante im Notebook-Kopf und werden in jede URL eingesetzt. (2) Browser-only Smoke-Test jeder Start-URL aus frischer Inkognito-Session auf HTTP 200 als Release-Gate, Raw mit explizitem Branch. (3) Setup-Zelle: fester Zielordner `/content/messyverse`, `rm -rf` nur darauf, idempotenter Re-Lauf, Abschlusszeile „Arbeitskopie: N Dateien". (4) Daten vor der Session pushen und während der 3,5 Stunden nicht ändern (Stale-CDN rund 5 Minuten); die Live-Kür moderiert und gestaffelt fahren, mit Crossref-mailto-Polite-Pool und der Ansage, dass 429/Timeout erwartbar sind. Stand: noch kein git-Remote gesetzt — die Remote- und Public-Schaltung ist PKs Aktion und Teil dieses Gates.
+- Daten-Bezug clone vor Raw-URL (E13, PK-Votum A): Für den Baum-/Mehrdatei-Fall ein git clone in den festen, branch-gepinnten Ordner `/content/messyverse` (idempotenter `rm -rf` plus re-clone, Abschluss-Ausgabe „Arbeitskopie: N Dateien"). Einzelne Fixtures dürfen Raw-URL bleiben. owner vor Go-Live fest verdrahten (vgl. E1). zip nur als dokumentierter Fallback. Begründung: eine Operation und eine Verbindung statt Datei-Fan-out (kein 429-Spike), eine Stelle der Wahrheit statt eines driftenden Zweit-Artefakts.
+- Fixtures als offengelegter Mock (E14, PK-Votum A): (1) Fixture-Vertrag pinnen — `api-fixtures/openlibrary/README.md` fixiert die Books-API `/api/books?bibkeys=ISBN:..&jscmd=data` (Autoren als Namen), Capture-Datum, Soll-Spalten und einen Offline-Loader-Test. (2) Die Offenlegung steht als sichtbare Ehrlichkeits-Zelle im Notebook, kein überlesbarer Kommentar; der Live-Call ist ein offen deklarierter Bonus-Schritt, der die 302-Redirect-Falle vorführt. Das Pagination-Versprechen ist ein optionaler Live-Bonus (vgl. E9). Der Mock hält Determinismus und naives Prompten zusammen und stützt die Ein-Welt-SoT.
 
 ## Lizenz
 
