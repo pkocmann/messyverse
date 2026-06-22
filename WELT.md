@@ -4,7 +4,7 @@ Dies ist die Stelle der Wahrheit für die fiktive Welt von messyverse. Jeder neu
 
 ## Die Organisation
 
-Arbeitsname (im Plan-Review zu bestätigen): Bibliothek und Archiv des Instituts für Stadt- und Regionalforschung (ISR), eine fiktive mittelgroße Spezialeinrichtung. Das Etikett Bibliothek und Archiv ist für das Fachpublikum glaubwürdig; die innere Struktur ist bewusst so benannt, dass jeder Mensch aus Verwaltung, Verein oder Firma sie sofort wiedererkennt. Der Transfer läuft über die Funktion: Einkauf, Verzeichnen, Ablage, Verwaltung gibt es überall.
+Arbeitsname (web-geprüft kollisionsfrei, Setting von PK zu bestätigen): Bibliothek und Archiv des Instituts für Verwaltungs- und Regionalkunde, eine fiktive mittelgroße Spezialeinrichtung. Das Etikett Bibliothek und Archiv ist für das Fachpublikum glaubwürdig; die innere Struktur ist bewusst so benannt, dass jeder Mensch aus Verwaltung, Verein oder Firma sie sofort wiedererkennt. Der Transfer läuft über die Funktion: Einkauf, Verzeichnen, Ablage, Verwaltung gibt es überall.
 
 ## Abteilungen — funktional benannt, das ist der Transfer-Hebel
 
@@ -19,11 +19,13 @@ Arbeitsname (im Plan-Review zu bestätigen): Bibliothek und Archiv des Instituts
 
 Personenbezogenes ist durchgehend fiktiv: Lieferanten, Sachbearbeiter, Adressen, Aktenzeichen, E-Mail-Adressen. Keine reale Person, keine reale Firmenrechnung — messyverse ist öffentlich.
 
+Erfundene Eigennamen — Lieferanten, Organisationen, Sachbearbeiter, der Org-Name selbst — werden vor der Aufnahme gegen Handelsregister und Web geprüft, damit kein scheinbar fiktiver Name eine reale Firma oder Einrichtung trifft. Der Lieferant Quellmann Fachbuch GmbH und der Org-Name Institut für Verwaltungs- und Regionalkunde sind so geprüft; jeder in P1 ergänzte Name durchläuft denselben Check.
+
 Eine Ausnahme, die kein Widerspruch ist: Im Katalog stehen reale ISBNs und DOIs. Deren öffentliche bibliografische Metadaten sind der Sinn der Open-Library- und Crossref-Übung. Real ist allein die Bibliografie; alles Organisatorische darum herum — wer das Buch wann von wem zu welchem Preis gekauft hat — ist erfunden.
 
 ## Kern-Entitäten (Seed, in P1 konkretisiert)
 
-- Lieferant: „Lehmann Fachbuch GmbH" (fiktiv); ein bis zwei weitere folgen.
+- Lieferant: „Quellmann Fachbuch GmbH" (fiktiv); ein bis zwei weitere folgen.
 - Haushaltsjahr: 2025 (Datumsrahmen siehe unten).
 - Katalog: eine Handvoll realer Titel; die konkreten ISBNs werden in P1 ausgewählt und mit gecachten Open-Library-Antworten in `api-fixtures/` verankert.
 
@@ -31,7 +33,7 @@ Eine Ausnahme, die kein Widerspruch ist: Im Katalog stehen reale ISBNs und DOIs.
 
 Mindestens eine Kette läuft durch vier Formate und macht aus einer Dateisammlung eine Welt:
 
-Eine Rechnung (in `erwerbung/`, PDF, Lieferant Lehmann Fachbuch GmbH, Betrag X, Datum D) betrifft ein Buch mit der ISBN I (in `katalog/`). Die Haushaltszeile in `verwaltung/haushalt.xlsx` trägt denselben Betrag X und das Datum D. Ein Vermerk in `notizen/` erwähnt die Anschaffung.
+Eine Rechnung (in `erwerbung/`, PDF, Lieferant Quellmann Fachbuch GmbH, Betrag X, Datum D) betrifft ein Buch mit der ISBN I (in `katalog/`). Die Haushaltszeile in `verwaltung/haushalt.xlsx` trägt denselben Betrag X und das Datum D. Ein Vermerk in `notizen/` erwähnt die Anschaffung.
 
 Wer in einer Übung die Rechnung ausliest, kann das Ergebnis gegen Katalog und Haushalt gegenprüfen. Das ist das Prüfen gegen das Universum.
 

@@ -8,7 +8,7 @@ Ein öffentliches Repo mit einer kohärenten fiktiven Organisation, das als geme
 
 ## 2. Die Welt
 
-Definiert im Kanon `WELT.md` (Stelle der Wahrheit). Kurz: Bibliothek und Archiv eines fiktiven Instituts, Abteilungen funktional benannt (Einkauf, Verzeichnen, Ablage, Verwaltung), damit der Transfer auf jeden Verwaltungskontext sofort gelingt. Org-Name ist im Review zu bestätigen.
+Definiert im Kanon `WELT.md` (Stelle der Wahrheit). Kurz: Bibliothek und Archiv eines fiktiven Instituts, Abteilungen funktional benannt (Einkauf, Verzeichnen, Ablage, Verwaltung), damit der Transfer auf jeden Verwaltungskontext sofort gelingt. Org-Arbeitsname ist „Institut für Verwaltungs- und Regionalkunde" (web-geprüft kollisionsfrei; ersetzt den mit der realen OEAW-Einrichtung kollidierenden Namen „Institut für Stadt- und Regionalforschung / ISR"). PK bestätigt das Setting; jeder erfundene Name läuft durch das Kollisions-Gate (§ Akzeptanzkriterien P1).
 
 ## 3. Artefakt-Inventar, auf die Tag-2-Übungen gemappt
 
@@ -64,10 +64,16 @@ Slug `messyverse`: MCP-Server `briefer-messyverse` (`.mcp.json`, `--reviewer cla
 
 ## 9. Offene Punkte fürs Review
 
-- Org-Name und Setting bestätigen (Arbeitsname ISR).
+- Org-Name (E3, erledigt): Arbeitsname jetzt „Institut für Verwaltungs- und Regionalkunde" (web-geprüft kollisionsfrei). PK bestätigt/justiert das Setting; ein neuer Name läuft durch das Kollisions-Gate.
 - `loesungen/` öffentlich (mit Reveal-Disziplin) oder in separatem privatem Branch/Repo?
 - Übungsumfang Tag 2: wie viele der fünf Aufgabentypen kommen wirklich in die 3,5 Stunden?
 - Reale ISBN-/DOI-Auswahl für den Katalog (welche Titel).
+
+## Akzeptanzkriterien P1 (Plan-Review 2026-06-22)
+
+Diese Auflagen aus dem Plan-Review sind vor der P1-Befüllung verbindlich. Sie betreffen den Generator und die erzeugten Daten; gebaut wird in einer eigenen Session.
+
+- Namens-Hygiene-Gate (E3): Alle erfundenen Eigennamen — Lieferanten, Sachbearbeiter, der Org-Name — werden vor P1 gegen Handelsregister und Web geprüft. Die Regel steht im Kanon (`WELT.md`, Daten-Hygiene). Erledigt für Quellmann Fachbuch GmbH und das Institut; jeder weitere Name durchläuft den Check.
 
 ## Lizenz
 
