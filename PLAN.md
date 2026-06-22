@@ -68,3 +68,7 @@ Slug `messyverse`: MCP-Server `briefer-messyverse` (`.mcp.json`, `--reviewer cla
 - `loesungen/` öffentlich (mit Reveal-Disziplin) oder in separatem privatem Branch/Repo?
 - Übungsumfang Tag 2: wie viele der fünf Aufgabentypen kommen wirklich in die 3,5 Stunden?
 - Reale ISBN-/DOI-Auswahl für den Katalog (welche Titel).
+
+## Lizenz
+
+`LICENSE` liegt im Repo-Root und lizenziert getrennt, weil die drei Bestandteile rechtlich unterschiedlich liegen (E5): Code (`generieren.py`, die Notebooks) unter MIT; synthetische Daten unter CC0 1.0; reale ISBN-/DOI-Fakten und die über Open Library/Crossref bezogenen öffentlichen Metadaten sind nicht mitlizenziert, weil Fakten nicht schutzfähig sind. Ab P1/P2 tragen die einzelnen Dateien SPDX-Header (`MIT` bzw. `CC0-1.0`). Die getrennte Lizenzierung ist der Gesamt-Lizenz vorzuziehen (im Review als CC-BY-SA 4.0 fürs ganze Repo vorgeschlagen): ein einziger Copyleft-Stempel würde realen Fakten einen Schutz anmaßen, den sie nicht haben, und Code-Wiederverwendung unnötig an Share-alike binden.
