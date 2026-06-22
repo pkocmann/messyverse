@@ -9,7 +9,7 @@ Arbeitsname (web-geprüft kollisionsfrei, Setting von PK zu bestätigen): Biblio
 ## Abteilungen — funktional benannt, das ist der Transfer-Hebel
 
 - `erwerbung/` — Einkauf: Lieferantenrechnungen, Bestellbestätigungen (PDF)
-- `katalog/` — Verzeichnen: ISBN- und DOI-Listen, Titeldaten (csv/txt)
+- `katalog/` — Verzeichnen: ISBN- und DOI-Listen, Titeldaten, kontrolliertes Schlagwort-Vokabular `schlagworte.csv` (csv/txt)
 - `magazin/` — Ablage: digitalisierte Dokumente mit gewachsenen Dateinamen
 - `verwaltung/` — Haushalt (xlsx), interne Vermerke
 - `notizen/` — interne Dokumentation (.md)

@@ -18,7 +18,7 @@ Definiert im Kanon `WELT.md` (Stelle der Wahrheit). Kurz: Bibliothek und Archiv 
 | DOI → Crossref | reale DOIs + gecachte Antworten | `katalog/dois.txt`, `api-fixtures/crossref/` |
 | PDF-Extraktion | erfundene Rechnungen/Bestätigungen (echte PDFs) | `erwerbung/*.pdf` |
 | Datei-Umbenennen/Sortieren | Scan-Zoo mit gewachsenen Namen | `magazin/` |
-| KI-Verschlagwortung | Titel/Aktenbeschreibungen → kontrolliertes Vokabular | `katalog/`, `schlagworte/` (später) |
+| KI-Verschlagwortung | Titel/Aktenbeschreibungen → kontrolliertes Vokabular | `katalog/`, `katalog/schlagworte.csv` |
 
 ## 4. Daten-Design
 
@@ -34,6 +34,7 @@ Definiert im Kanon `WELT.md` (Stelle der Wahrheit). Kurz: Bibliothek und Archiv 
 - Für Datei-Baum-Aufgaben eine bereitgestellte idempotente Setup-Zelle als Black Box (vor dem Klonen `rm -rf`, dann clone, „jetzt hast du deine Arbeitskopie").
 - Fixtures-first für alles mit API: Übung läuft deterministisch gegen `api-fixtures/`, die Live-Abfrage ist die Kür.
 - Steuern statt schreiben: Lage anschauen, KI prompten, Code lesen und prüfen, bei Fehler re-prompten statt von Hand fixen. Pro Übung ein erwartetes Ergebnis in der Lösungs-Ablage, damit das Prüfen gegen das Universum objektiv ist.
+- Zwei Prüf-Modi (E12): (a) exaktes Soll für ISBN/DOI-Abfrage, PDF-Extraktion und Datei-Sortieren; (b) Constraint-Prüfung für die KI-Verschlagwortung — alle Schlagworte stammen aus dem kontrollierten Vokabular, die Pflicht-Facetten sind besetzt. Ein nicht maschinenprüfbares Soll würde das Versprechen „prüfen gegen das Universum" untergraben.
 
 ## 6. Repo-Struktur
 
@@ -77,6 +78,9 @@ Diese Auflagen aus dem Plan-Review sind vor der P1-Befüllung verbindlich. Sie b
 - Querverweis-Kette (E2): Die Verbindung Rechnung — Katalog — Haushalt — Vermerk läuft über eine eindeutige Schlüsselspalte (Rechnungs-Nummer oder ISBN), identisch auf beiden Seiten; Betrag und Datum sind nur Plausi-Kontrolle (nie auf nicht-eindeutige Attribute joinen). Die Rechnung trägt je Buch eine Positionszeile mit ISBN, Kurztitel und Einzelpreis. Der Generator prüft die Schlüssel-Eindeutigkeit als Assertion. Edge-Cases sitzen an festen Positionen, damit `loesungen/` über Regenerationen stabil bleibt. Umfang: rund 8 bis 10 vollständige Ketten plus 2 bis 3 bewusst unvollständige. Werte und Anatomie sind im Kanon (`WELT.md`) definiert.
 - PDF-Scope (E9): Die erste Welle baut Rechnungen und Bestätigungen als PDF. „Digitale Aktenausdrucke" aus der Kursbeschreibung kommen entweder als dritter PDF-Typ in P1 hinzu oder werden bewusst gegen die fixierte Kursbeschreibung als Auslassung dokumentiert — keine stille Lücke.
 - Pagination-Fixtures (E9): `api-fixtures/crossref/` enthält ein Werk-Suche-Set mit rows/offset über 2 bis 3 Seiten (Tag 1 nur rows/offset, nicht cursor), damit das Kursversprechen „Web-Abfragen mit Pagination" gedeckt ist — oder die Auslassung wird bewusst dokumentiert. Koppelt an den offen deklarierten Live-Bonus (E14).
+- Drift-Schutz für Generator und Output (E6): Generator und erzeugtes Universum werden beide committet, deshalb braucht es einen Schutz gegen stillen Drift zwischen Code und Artefakt. (1) Feste Seed-Zahl fixieren. (2) Marker „GENERIERT — nicht editieren" in erzeugte Dateien und Header. (3) Reproduzieren-Gate: ein Generator-Lauf gefolgt von `git diff --exit-code` muss sauber bleiben. (4) PDF- und xlsx-Timestamps deterministisch setzen, sonst ändern sich die Bytes trotz fixem Seed. (5) Generator-Wartungs- und Regenerations-Doku für Schema-Änderungen.
+- schlagworte-Kanonisierung (E8): Das Verschlagwortungs-Mapping zeigt auf `katalog/schlagworte.csv` statt auf einen nicht-kanonischen Ordner `schlagworte/`. Diese CSV ist zugleich das kontrollierte Vokabular (E12). Die Variante bleibt robust, ob die KI-Verschlagwortung in der ersten Welle bleibt oder nicht: das Mapping zeigt in beiden Fällen auf den kanonischen `katalog/`.
+- Kontrolliertes Vokabular und Golden-Schema (E12): Das kontrollierte Vokabular `katalog/schlagworte.csv` ist ein P1-/Kanon-Artefakt, falls die KI-Verschlagwortung in der ersten Welle bleibt — sonst wird die Verschlagwortung explizit aus der ersten Tag-2-Welle ausgeklammert (koppelt an den offenen Umfangs-Punkt in §9). Pro Übung wird ein Golden-Output-Schema definiert (Golden CSV/JSON/Markdown bzw. `loesungen/`-Manifest), nicht erst als spätere Ablage — verbindet sich mit dem Verifikations-Layer (E15).
 
 ## Lizenz
 
