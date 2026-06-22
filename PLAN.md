@@ -47,7 +47,7 @@ messyverse/
   erwerbung/ katalog/ magazin/ verwaltung/ notizen/   # die Welt (P1)
   api-fixtures/        # gecachte Open-Library-/Crossref-Antworten (P1)
   notebooks/           # Übungs-Notebooks mit Open-in-Colab-Badges (P2)
-  loesungen/           # erwartete Ergebnisse (P2; Trennung siehe offene Frage)
+  loesungen/           # public Verifikations-Layer, Digest-first (P2)
 ```
 
 Lokal, gitignored (nie ins öffentliche Repo): `.mcp.json`, `.vscode/`, `.claude/`, `.github/`, `reindex.sh`, `rules.yaml` — die briefer-/Authoring-Infrastruktur.
@@ -66,7 +66,7 @@ Slug `messyverse`: MCP-Server `briefer-messyverse` (`.mcp.json`, `--reviewer cla
 ## 9. Offene Punkte fürs Review
 
 - Org-Name (E3, erledigt): Arbeitsname jetzt „Institut für Verwaltungs- und Regionalkunde" (web-geprüft kollisionsfrei). PK bestätigt/justiert das Setting; ein neuer Name läuft durch das Kollisions-Gate.
-- `loesungen/` öffentlich (mit Reveal-Disziplin) oder in separatem privatem Branch/Repo?
+- `loesungen/` (E15, erledigt): öffentlich als Verifikations-Layer, Digest-first und nicht-invertierbar. Detail in den P2-Akzeptanzkriterien.
 - Übungsumfang Tag 2: wie viele der fünf Aufgabentypen kommen wirklich in die 3,5 Stunden?
 - Reale ISBN-/DOI-Auswahl für den Katalog (welche Titel).
 
@@ -89,6 +89,8 @@ Diese Auflagen betreffen die Übungs-Notebooks, den Daten-Bezug in Colab und die
 - Public-Repo Live-Zugriff-Gate (E1, vor P2): (1) Repo öffentlich schalten und git-Remote setzen; owner/repo/branch stehen als EINE fixierte Konstante im Notebook-Kopf und werden in jede URL eingesetzt. (2) Browser-only Smoke-Test jeder Start-URL aus frischer Inkognito-Session auf HTTP 200 als Release-Gate, Raw mit explizitem Branch. (3) Setup-Zelle: fester Zielordner `/content/messyverse`, `rm -rf` nur darauf, idempotenter Re-Lauf, Abschlusszeile „Arbeitskopie: N Dateien". (4) Daten vor der Session pushen und während der 3,5 Stunden nicht ändern (Stale-CDN rund 5 Minuten); die Live-Kür moderiert und gestaffelt fahren, mit Crossref-mailto-Polite-Pool und der Ansage, dass 429/Timeout erwartbar sind. Stand: noch kein git-Remote gesetzt — die Remote- und Public-Schaltung ist PKs Aktion und Teil dieses Gates.
 - Daten-Bezug clone vor Raw-URL (E13, PK-Votum A): Für den Baum-/Mehrdatei-Fall ein git clone in den festen, branch-gepinnten Ordner `/content/messyverse` (idempotenter `rm -rf` plus re-clone, Abschluss-Ausgabe „Arbeitskopie: N Dateien"). Einzelne Fixtures dürfen Raw-URL bleiben. owner vor Go-Live fest verdrahten (vgl. E1). zip nur als dokumentierter Fallback. Begründung: eine Operation und eine Verbindung statt Datei-Fan-out (kein 429-Spike), eine Stelle der Wahrheit statt eines driftenden Zweit-Artefakts.
 - Fixtures als offengelegter Mock (E14, PK-Votum A): (1) Fixture-Vertrag pinnen — `api-fixtures/openlibrary/README.md` fixiert die Books-API `/api/books?bibkeys=ISBN:..&jscmd=data` (Autoren als Namen), Capture-Datum, Soll-Spalten und einen Offline-Loader-Test. (2) Die Offenlegung steht als sichtbare Ehrlichkeits-Zelle im Notebook, kein überlesbarer Kommentar; der Live-Call ist ein offen deklarierter Bonus-Schritt, der die 302-Redirect-Falle vorführt. Das Pagination-Versprechen ist ein optionaler Live-Bonus (vgl. E9). Der Mock hält Determinismus und naives Prompten zusammen und stützt die Ein-Welt-SoT.
+- KI-gesteuerter Prüf-/Diff-Mechanismus (E10): (1) Eine Black-Box-Prüf-/Diff-Zelle benennt abweichende Objekte namentlich, nicht als True/False. (2) Pro Übung eine sichtbare Fehlerschleife: Lage ansehen, Fehlermeldung kopieren, re-prompten, Ergebnis gegen Soll prüfen; „editiere diese Zeile" nie als Normalweg. (3) Re-Prompt-Fallback: nach mehreren erfolglosen Versuchen ein offengelegter Reveal, der das erwartete Ergebnis oder einen Hinweis zeigt und zum Re-Prompten zurücktreibt (kein Copy-Paste-Code). (4) Der undatierbare Fall (`magazin/IMG_0421.pdf` ohne ableitbares Datum) wird als Sammelordner „undatiert" in `loesungen/` kanonisiert. (5) Cross-Format-Prüfen ausdrücklich KI-gesteuert formulieren. Nicht übernommen: `read_only=True` (kein Colab-Feature) und vorgegebene Blackbox-Funktionen (positionswidrig zum Steuern statt Schreiben).
+- loesungen/ als nicht-invertierbarer Verifikations-Layer (E15, PK-Votum A): `loesungen/` ist öffentlich. (1) Für Klassen mit Ergebnis gleich Lösung (Datei-Baum sortieren/umbenennen) wird nur ein Digest/Hash des Soll-Endzustands committet; die Diff-Zelle bildet denselben Digest über den TN-Output und leitet die namentliche Abweichung lokal ab — der öffentliche Wert ist nicht in die Antwort rückrechenbar. (2) Klartext-Soll nur, wo der Wert ohnehin aus der öffentlichen Welt herleitbar ist (Betrag X, Datum D). (3) Manifest-Format Digest-first. So bleiben Ein-Repo-SoT und Laufzeit-Self-Check beide erhalten.
 
 ## Lizenz
 
