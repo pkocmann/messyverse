@@ -6,6 +6,8 @@ Status: Entwurf für Review. P0 (Andocken + Kanon) ist umgesetzt; P1/P2 (Befüll
 
 Ein öffentliches Repo mit einer kohärenten fiktiven Organisation, das als gemeinsame Zielscheibe für KI-gesteuerte Übungen dient. Erst-Konsument ist python-mit-ki Tag 2. Welt-förmig angelegt, damit `dokumente-ordnen`, die Markdown-Kurse, Excel/Power-Query und der Wissensrepräsentations-Workshop später ihren Ausschnitt dazulegen. Gebaut wird in der ersten Welle nur der Tag-2-Seed. Begründung für eine Welt statt vieler: Glaubwürdigkeit durch Querverweise, eine Pflegestelle statt mehrerer, Wiederverwendung über Kurse hinweg.
 
+Die Welt trägt zunächst nur die Tag-2-Brille (python-mit-ki). Die weiteren Brillen — `dokumente-ordnen`, die Markdown-Kurse, Power-Query mit einer zweiten verwandten Tabelle, der Wissensrepräsentations-Workshop — ziehen ihren Ausschnitt erst später nach (E11). Vor dem Generator-Bau eines Folgekurses steht je eine Ein-Satz-Strukturanforderung an die Welt: Power-Query etwa braucht eine zweite, verwandte Tabelle mit Duplikaten.
+
 ## 2. Die Welt
 
 Definiert im Kanon `WELT.md` (Stelle der Wahrheit). Kurz: Bibliothek und Archiv eines fiktiven Instituts, Abteilungen funktional benannt (Einkauf, Verzeichnen, Ablage, Verwaltung), damit der Transfer auf jeden Verwaltungskontext sofort gelingt. Org-Arbeitsname ist „Institut für Verwaltungs- und Regionalkunde" (web-geprüft kollisionsfrei; ersetzt den mit der realen OEAW-Einrichtung kollidierenden Namen „Institut für Stadt- und Regionalforschung / ISR"). PK bestätigt das Setting; jeder erfundene Name läuft durch das Kollisions-Gate (§ Akzeptanzkriterien P1).
@@ -23,9 +25,8 @@ Definiert im Kanon `WELT.md` (Stelle der Wahrheit). Kurz: Bibliothek und Archiv 
 ## 4. Daten-Design
 
 - Generator statt Handarbeit: ein seed-fester `generieren.py` (gemeinsame uv-venv: python-docx, reportlab/fpdf, openpyxl) erzeugt das Universum reproduzierbar. Generator und erzeugtes Universum werden beide committet — Teilnehmende klonen fertige Dateien, der Generator hält alles regenerier- und tunbar. Echte PDFs/xlsx, keine Platzhalter.
-- Klein: rund 15 bis 30 Objekte pro Bereich.
-- Gemusterte, regel-lösbare Unordnung (uneinheitliche Datumsformate, `FINAL_v2`-Namen), kein Zufallschaos.
-- Bewusste Edge-Cases, die auf die Tag-2-Fehlerklassen zielen (leere Einträge, Sonderfälle): leere Datei, Rechnung ohne Betrag, Titel mit „z.B.". Details im Kanon.
+- Umfang, Unordnungs-Muster, Datumsformate und Edge-Cases sind im Kanon (`WELT.md`) definiert; der Plan verweist darauf, statt die Werte zu duplizieren (eine Stelle der Wahrheit, E11).
+- Dateigrößen-Deckel (E11): micro/seed-Größen, die Gesamtsumme klein halten. Das blockt Feature-Creep späterer Kurse (etwa Power-Query-Massendaten) und hält den clone in Colab leicht.
 - Synthetische Personendaten durchgehend; reale ISBNs/DOIs nur im Katalog (öffentliche Bibliografie, Sinn der API-Übung).
 
 ## 5. Zugriff und Methode
@@ -61,7 +62,7 @@ Slug `messyverse`: MCP-Server `briefer-messyverse` (`.mcp.json`, `--reviewer cla
 - P0 (umgesetzt): Andocken + Kanon `WELT.md`.
 - P1 (nach Review): Generator + Tag-2-Seed-Daten (Katalog, Fixtures, Rechnungssatz, Magazin-Zoo, `haushalt.xlsx`, die Querverweis-Kette).
 - P2 (nach Review): Übungs-Notebooks + erwartete Ergebnisse.
-- P3 (später): Ausschnitte für die anderen Kurse.
+- P3 (später): Ausschnitte für die anderen Kurse. Erweiterungs-Vertrag (E11): ein neuer Kurs bringt einen neuen WELT-Abschnitt plus Artefakt-Mapping; bestehende Dateien ändern nie still ihre Bedeutung.
 
 ## 9. Offene Punkte fürs Review
 
