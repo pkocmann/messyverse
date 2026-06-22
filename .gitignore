@@ -1,64 +1,59 @@
 # messyverse ist ein OEFFENTLICHES Repo (Teilnehmende klonen und forken es).
 #
-# Polaritaet: fail-closed Allowlist (E4). Erst ALLES auf oberster Ebene
-# ignorieren, dann nur die gewollten oeffentlichen Pfade per ! freigeben.
-# Begruendung: eine Denylist vergisst eine neu hinzukommende Geheimnis-Datei
-# still und traegt sie ins oeffentliche Repo; eine Allowlist laesst
-# standardmaessig nichts durch. Maschinenlokale globale Ignores
-# (~/.config/git/ignore) reisen beim Klon/Fork NICHT mit, deshalb stehen die
-# defensiven Muster unten zusaetzlich hier im Repo.
+# Polaritaet: fail-closed TYP-Allowlist (E4). Standardmaessig ist ALLES ignoriert;
+# freigegeben werden nur (a) die kuratierten Top-Level-Dateien und (b) pro
+# Welt-Ordner exakt die oeffentlichen INHALTSTYPEN. Alles, was kein deklarierter
+# Inhaltstyp ist -- Schluessel, .env, .yaml, Datenbanken, endungslose Dateien,
+# die briefer-/Authoring-Infrastruktur -- bleibt damit ueberall ignoriert, ganz
+# ohne Namens-Denylist (keine Liste, die man nachpflegen koennte). Den einen
+# Rest, den eine Typ-Allowlist nicht fangen kann -- ein Secret, das einen
+# erlaubten Typ traegt (z.B. ein Key in einer .json-Fixture) -- deckt der
+# Secret-Scan im Release-Gate ab (PLAN.md, Akzeptanzkriterien P1).
+#
+# Die globale ~/.config/git/ignore reist beim Klon/Fork nicht mit -- diese Datei
+# ist daher die alleinige Quelle der Wahrheit fuer das, was oeffentlich wird.
+# Eine bewusste Sonderdatei ohne deklarierten Typ (etwa ein endungsloser
+# Edge-Case im magazin/) braucht einen expliziten !-Eintrag.
 
-# 1) Alles auf oberster Ebene ignorieren
-/*
+# 1) Alles ignorieren, aber in Verzeichnisse absteigen duerfen
+*
+!*/
 
-# 2) Gewollte oeffentliche Pfade UND ihre Inhalte freigeben. Pro Ordner zwei
-#    Zeilen: der Ordner selbst und sein Inhalt rekursiv (/**). Das **-Muster
-#    ueberschreibt auch die maschinenlokale globale gitignore, die *.pdf,
-#    *.xlsx, *.png u.a. ausschliesst — sonst wuerden die echten Welt-Artefakte
-#    (Rechnungs-PDFs, haushalt.xlsx) still nicht versioniert.
+# 2) Kuratierte Top-Level-Dateien
 !/.gitignore
 !/LICENSE
 !/README.md
 !/WELT.md
 !/PLAN.md
 !/generieren.py
-!/erwerbung/
-!/erwerbung/**
-!/katalog/
-!/katalog/**
-!/magazin/
-!/magazin/**
-!/verwaltung/
-!/verwaltung/**
-!/notizen/
-!/notizen/**
-!/api-fixtures/
-!/api-fixtures/**
-!/notebooks/
-!/notebooks/**
-!/loesungen/
-!/loesungen/**
 
-# 3) Defensive Muster: NACH der Allowlist, damit sie Geheimnisse auch
-#    innerhalb freigegebener Ordner wieder ausschliessen (letzter Treffer
-#    gewinnt). Ohne fuehrenden Slash greifen sie auf jeder Ebene.
-briefer.yaml
-secrets.json
-secrets.yaml
-secrets.yml
-.env*
-*.env
-*.token
-*.key
-*.pem
-*.db
-*.sqlite*
-copilot-instructions.md
-
-# 4) Standard-Muell, auch innerhalb freigegebener Ordner
-.DS_Store
-__pycache__/
-*.py[cod]
-.ipynb_checkpoints/
-_site/
-.venv/
+# 3) Pro Welt-Ordner exakt die oeffentlichen Inhaltstypen
+# erwerbung/ -- Rechnungen, Bestellbestaetigungen
+!/erwerbung/**/*.pdf
+# katalog/ -- ISBN-/DOI-Listen, Titeldaten, kontrolliertes Vokabular
+!/katalog/**/*.csv
+!/katalog/**/*.txt
+# magazin/ -- Scan-Zoo (digitalisierte Dokumente mit gewachsenen Namen)
+!/magazin/**/*.pdf
+!/magazin/**/*.png
+!/magazin/**/*.jpg
+!/magazin/**/*.jpeg
+!/magazin/**/*.tif
+!/magazin/**/*.tiff
+# verwaltung/ -- Haushalt (xlsx) + interne Vermerke
+!/verwaltung/**/*.xlsx
+!/verwaltung/**/*.csv
+!/verwaltung/**/*.md
+# notizen/ -- interne Dokumentation
+!/notizen/**/*.md
+# api-fixtures/ -- gecachte Web-Katalog-Antworten + Fixture-Vertrag
+!/api-fixtures/**/*.json
+!/api-fixtures/**/*.md
+# notebooks/ -- Uebungs-Notebooks
+!/notebooks/**/*.ipynb
+!/notebooks/**/*.md
+# loesungen/ -- Verifikations-Layer (Digest-Manifest)
+!/loesungen/**/*.json
+!/loesungen/**/*.csv
+!/loesungen/**/*.md
+!/loesungen/**/*.txt
