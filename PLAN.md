@@ -1,6 +1,6 @@
 # Plan: messyverse — das Übungsuniversum
 
-Status: Entwurf für Review. P0 (Andocken + Kanon) ist umgesetzt; P1/P2 (Befüllung) folgen nach diesem Review.
+Status: Plan-Revision aus dem Plan-Review 2026-06-22 eingearbeitet (15 Decisions). P0 (Andocken + Kanon) ist umgesetzt; P1/P2 (Befüllung) folgen nach diesem Plan. Die Review-Auflagen in den Abschnitten „Akzeptanzkriterien P1/P2" sind verbindlich; gebaut wird in eigenen Sessions.
 
 ## 1. Zweck und Scope
 
