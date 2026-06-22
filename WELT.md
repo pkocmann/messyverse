@@ -31,11 +31,13 @@ Eine Ausnahme, die kein Widerspruch ist: Im Katalog stehen reale ISBNs und DOIs.
 
 ## Die Querverweis-Kette — das Glaubwürdigkeits-Rückgrat
 
-Mindestens eine Kette läuft durch vier Formate und macht aus einer Dateisammlung eine Welt:
+Die Welt trägt rund 8 bis 10 vollständige Querverweis-Ketten und 2 bis 3 bewusst unvollständige — eine Rechnung ohne passende Haushaltszeile, ein Katalogeintrag ohne Beleg. Die unvollständigen sind kein Defekt, sondern der Lernanlass für „was fehlt hier?".
 
-Eine Rechnung (in `erwerbung/`, PDF, Lieferant Quellmann Fachbuch GmbH, Betrag X, Datum D) betrifft ein Buch mit der ISBN I (in `katalog/`). Die Haushaltszeile in `verwaltung/haushalt.xlsx` trägt denselben Betrag X und das Datum D. Ein Vermerk in `notizen/` erwähnt die Anschaffung.
+Jede Kette läuft über einen eindeutigen Schlüssel durch vier Formate. Der Schlüssel ist die Rechnungs-Nummer oder die ISBN, und er steht identisch auf beiden Seiten jeder Verbindung. Betrag und Datum dienen nur der Plausibilitäts-Gegenkontrolle; auf solche nicht-eindeutigen Attribute wird nie gejoint.
 
-Wer in einer Übung die Rechnung ausliest, kann das Ergebnis gegen Katalog und Haushalt gegenprüfen. Das ist das Prüfen gegen das Universum.
+Eine Rechnung in `erwerbung/` (PDF, Lieferant Quellmann Fachbuch GmbH) trägt eine eindeutige Rechnungs-Nummer und je Buch eine Positionszeile mit ISBN, Kurztitel und Einzelpreis. Das Buch mit der ISBN steht im `katalog/`. Die Haushaltszeile in `verwaltung/haushalt.xlsx` führt dieselbe Rechnungs-Nummer als Schlüssel; Betrag und Datum stimmen zusätzlich überein. Ein Vermerk in `notizen/` nennt die Anschaffung unter derselben Rechnungs-Nummer.
+
+Wer in einer Übung die Rechnung ausliest, verbindet über den Schlüssel auf Katalog und Haushalt und prüft das Ergebnis gegen das Universum.
 
 ## Datumsrahmen
 
