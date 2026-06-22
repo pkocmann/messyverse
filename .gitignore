@@ -1,20 +1,64 @@
-# messyverse ist ein OEFFENTLICHES Repo (Teilnehmende klonen es).
-# Die briefer-/Authoring-Infrastruktur bleibt LOKAL und kommt nie ins Repo
-# (PK-Entscheid 2026-06-22: gitignore loest die public-vs-briefer-Struktur).
-# Diese Dateien existieren auf der Platte (Onboarding-Lint prueft Praesenz,
-# nicht git-Tracking) und wirken lokal, werden aber nicht versioniert.
-.mcp.json
-.vscode/
-.claude/
-.github/
-reindex.sh
-rules.yaml
+# messyverse ist ein OEFFENTLICHES Repo (Teilnehmende klonen und forken es).
+#
+# Polaritaet: fail-closed Allowlist (E4). Erst ALLES auf oberster Ebene
+# ignorieren, dann nur die gewollten oeffentlichen Pfade per ! freigeben.
+# Begruendung: eine Denylist vergisst eine neu hinzukommende Geheimnis-Datei
+# still und traegt sie ins oeffentliche Repo; eine Allowlist laesst
+# standardmaessig nichts durch. Maschinenlokale globale Ignores
+# (~/.config/git/ignore) reisen beim Klon/Fork NICHT mit, deshalb stehen die
+# defensiven Muster unten zusaetzlich hier im Repo.
 
-# Briefer-DBs liegen zentral in ~/.briefer-data, nie im Repo.
+# 1) Alles auf oberster Ebene ignorieren
+/*
 
-# Standard
-.venv/
+# 2) Gewollte oeffentliche Pfade UND ihre Inhalte freigeben. Pro Ordner zwei
+#    Zeilen: der Ordner selbst und sein Inhalt rekursiv (/**). Das **-Muster
+#    ueberschreibt auch die maschinenlokale globale gitignore, die *.pdf,
+#    *.xlsx, *.png u.a. ausschliesst — sonst wuerden die echten Welt-Artefakte
+#    (Rechnungs-PDFs, haushalt.xlsx) still nicht versioniert.
+!/.gitignore
+!/LICENSE
+!/README.md
+!/WELT.md
+!/PLAN.md
+!/generieren.py
+!/erwerbung/
+!/erwerbung/**
+!/katalog/
+!/katalog/**
+!/magazin/
+!/magazin/**
+!/verwaltung/
+!/verwaltung/**
+!/notizen/
+!/notizen/**
+!/api-fixtures/
+!/api-fixtures/**
+!/notebooks/
+!/notebooks/**
+!/loesungen/
+!/loesungen/**
+
+# 3) Defensive Muster: NACH der Allowlist, damit sie Geheimnisse auch
+#    innerhalb freigegebener Ordner wieder ausschliessen (letzter Treffer
+#    gewinnt). Ohne fuehrenden Slash greifen sie auf jeder Ebene.
+briefer.yaml
+secrets.json
+secrets.yaml
+secrets.yml
+.env*
+*.env
+*.token
+*.key
+*.pem
+*.db
+*.sqlite*
+copilot-instructions.md
+
+# 4) Standard-Muell, auch innerhalb freigegebener Ordner
+.DS_Store
 __pycache__/
-**/.DS_Store
+*.py[cod]
+.ipynb_checkpoints/
 _site/
-**/.ipynb_checkpoints/
+.venv/
