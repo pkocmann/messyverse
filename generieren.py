@@ -119,6 +119,9 @@ MAGAZIN = [
     {"name": "DOC20250912.pdf",                            "datum": "2025-09-12", "text": "Geraete-Export"},
     {"name": "leer_scan.pdf",                              "datum": None,         "text": None},  # 0-Byte-Datei (leerer Eintrag)
     {"name": "uebersicht_2025.pdf",                        "datum": "2025-12-01", "text": "Jahresuebersicht"},
+    # echter Umlaut im Dateinamen (PB4 E6): bewusste Ausnahme von der ASCII-Dateinamen-Regel,
+    # damit der Umlaut-Pfad real getestet wird (Filesystem -> JSON-Golden -> faithful NB04).
+    {"name": "Behörden-Rückgabe März.pdf",                 "datum": "2025-03-21", "text": "Rueckgabe-Vermerk der Aussenstelle (Umlaut nur im Dateinamen)"},
 ]
 
 
