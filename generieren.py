@@ -378,10 +378,13 @@ def gen_loesungen():
     # 5) README zum Verifikations-Layer
     schreibe_text(ldir / "README.md",
         f"<!-- {MARKER} -->\n\n# loesungen/ -- Verifikations-Layer\n\n"
-        "Dieser Ordner ist oeffentlich und dient dem Selbst-Check im Notebook. Fuer Aufgaben, bei denen "
-        "das Ergebnis zugleich die Loesung waere (Datei-Sortieren), wird nur ein **Digest** des "
-        "Soll-Endzustands hinterlegt (nicht rueckrechenbar). Wo der Sollwert ohnehin aus der oeffentlichen "
-        "Welt herleitbar ist (Lookup-Ergebnisse, Rechnungsbetraege), steht er im Klartext.\n")
+        "Dieser Ordner ist öffentlich und dient dem Selbst-Check im Notebook. Die Sollwerte stehen "
+        "im Klartext, weil sie ohnehin aus der öffentlichen Welt herleitbar sind: die Lookup-Ergebnisse "
+        "aus den Fixtures, die Rechnungsbeträge aus den PDFs -- und auch das Soll-Datum beim "
+        "Datei-Sortieren steht im Datei-Inhalt (Zeile 'Datum:'). Für das Datei-Sortieren liegt deshalb "
+        "das vollständige Klartext-Mapping Dateiname -> Datum in datei_sortieren.golden.json; der "
+        "zusätzliche integritaets_sha256 ist nur ein Sekundär-Check gegen versehentliche Veränderung, "
+        "keine Verschleierung des Solls.\n")
 
 
 def pruefe_integritaet():
