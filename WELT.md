@@ -4,12 +4,12 @@ Dies ist die Stelle der Wahrheit für die fiktive Welt von messyverse. Jeder neu
 
 ## Die Organisation
 
-Arbeitsname (im Plan-Review zu bestätigen): Bibliothek und Archiv des Instituts für Stadt- und Regionalforschung (ISR), eine fiktive mittelgroße Spezialeinrichtung. Das Etikett Bibliothek und Archiv ist für das Fachpublikum glaubwürdig; die innere Struktur ist bewusst so benannt, dass jeder Mensch aus Verwaltung, Verein oder Firma sie sofort wiedererkennt. Der Transfer läuft über die Funktion: Einkauf, Verzeichnen, Ablage, Verwaltung gibt es überall.
+Arbeitsname (web-geprüft kollisionsfrei, Setting von PK zu bestätigen): Bibliothek und Archiv des Instituts für Verwaltungs- und Regionalkunde, eine fiktive mittelgroße Spezialeinrichtung. Das Etikett Bibliothek und Archiv ist für das Fachpublikum glaubwürdig; die innere Struktur ist bewusst so benannt, dass jeder Mensch aus Verwaltung, Verein oder Firma sie sofort wiedererkennt. Der Transfer läuft über die Funktion: Einkauf, Verzeichnen, Ablage, Verwaltung gibt es überall.
 
 ## Abteilungen — funktional benannt, das ist der Transfer-Hebel
 
 - `erwerbung/` — Einkauf: Lieferantenrechnungen, Bestellbestätigungen (PDF)
-- `katalog/` — Verzeichnen: ISBN- und DOI-Listen, Titeldaten (csv/txt)
+- `katalog/` — Verzeichnen: ISBN- und DOI-Listen, Titeldaten, kontrolliertes Schlagwort-Vokabular `schlagworte.csv` (csv/txt)
 - `magazin/` — Ablage: digitalisierte Dokumente mit gewachsenen Dateinamen
 - `verwaltung/` — Haushalt (xlsx), interne Vermerke
 - `notizen/` — interne Dokumentation (.md)
@@ -19,21 +19,27 @@ Arbeitsname (im Plan-Review zu bestätigen): Bibliothek und Archiv des Instituts
 
 Personenbezogenes ist durchgehend fiktiv: Lieferanten, Sachbearbeiter, Adressen, Aktenzeichen, E-Mail-Adressen. Keine reale Person, keine reale Firmenrechnung — messyverse ist öffentlich.
 
+Erfundene Eigennamen — Lieferanten, Organisationen, Sachbearbeiter, der Org-Name selbst — werden vor der Aufnahme gegen Handelsregister und Web geprüft, damit kein scheinbar fiktiver Name eine reale Firma oder Einrichtung trifft. Der Lieferant Quellmann Fachbuch GmbH und der Org-Name Institut für Verwaltungs- und Regionalkunde sind so geprüft; jeder in P1 ergänzte Name durchläuft denselben Check.
+
 Eine Ausnahme, die kein Widerspruch ist: Im Katalog stehen reale ISBNs und DOIs. Deren öffentliche bibliografische Metadaten sind der Sinn der Open-Library- und Crossref-Übung. Real ist allein die Bibliografie; alles Organisatorische darum herum — wer das Buch wann von wem zu welchem Preis gekauft hat — ist erfunden.
+
+Werte- und Diversitäts-Leitplanke: Die ganze Welt — Katalogtitel, Autorinnen und Autoren, Sachbearbeiter, Vermerke, jede generierte Person und jeder Inhalt — bildet Vielfalt wertschätzend ab: Kulturen, Geschlechter, Epochen und Altersgruppen ausgewogen, ohne Klischee. Tabu sind herabwürdigende Inhalte (etwa homophobe oder rassistische), politischer Extremismus und jede Verherrlichung von Diktaturen, Kriegen oder Verbrechen. Die realen Katalogtitel werden nach denselben Maßstäben kuratiert: klassische, breit katalogisierte Werke aus verschiedenen Kulturkreisen, die freiheitliche Werte vertreten.
 
 ## Kern-Entitäten (Seed, in P1 konkretisiert)
 
-- Lieferant: „Lehmann Fachbuch GmbH" (fiktiv); ein bis zwei weitere folgen.
+- Lieferant: „Quellmann Fachbuch GmbH" (fiktiv); ein bis zwei weitere folgen.
 - Haushaltsjahr: 2025 (Datumsrahmen siehe unten).
-- Katalog: eine Handvoll realer Titel; die konkreten ISBNs werden in P1 ausgewählt und mit gecachten Open-Library-Antworten in `api-fixtures/` verankert.
+- Katalog: rund 10 bis 13 reale, klassische Titel, kuratiert nach der Werte- und Diversitäts-Leitplanke (verschiedene Kulturkreise, Geschlechter, Epochen, Themen); davon ~8 bis 10 mit vollständiger Querverweis-Kette, 2 bis 3 bewusst unvollständig. Die konkreten ISBNs/DOIs werden in P1 live gegen Open Library/Crossref verifiziert, als Fixtures gepinnt (E14) und PK vor dem Generieren zur Freigabe vorgelegt.
 
 ## Die Querverweis-Kette — das Glaubwürdigkeits-Rückgrat
 
-Mindestens eine Kette läuft durch vier Formate und macht aus einer Dateisammlung eine Welt:
+Die Welt trägt rund 8 bis 10 vollständige Querverweis-Ketten und 2 bis 3 bewusst unvollständige — eine Rechnung ohne passende Haushaltszeile, ein Katalogeintrag ohne Beleg. Die unvollständigen sind kein Defekt, sondern der Lernanlass für „was fehlt hier?".
 
-Eine Rechnung (in `erwerbung/`, PDF, Lieferant Lehmann Fachbuch GmbH, Betrag X, Datum D) betrifft ein Buch mit der ISBN I (in `katalog/`). Die Haushaltszeile in `verwaltung/haushalt.xlsx` trägt denselben Betrag X und das Datum D. Ein Vermerk in `notizen/` erwähnt die Anschaffung.
+Jede Kette läuft über einen eindeutigen Schlüssel durch vier Formate. Der Schlüssel ist die Rechnungs-Nummer oder die ISBN, und er steht identisch auf beiden Seiten jeder Verbindung. Betrag und Datum dienen nur der Plausibilitäts-Gegenkontrolle; auf solche nicht-eindeutigen Attribute wird nie gejoint.
 
-Wer in einer Übung die Rechnung ausliest, kann das Ergebnis gegen Katalog und Haushalt gegenprüfen. Das ist das Prüfen gegen das Universum.
+Eine Rechnung in `erwerbung/` (PDF, Lieferant Quellmann Fachbuch GmbH) trägt eine eindeutige Rechnungs-Nummer und je Buch eine Positionszeile mit ISBN, Kurztitel und Einzelpreis. Das Buch mit der ISBN steht im `katalog/`. Die Haushaltszeile in `verwaltung/haushalt.xlsx` führt dieselbe Rechnungs-Nummer als Schlüssel; Betrag und Datum stimmen zusätzlich überein. Ein Vermerk in `notizen/` nennt die Anschaffung unter derselben Rechnungs-Nummer.
+
+Wer in einer Übung die Rechnung ausliest, verbindet über den Schlüssel auf Katalog und Haushalt und prüft das Ergebnis gegen das Universum.
 
 ## Datumsrahmen
 
@@ -45,7 +51,7 @@ Die Dateinamen im `magazin/` sind gewachsen: `Scan_2025_03_final_FINAL_v2.pdf`, 
 
 ## Bewusste Edge-Cases — sie zielen auf die Tag-2-Fehlerklassen
 
-Die Kursbeschreibung nennt als Lernziel unter anderem „fehlende Behandlung leerer Einträge, übersehene Sonderfälle". Die Welt enthält daher absichtlich eine leere Datei (0 Byte) im `magazin/`, eine Rechnung ohne Betragszeile, einen Titel mit „z.B." (verfälscht eine naive Satz- oder Tokenzählung) und einen Eintrag mit Umlauten und Sonderzeichen im Namen. Diese Fälle sind kein Defekt, sondern der Lernanlass: KI-generierter Code übersieht sie typischerweise, und genau das soll im Kurs auffallen.
+Die Kursbeschreibung nennt als Lernziel unter anderem „fehlende Behandlung leerer Einträge, übersehene Sonderfälle". Die Welt enthält daher absichtlich leere Einträge — etwa eine 0-Byte-Datei im `magazin/` —, eine Rechnung ohne Betragszeile, einen Titel mit „z.B." (verfälscht eine naive Satz- oder Tokenzählung) und einen Eintrag mit Umlauten und Sonderzeichen im Namen. Diese Fälle sind kein Defekt, sondern der Lernanlass: KI-generierter Code übersieht sie typischerweise, und genau das soll im Kurs auffallen.
 
 ## Änderungs-Disziplin
 

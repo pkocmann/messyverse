@@ -1,20 +1,59 @@
-# messyverse ist ein OEFFENTLICHES Repo (Teilnehmende klonen es).
-# Die briefer-/Authoring-Infrastruktur bleibt LOKAL und kommt nie ins Repo
-# (PK-Entscheid 2026-06-22: gitignore loest die public-vs-briefer-Struktur).
-# Diese Dateien existieren auf der Platte (Onboarding-Lint prueft Praesenz,
-# nicht git-Tracking) und wirken lokal, werden aber nicht versioniert.
-.mcp.json
-.vscode/
-.claude/
-.github/
-reindex.sh
-rules.yaml
+# messyverse ist ein OEFFENTLICHES Repo (Teilnehmende klonen und forken es).
+#
+# Polaritaet: fail-closed TYP-Allowlist (E4). Standardmaessig ist ALLES ignoriert;
+# freigegeben werden nur (a) die kuratierten Top-Level-Dateien und (b) pro
+# Welt-Ordner exakt die oeffentlichen INHALTSTYPEN. Alles, was kein deklarierter
+# Inhaltstyp ist -- Schluessel, .env, .yaml, Datenbanken, endungslose Dateien,
+# die briefer-/Authoring-Infrastruktur -- bleibt damit ueberall ignoriert, ganz
+# ohne Namens-Denylist (keine Liste, die man nachpflegen koennte). Den einen
+# Rest, den eine Typ-Allowlist nicht fangen kann -- ein Secret, das einen
+# erlaubten Typ traegt (z.B. ein Key in einer .json-Fixture) -- deckt der
+# Secret-Scan im Release-Gate ab (PLAN.md, Akzeptanzkriterien P1).
+#
+# Die globale ~/.config/git/ignore reist beim Klon/Fork nicht mit -- diese Datei
+# ist daher die alleinige Quelle der Wahrheit fuer das, was oeffentlich wird.
+# Eine bewusste Sonderdatei ohne deklarierten Typ (etwa ein endungsloser
+# Edge-Case im magazin/) braucht einen expliziten !-Eintrag.
 
-# Briefer-DBs liegen zentral in ~/.briefer-data, nie im Repo.
+# 1) Alles ignorieren, aber in Verzeichnisse absteigen duerfen
+*
+!*/
 
-# Standard
-.venv/
-__pycache__/
-**/.DS_Store
-_site/
-**/.ipynb_checkpoints/
+# 2) Kuratierte Top-Level-Dateien
+!/.gitignore
+!/LICENSE
+!/README.md
+!/WELT.md
+!/PLAN.md
+!/generieren.py
+
+# 3) Pro Welt-Ordner exakt die oeffentlichen Inhaltstypen
+# erwerbung/ -- Rechnungen, Bestellbestaetigungen
+!/erwerbung/**/*.pdf
+# katalog/ -- ISBN-/DOI-Listen, Titeldaten, kontrolliertes Vokabular
+!/katalog/**/*.csv
+!/katalog/**/*.txt
+# magazin/ -- Scan-Zoo (digitalisierte Dokumente mit gewachsenen Namen)
+!/magazin/**/*.pdf
+!/magazin/**/*.png
+!/magazin/**/*.jpg
+!/magazin/**/*.jpeg
+!/magazin/**/*.tif
+!/magazin/**/*.tiff
+# verwaltung/ -- Haushalt (xlsx) + interne Vermerke
+!/verwaltung/**/*.xlsx
+!/verwaltung/**/*.csv
+!/verwaltung/**/*.md
+# notizen/ -- interne Dokumentation
+!/notizen/**/*.md
+# api-fixtures/ -- gecachte Web-Katalog-Antworten + Fixture-Vertrag
+!/api-fixtures/**/*.json
+!/api-fixtures/**/*.md
+# notebooks/ -- Uebungs-Notebooks
+!/notebooks/**/*.ipynb
+!/notebooks/**/*.md
+# loesungen/ -- Verifikations-Layer (Digest-Manifest)
+!/loesungen/**/*.json
+!/loesungen/**/*.csv
+!/loesungen/**/*.md
+!/loesungen/**/*.txt

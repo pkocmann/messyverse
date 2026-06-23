@@ -1,0 +1,63 @@
+messyverse — Lizenzierung
+=========================
+
+messyverse ist ein öffentliches Übungsuniversum und besteht aus drei
+Bestandteilen mit unterschiedlicher Schutzlage. Sie sind getrennt lizenziert,
+weil Code, synthetische Daten und reale Fakten rechtlich verschieden liegen.
+
+1. Code (generieren.py, die Übungs-Notebooks unter notebooks/, sonstige Skripte)
+   -> MIT-Lizenz (Volltext unten).
+
+2. Synthetische Daten (die erfundene Welt: erfundene Rechnungen, Bestätigungen,
+   Vermerke, Haushaltszeilen, Dateinamen, das Schlagwort-Vokabular und alle
+   übrigen generierten Inhalte unter erwerbung/, magazin/, verwaltung/,
+   notizen/, katalog/ und loesungen/, soweit sie erfunden sind)
+   -> CC0 1.0 Universal (Public Domain Dedication). Frei nutzbar ohne
+   Bedingungen, eine Namensnennung ist nicht erforderlich.
+   Volltext: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+3. Reale bibliografische Fakten (die im Katalog verwendeten realen ISBNs und
+   DOIs sowie die über Open Library und Crossref bezogenen öffentlichen
+   Metadaten in api-fixtures/)
+   -> NICHT mitlizenziert. Bibliografische Fakten — Titel, Autorinnen und
+   Autoren, ISBN, DOI, Erscheinungsjahr — sind keine schöpferische Leistung
+   und unterliegen keinem Urheberrecht; messyverse erhebt an ihnen keine
+   Rechte und kann keine einräumen. Sie stammen aus öffentlichen Katalogen und
+   dienen allein dem bibliografischen Lernzweck der API-Übungen. Marken- und
+   Namensrechte Dritter bleiben unberührt.
+
+Für die maschinenlesbare Zuordnung tragen die einzelnen Dateien ab P1/P2
+SPDX-Header (SPDX-License-Identifier: MIT beziehungsweise CC0-1.0), damit die
+Trennung pro Datei eindeutig bleibt.
+
+---------------------------------------------------------------------------
+MIT License (gilt für den Code-Bestandteil, Punkt 1)
+
+Copyright (c) 2026 Peter Kocmann
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---------------------------------------------------------------------------
+CC0 1.0 Universal (gilt für die synthetischen Daten, Punkt 2)
+
+Soweit gesetzlich möglich, gibt der Urheber die synthetischen Daten von
+messyverse in die Gemeinfreiheit frei (CC0 1.0 Universal Public Domain
+Dedication). Es bestehen keine Bedingungen für Nutzung, Bearbeitung oder
+Weitergabe. Der vollständige Rechtstext steht unter
+https://creativecommons.org/publicdomain/zero/1.0/legalcode
