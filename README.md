@@ -8,10 +8,16 @@ Die Idee: eine Welt, viele Brillen. Dieselbe Organisation dient als gemeinsame Z
 
 Die Aufgaben werden nicht von Hand programmiert. Man schaut sich die Lage an, formuliert einen Auftrag an einen KI-Assistenten, liest und prüft den erzeugten Code und steuert bei Bedarf nach. Geprüft wird gegen das Universum: zu jeder Aufgabe gibt es ein erwartetes Ergebnis.
 
-## Nutzung
+## Die Übungen
 
-Die Übungs-Notebooks öffnen über die jeweiligen „Open in Colab"-Links. Beispieldaten lädt das Notebook direkt aus diesem Repo. Für Aufgaben, die einen ganzen Dateibaum brauchen (Umbenennen, Sortieren), enthält das Notebook eine bereitgestellte Setup-Zelle, die eine Arbeitskopie anlegt.
+Jedes Notebook öffnet mit einem Klick in Google Colab. Es lädt die Daten direkt aus diesem Repo (eine bereitgestellte Setup-Zelle legt eine Arbeitskopie an), arbeitet gegen gespeicherte Web-Antworten in `api-fixtures/` (deterministisch) und enthält eine Selbst-Prüfung gegen das erwartete Ergebnis.
 
-## Status
+| Übung | Worum es geht | Notebook |
+|---|---|---|
+| ISBN → Open Library | Buchmetadaten zu einer ISBN-Liste abrufen | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dsci3d/messyverse/blob/main/notebooks/01_isbn-open-library.ipynb) |
+| DOI → Crossref | Zitationen anreichern + Pagination | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dsci3d/messyverse/blob/main/notebooks/02_doi-crossref.ipynb) |
+| PDF-Extraktion | Beträge aus Rechnungen auslesen | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dsci3d/messyverse/blob/main/notebooks/03_pdf-extraktion.ipynb) |
+| Datei-Sortieren | Den Scan-Zoo nach Datum ordnen | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dsci3d/messyverse/blob/main/notebooks/04_datei-sortieren.ipynb) |
+| KI-Verschlagwortung | Titel ins kontrollierte Vokabular einordnen | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dsci3d/messyverse/blob/main/notebooks/05_ki-verschlagwortung.ipynb) |
 
-Gerüst angelegt (2026-06-22). Das Universum wird nach dem Aufbauplan (`PLAN.md`) befüllt; die Welt-Definition steht in `WELT.md`.
+Die Daten erzeugt `generieren.py` reproduzierbar aus den gepinnten Fixtures; die Welt-Definition steht in `WELT.md`, der Aufbauplan in `PLAN.md`.
