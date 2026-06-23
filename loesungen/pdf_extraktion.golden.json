@@ -1,0 +1,38 @@
+{
+  "RE-2025-0001": {
+    "betrag_eur": 56.8,
+    "datum_iso": "2025-03-15",
+    "lieferant": "Quellmann Fachbuch GmbH",
+    "positionen": 2
+  },
+  "RE-2025-0002": {
+    "betrag_eur": 53.0,
+    "datum_iso": "2025-04-08",
+    "lieferant": "Quellmann Fachbuch GmbH",
+    "positionen": 3
+  },
+  "RE-2025-0003": {
+    "betrag_eur": 14.5,
+    "datum_iso": "2025-05-03",
+    "lieferant": "Quellmann Fachbuch GmbH",
+    "positionen": 2
+  },
+  "RE-2025-0004": {
+    "betrag_eur": 15.0,
+    "datum_iso": "2025-06-20",
+    "lieferant": "Quellmann Fachbuch GmbH",
+    "positionen": 1
+  },
+  "RE-2025-0005": {
+    "betrag_eur": 43.9,
+    "datum_iso": "2025-09-12",
+    "lieferant": "Quellmann Fachbuch GmbH",
+    "positionen": 3
+  },
+  "RE-2025-0008": {
+    "betrag_eur": 11.5,
+    "datum_iso": "2025-11-05",
+    "lieferant": "Quellmann Fachbuch GmbH",
+    "positionen": 1
+  }
+}

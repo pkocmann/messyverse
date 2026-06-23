@@ -1,0 +1,9 @@
+{
+  "sammelordner_undatiert": [
+    "IMG_0421.pdf",
+    "leer_scan.pdf"
+  ],
+  "soll_anzahl_datierbar": 14,
+  "soll_sha256": "596965de742a21e3af5722e6274fcb6912ea602270b26f47bf0f4806090bd8be",
+  "verfahren": "Digest-first (E15): committet wird nur der SHA-256 des sortierten Soll-Endzustands, nicht die Zuordnung. Die Pruefzelle bildet denselben Digest ueber den TN-Output."
+}
