@@ -1,4 +1,3 @@
-# GENERIERT -- nicht editieren (Quelle: generieren.py). Aenderungen gehen beim naechsten Lauf verloren.
 9783150012413
 9781503901599
 9781974384594

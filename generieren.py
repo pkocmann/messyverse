@@ -183,10 +183,11 @@ def euro(x):
 # ------------------------------------------------------------------ Generierung
 def gen_katalog():
     kdir = ROOT / "katalog"
-    # isbns.txt
-    schreibe_text(kdir / "isbns.txt", f"# {MARKER}\n" + "\n".join(b["isbn"] for b in KATALOG) + "\n")
-    # dois.txt
-    schreibe_text(kdir / "dois.txt", f"# {MARKER}\n" + "\n".join(DOIS) + "\n")
+    # isbns.txt / dois.txt: reine Wertlisten OHNE "#"-Header -- ein Kommentar-Header laesst naive
+    # Parser auf der ersten Zeile abstuerzen (adversariale Verifikation 2026-06-23). Drift ist hier
+    # durch das Reproduzieren-Gate gedeckt; der GENERIERT-Marker steckt in den uebrigen Artefakten.
+    schreibe_text(kdir / "isbns.txt", "\n".join(b["isbn"] for b in KATALOG) + "\n")
+    schreibe_text(kdir / "dois.txt", "\n".join(DOIS) + "\n")
     # titel.csv (kuratierte Anzeige-Metadaten)
     with (kdir / "titel.csv").open("w", encoding="utf-8", newline="") as f:
         w = csv.writer(f)
