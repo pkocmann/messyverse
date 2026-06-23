@@ -14,10 +14,10 @@ Jedes Notebook öffnet mit einem Klick in Google Colab. Es lädt die Daten direk
 
 | Übung | Worum es geht | Notebook |
 |---|---|---|
-| ISBN → Open Library | Buchmetadaten zu einer ISBN-Liste abrufen | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dsci3d/messyverse/blob/main/notebooks/01_isbn-open-library.ipynb) |
-| DOI → Crossref | Zitationen anreichern + Pagination | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dsci3d/messyverse/blob/main/notebooks/02_doi-crossref.ipynb) |
-| PDF-Extraktion | Beträge aus Rechnungen auslesen | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dsci3d/messyverse/blob/main/notebooks/03_pdf-extraktion.ipynb) |
-| Datei-Sortieren | Den Scan-Zoo nach Datum ordnen | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dsci3d/messyverse/blob/main/notebooks/04_datei-sortieren.ipynb) |
-| KI-Verschlagwortung | Titel ins kontrollierte Vokabular einordnen | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dsci3d/messyverse/blob/main/notebooks/05_ki-verschlagwortung.ipynb) |
+| ISBN → Open Library | Buchmetadaten zu einer ISBN-Liste abrufen | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pkocmann/messyverse/blob/main/notebooks/01_isbn-open-library.ipynb) |
+| DOI → Crossref | Zitationen anreichern + Pagination | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pkocmann/messyverse/blob/main/notebooks/02_doi-crossref.ipynb) |
+| PDF-Extraktion | Beträge aus Rechnungen auslesen | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pkocmann/messyverse/blob/main/notebooks/03_pdf-extraktion.ipynb) |
+| Datei-Sortieren | Den Scan-Zoo nach Datum ordnen | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pkocmann/messyverse/blob/main/notebooks/04_datei-sortieren.ipynb) |
+| KI-Verschlagwortung | Titel ins kontrollierte Vokabular einordnen | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pkocmann/messyverse/blob/main/notebooks/05_ki-verschlagwortung.ipynb) |
 
 Die Daten erzeugt `generieren.py` reproduzierbar aus den gepinnten Fixtures; die Welt-Definition steht in `WELT.md`, der Aufbauplan in `PLAN.md`.
