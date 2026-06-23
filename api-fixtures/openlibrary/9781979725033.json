@@ -1,0 +1,29 @@
+{
+  "ISBN:9781979725033": {
+    "authors": [
+      {
+        "name": "Jane Austen",
+        "url": "http://openlibrary.org/authors/OL21594A/Jane_Austen"
+      }
+    ],
+    "identifiers": {
+      "isbn_13": [
+        "9781979725033"
+      ],
+      "openlibrary": [
+        "OL56563888M"
+      ]
+    },
+    "key": "/books/OL56563888M",
+    "number_of_pages": 394,
+    "publish_date": "2017",
+    "publishers": [
+      {
+        "name": "CreateSpace Independent Publishing Platform"
+      }
+    ],
+    "title": "Stolz und Vorurteil",
+    "url": "http://openlibrary.org/books/OL56563888M/Stolz_und_Vorurteil",
+    "weight": "0.668"
+  }
+}

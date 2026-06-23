@@ -1,0 +1,1331 @@
+{
+  "message": {
+    "DOI": "10.1108/eb026583",
+    "ISSN": [
+      "0022-0418"
+    ],
+    "URL": "https://doi.org/10.1108/eb026583",
+    "abstract": "<jats:p>The term ‘obsolescence’ occurs frequently in the literature of librarianship and information science. In numerous papers we are told how most published literature becomes obsolete within a measurable time, and that an item receives half the uses it will ever receive (‘half‐life’) in a few years. ‘Obsolescence’ is however very rarely defined, and its validity, interest, and practical value are often assumed rather than explained. Before reviewing studies on ‘obsolescence’, therefore, it is necessary to look at the concept and to identify the reasons why it should be of interest.</jats:p>",
+    "alternative-id": [
+      "10.1108/eb026583"
+    ],
+    "author": [
+      {
+        "affiliation": [],
+        "family": "LINE",
+        "given": "MAURICE B.",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "first"
+      },
+      {
+        "affiliation": [],
+        "family": "SANDISON",
+        "given": "A.",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      }
+    ],
+    "container-title": [
+      "Journal of Documentation"
+    ],
+    "content-domain": {
+      "crossmark-restriction": false,
+      "domain": []
+    },
+    "created": {
+      "date-parts": [
+        [
+          2008,
+          1,
+          19
+        ]
+      ],
+      "date-time": "2008-01-19T07:52:02Z",
+      "timestamp": 1200729122000
+    },
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          24
+        ]
+      ],
+      "date-time": "2025-07-24T23:10:29Z",
+      "timestamp": 1753398629000
+    },
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          12
+        ]
+      ],
+      "date-time": "2026-04-12T15:45:22Z",
+      "timestamp": 1776008722038,
+      "version": "3.50.1"
+    },
+    "is-referenced-by-count": 121,
+    "issn-type": [
+      {
+        "type": "print",
+        "value": "0022-0418"
+      }
+    ],
+    "issue": "3",
+    "issued": {
+      "date-parts": [
+        [
+          1974,
+          3,
+          1
+        ]
+      ]
+    },
+    "journal-issue": {
+      "issue": "3",
+      "published-print": {
+        "date-parts": [
+          [
+            1974,
+            3,
+            1
+          ]
+        ]
+      }
+    },
+    "language": "en",
+    "license": [
+      {
+        "URL": "https://www.emerald.com/insight/site-policies",
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "start": {
+          "date-parts": [
+            [
+              1974,
+              3,
+              1
+            ]
+          ],
+          "date-time": "1974-03-01T00:00:00Z",
+          "timestamp": 131328000000
+        }
+      }
+    ],
+    "link": [
+      {
+        "URL": "https://www.emerald.com/insight/content/doi/10.1108/eb026583/full/xml",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.emerald.com/insight/content/doi/10.1108/eb026583/full/html",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "member": "140",
+    "original-title": [],
+    "page": "283-350",
+    "prefix": "10.1108",
+    "published": {
+      "date-parts": [
+        [
+          1974,
+          3,
+          1
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          1974,
+          3,
+          1
+        ]
+      ]
+    },
+    "publisher": "Emerald",
+    "reference": [
+      {
+        "DOI": "10.1086/613949",
+        "doi-asserted-by": "publisher",
+        "key": "p_5"
+      },
+      {
+        "author": "SPYERS-DURAN ETER",
+        "first-page": "299",
+        "journal-title": "Wilson Library Bulletin",
+        "key": "p_6",
+        "volume": "36",
+        "year": "1961"
+      },
+      {
+        "author": "KILGOUR CK G",
+        "first-page": "429",
+        "journal-title": "Bulletin of the Medical Library Association",
+        "key": "p_7",
+        "volume": "50",
+        "year": "1962"
+      },
+      {
+        "author": "ASH LEE",
+        "key": "p_8",
+        "volume-title": "Conn.",
+        "year": "1963"
+      },
+      {
+        "author": "ERLAM H. D",
+        "first-page": "242",
+        "journal-title": "Bulletin of the Medical Library Association",
+        "key": "p_9",
+        "volume": "52",
+        "year": "1964"
+      },
+      {
+        "DOI": "10.1108/eb049970",
+        "doi-asserted-by": "publisher",
+        "key": "p_10"
+      },
+      {
+        "author": "GROOS",
+        "first-page": "289",
+        "journal-title": "Library Resources and Technical Services",
+        "key": "p_11",
+        "volume": "10",
+        "year": "1966"
+      },
+      {
+        "author": "KOVACS ELEN",
+        "first-page": "42",
+        "journal-title": "Bulletin of the Medical Library Association",
+        "key": "p_12",
+        "volume": "54",
+        "year": "1966"
+      },
+      {
+        "author": "RAISIG L",
+        "first-page": "104",
+        "journal-title": "Bulletin ofthe Medical Library Association",
+        "key": "p_13",
+        "volume": "54",
+        "year": "1966"
+      },
+      {
+        "author": "STRAIN LA M",
+        "first-page": "295",
+        "journal-title": "Library Resources and Technical Services",
+        "key": "p_14",
+        "volume": "10",
+        "year": "1966"
+      },
+      {
+        "author": "STANGL ETER",
+        "first-page": "290",
+        "journal-title": "Bulletin ofthe Medical Library Association",
+        "key": "p_15",
+        "volume": "55",
+        "year": "1967"
+      },
+      {
+        "DOI": "10.1108/eb026482",
+        "doi-asserted-by": "publisher",
+        "key": "p_16"
+      },
+      {
+        "author": "NATIONAL LIBRARIES COMMITTEE. Report",
+        "key": "p_17",
+        "series-title": "Cmnd. 4028",
+        "year": "1969"
+      },
+      {
+        "author": "SMITH AN M",
+        "first-page": "65",
+        "journal-title": "Bulletin ofthe Medical Library Association",
+        "key": "p_19",
+        "volume": "58",
+        "year": "1970"
+      },
+      {
+        "DOI": "10.1002/asi.4630230405",
+        "doi-asserted-by": "publisher",
+        "key": "p_20"
+      },
+      {
+        "author": "SANDISON A",
+        "first-page": "4",
+        "issue": "96",
+        "journal-title": "Library Association Medical Section Bulletin",
+        "key": "p_21",
+        "year": "1974"
+      },
+      {
+        "DOI": "10.1002/asi.4630250308",
+        "doi-asserted-by": "publisher",
+        "key": "p_22"
+      },
+      {
+        "author": "TIBBETTS MELA",
+        "first-page": "37",
+        "journal-title": "Bulletin of the Medical Library Association",
+        "key": "p_23",
+        "volume": "62",
+        "year": "1974"
+      },
+      {
+        "key": "p_25",
+        "unstructured": "MIDDLESWART, L. E. A study ofbook use in the University of Chicago Library. (M.Sc. thesis,University of Chicago, 1951.)"
+      },
+      {
+        "key": "p_26",
+        "unstructured": "LISTER, WINSTON C. Least cost decision rulesfor the selection of library materialsfor compact storage. (Ph.D. thesis,Purdue University, 1967). PB 174 441."
+      },
+      {
+        "author": "FUSSLER AN H",
+        "key": "p_27",
+        "volume-title": "Patterns in the use of books in large research libraries",
+        "year": "1969"
+      },
+      {
+        "DOI": "10.5860/crl_25_04_285",
+        "doi-asserted-by": "publisher",
+        "key": "p_29"
+      },
+      {
+        "key": "p_31",
+        "unstructured": "KILGOUR,FREDERICK G. Density of library book use in biology and medicine, In American Documentation Institute. Automation and scientific communication. (26th annual meeting,1963). Pt. 2. ADI, 1963, pp.263-264."
+      },
+      {
+        "author": "HUGHES DYNAMICS",
+        "key": "p_32",
+        "volume-title": "California",
+        "year": "1964"
+      },
+      {
+        "DOI": "10.5860/crl_27_03_211",
+        "doi-asserted-by": "publisher",
+        "key": "p_33"
+      },
+      {
+        "author": "JAIN A. K.",
+        "key": "p_34",
+        "volume-title": "Report on a statistical study ofbook use",
+        "year": "1967"
+      },
+      {
+        "DOI": "10.1086/619765",
+        "doi-asserted-by": "publisher",
+        "key": "p_35"
+      },
+      {
+        "DOI": "10.1108/eb026516",
+        "doi-asserted-by": "publisher",
+        "key": "p_36"
+      },
+      {
+        "DOI": "10.1108/eb026261",
+        "doi-asserted-by": "publisher",
+        "key": "p_38"
+      },
+      {
+        "DOI": "10.1108/eb026311",
+        "doi-asserted-by": "publisher",
+        "key": "p_39"
+      },
+      {
+        "DOI": "10.1108/eb026119",
+        "doi-asserted-by": "publisher",
+        "key": "p_41"
+      },
+      {
+        "DOI": "10.1108/eb026266",
+        "doi-asserted-by": "publisher",
+        "key": "p_42"
+      },
+      {
+        "author": "URQUHART D. J.",
+        "first-page": "287",
+        "key": "p_43",
+        "volume": "1",
+        "volume-title": "International Conference on Scientific Information. Proceedings.",
+        "year": "1959"
+      },
+      {
+        "DOI": "10.1108/eb026280",
+        "doi-asserted-by": "publisher",
+        "key": "p_44"
+      },
+      {
+        "author": "GRAZIANO NE E",
+        "first-page": "251",
+        "journal-title": "Special Libraries",
+        "key": "p_45",
+        "volume": "53",
+        "year": "1962"
+      },
+      {
+        "author": "KURTH AM H",
+        "key": "p_46",
+        "volume-title": "Survey of the interlibrary loan operation of the National Library of Medicine",
+        "year": "1962"
+      },
+      {
+        "author": "WILSON T. D",
+        "first-page": "493",
+        "journal-title": "Special Libraries",
+        "key": "p_47",
+        "volume": "53",
+        "year": "1962"
+      },
+      {
+        "author": "ASH LEE",
+        "key": "p_48",
+        "volume-title": "Interlibrary request and loan transactions among medical libraries of the Greater New York Area",
+        "year": "1966"
+      },
+      {
+        "author": "FILON P. L.",
+        "first-page": "289",
+        "journal-title": "Library Association Record",
+        "key": "p_49",
+        "volume": "68",
+        "year": "1966"
+      },
+      {
+        "DOI": "10.1177/096100066900100203",
+        "doi-asserted-by": "publisher",
+        "key": "p_50"
+      },
+      {
+        "author": "DEPARTMENT OF EDUCATION AND SCIENCE.",
+        "first-page": "A152",
+        "key": "p_51",
+        "volume": "1",
+        "volume-title": "HMSO",
+        "year": "1969"
+      },
+      {
+        "author": "WENDER TH W",
+        "first-page": "510",
+        "journal-title": "Special Libraries",
+        "key": "p_52",
+        "volume": "60",
+        "year": "1969"
+      },
+      {
+        "author": "WOOD ES L",
+        "key": "p_53",
+        "volume-title": "A review of the availability of primary scientific and technical documents within the United States",
+        "year": "1969"
+      },
+      {
+        "author": "WOOD ID N",
+        "first-page": "47",
+        "journal-title": "Bulletin of the Medical Library Association",
+        "key": "p_54",
+        "volume": "57",
+        "year": "1969"
+      },
+      {
+        "DOI": "10.1108/eb026467",
+        "doi-asserted-by": "publisher",
+        "key": "p_55"
+      },
+      {
+        "DOI": "10.1055/s-0038-1635995",
+        "author": "WOOD D. N.",
+        "doi-asserted-by": "crossref",
+        "first-page": "46",
+        "journal-title": "Methods of Information in Medicine",
+        "key": "p_56",
+        "volume": "9",
+        "year": "1970"
+      },
+      {
+        "author": "EAST H.",
+        "key": "p_57",
+        "volume-title": "TheSouthEasternRegionalLibrary System: design and development ofa computer-assisted methodfor book location recording",
+        "year": "1971"
+      },
+      {
+        "author": "HADLEY NE T",
+        "key": "p_58",
+        "volume-title": "Trends in inter-library lending in South Africa. Pretoria",
+        "year": "1971"
+      },
+      {
+        "author": "KAUSHIK B. L",
+        "first-page": "52",
+        "journal-title": "Annals ofLibrary Science",
+        "key": "p_59",
+        "volume": "19",
+        "year": "1972"
+      },
+      {
+        "author": "PALMOUR V. E.",
+        "key": "p_60",
+        "volume-title": "Conn.",
+        "year": "1972"
+      },
+      {
+        "author": "ASCHIM EVA",
+        "first-page": "260",
+        "journal-title": "Libri",
+        "key": "p_61",
+        "volume": "23",
+        "year": "1963"
+      },
+      {
+        "author": "FREEMAN",
+        "first-page": "462",
+        "journal-title": "Australian LibraryJournal",
+        "key": "p_62",
+        "volume": "22",
+        "year": "1973"
+      },
+      {
+        "DOI": "10.1126/science.66.1713.385",
+        "doi-asserted-by": "publisher",
+        "key": "p_65"
+      },
+      {
+        "author": "ALLEN ARDS",
+        "key": "p_66",
+        "volume-title": "Science, 70",
+        "year": "1825"
+      },
+      {
+        "DOI": "10.1126/science.73.1903.660",
+        "doi-asserted-by": "publisher",
+        "key": "p_67"
+      },
+      {
+        "DOI": "10.1001/jama.1931.02730090022006",
+        "doi-asserted-by": "publisher",
+        "key": "p_68"
+      },
+      {
+        "author": "SHERWOOD K. K",
+        "first-page": "273",
+        "journal-title": "Northwest Medicine",
+        "key": "p_69",
+        "volume": "31",
+        "year": "1932"
+      },
+      {
+        "author": "HOOKER TH H",
+        "first-page": "6",
+        "journal-title": "Review of ScientificInstruments",
+        "key": "p_70",
+        "year": "1935"
+      },
+      {
+        "author": "HACKH INGO",
+        "first-page": "109",
+        "journal-title": "Bulletin ofthe Medical Library Association",
+        "key": "p_71",
+        "volume": "23",
+        "year": "1936"
+      },
+      {
+        "author": "PATTERSON IN M",
+        "journal-title": "Journal citations in the 'Recueil'",
+        "key": "p_72",
+        "volume": "1937"
+      },
+      {
+        "DOI": "10.5860/crl_05_03_217",
+        "doi-asserted-by": "publisher",
+        "key": "p_73"
+      },
+      {
+        "DOI": "10.1021/ed022p514",
+        "doi-asserted-by": "publisher",
+        "key": "p_74"
+      },
+      {
+        "author": "COILE R. C",
+        "first-page": "1380",
+        "journal-title": "Proceedings ofthe Institution of Radio Engineers",
+        "key": "p_75",
+        "volume": "38",
+        "year": "1950"
+      },
+      {
+        "author": "HARDIE B. G.",
+        "first-page": "159",
+        "journal-title": "Oil and Gas Journal",
+        "key": "p_76",
+        "volume": "49",
+        "year": "1950"
+      },
+      {
+        "author": "BROADUS RT N",
+        "key": "p_77",
+        "volume-title": "An analysis of literature cited in the American Sociological Review American Sociological Review, 17",
+        "year": "1952"
+      },
+      {
+        "DOI": "10.1108/eb026186",
+        "doi-asserted-by": "publisher",
+        "key": "p_78"
+      },
+      {
+        "author": "BROWN RVEY",
+        "key": "p_79",
+        "volume-title": "Scientific serials",
+        "year": "1956"
+      },
+      {
+        "DOI": "10.1021/ed034p35",
+        "doi-asserted-by": "publisher",
+        "key": "p_80"
+      },
+      {
+        "DOI": "10.1002/asi.5090100109",
+        "doi-asserted-by": "publisher",
+        "key": "p_81"
+      },
+      {
+        "DOI": "10.1126/science.132.3435.1229",
+        "doi-asserted-by": "publisher",
+        "key": "p_83"
+      },
+      {
+        "DOI": "10.1063/1.3057150",
+        "doi-asserted-by": "publisher",
+        "key": "p_84"
+      },
+      {
+        "author": "KESSLER M. M.",
+        "first-page": "247",
+        "key": "p_85",
+        "volume-title": "MIT Lincoln Laboratory, 1961. AD 261 303; also in Proceedings ofthe WesternJoint Computer Conference",
+        "year": "1961"
+      },
+      {
+        "DOI": "10.2466/pr0.1963.13.2.537",
+        "doi-asserted-by": "publisher",
+        "key": "p_86"
+      },
+      {
+        "author": "BARINOVA Z. B.",
+        "first-page": "3",
+        "issue": "12",
+        "journal-title": "Nauchno-Tekhnkheskaya Informatsiyz, Series",
+        "key": "p_87",
+        "volume": "2",
+        "year": "1967"
+      },
+      {
+        "author": "BROADUS RT N",
+        "first-page": "19",
+        "journal-title": "American Sociologist",
+        "key": "p_88",
+        "volume": "2",
+        "year": "1967"
+      },
+      {
+        "DOI": "10.1108/eb026418",
+        "doi-asserted-by": "publisher",
+        "key": "p_89"
+      },
+      {
+        "DOI": "10.2307/621323",
+        "doi-asserted-by": "publisher",
+        "key": "p_90"
+      },
+      {
+        "DOI": "10.2307/40321999",
+        "doi-asserted-by": "publisher",
+        "key": "p_91"
+      },
+      {
+        "author": "COILE LL C",
+        "journal-title": "IEEE Transactions on Engineering Writing and Speech, EWS-12",
+        "key": "p_92",
+        "volume": "71",
+        "year": "1969"
+      },
+      {
+        "DOI": "10.1108/eb026468",
+        "doi-asserted-by": "publisher",
+        "key": "p_93"
+      },
+      {
+        "DOI": "10.1108/eb050194",
+        "doi-asserted-by": "publisher",
+        "key": "p_95"
+      },
+      {
+        "author": "LIN NAN",
+        "first-page": "47",
+        "journal-title": "American Sociologist",
+        "key": "p_96",
+        "volume": "4",
+        "year": "1969"
+      },
+      {
+        "author": "ORR RD H",
+        "first-page": "241",
+        "journal-title": "Bulletin ofthe Medical Library Association",
+        "key": "p_97",
+        "volume": "56",
+        "year": "1969"
+      },
+      {
+        "DOI": "10.1002/asi.4630210503",
+        "doi-asserted-by": "publisher",
+        "key": "p_98"
+      },
+      {
+        "author": "PRICE EK J",
+        "key": "p_99",
+        "volume-title": "Citation measures of hard science, soft science, technology, and nonscience"
+      },
+      {
+        "author": "SENGUPTA I. N.",
+        "first-page": "143",
+        "journal-title": "Unesco Bulletinfor Libraries",
+        "key": "p_100",
+        "volume": "24",
+        "year": "1970"
+      },
+      {
+        "DOI": "10.1016/0020-7837(70)90040-3",
+        "doi-asserted-by": "publisher",
+        "key": "p_101"
+      },
+      {
+        "author": "VLACHY JAN",
+        "first-page": "501",
+        "journal-title": "Czechoslovak Journal of Physics, B20",
+        "key": "p_102",
+        "volume": "1970"
+      },
+      {
+        "DOI": "10.1016/0020-7837(71)90041-0",
+        "doi-asserted-by": "publisher",
+        "key": "p_103"
+      },
+      {
+        "author": "LEHNUS ALDL",
+        "key": "p_104",
+        "volume-title": "Journal ofEducationfor Librarianship, 12",
+        "year": "1971"
+      },
+      {
+        "author": "MARKUSOVA V.A.",
+        "first-page": "31",
+        "issue": "5",
+        "journal-title": "Scries",
+        "key": "p_105",
+        "volume": "1",
+        "year": "1971"
+      },
+      {
+        "author": "SIMOSKO IMIR",
+        "first-page": "5",
+        "journal-title": "Sci-Tech News",
+        "key": "p_106",
+        "volume": "25",
+        "year": "1971"
+      },
+      {
+        "author": "BROOKES B. C.",
+        "first-page": "66",
+        "key": "p_107",
+        "volume-title": "Chernyi, A. I. (ed.) Problems ofinformation science.",
+        "year": "1972"
+      },
+      {
+        "author": "FROLOVA M. G.",
+        "first-page": "20",
+        "issue": "8",
+        "journal-title": "Nauchno-Tekhmicheskaya Informatsiya, Series",
+        "key": "p_108",
+        "volume": "1",
+        "year": "1972"
+      },
+      {
+        "DOI": "10.1126/science.178.4060.471",
+        "doi-asserted-by": "publisher",
+        "key": "p_109"
+      },
+      {
+        "author": "MITRA A. C",
+        "first-page": "119",
+        "journal-title": "Annals ofLibrary Science and Documentation",
+        "key": "p_110",
+        "volume": "19",
+        "year": "1972"
+      },
+      {
+        "author": "JONES LYVE",
+        "first-page": "138",
+        "journal-title": "Journal ofLibrarianship",
+        "key": "p_111",
+        "volume": "4",
+        "year": "1972"
+      },
+      {
+        "author": "DONOHUE PH C",
+        "key": "p_112",
+        "volume-title": "Understanding scientific literatures: a bibliometric approach",
+        "year": "1973"
+      },
+      {
+        "author": "INSTITUTE FOR SCIENTIFIC INFORMATION.",
+        "key": "p_113",
+        "volume-title": "ISI",
+        "year": "1973"
+      },
+      {
+        "author": "MARKUSOVA V. A",
+        "first-page": "27",
+        "issue": "1",
+        "journal-title": "Nauchno-Tekhnicheskaya Informatsiya, Series",
+        "key": "p_114",
+        "volume": "1",
+        "year": "1973"
+      },
+      {
+        "author": "SZÁVA-KOVÁTS NDRE",
+        "first-page": "89",
+        "journal-title": "TudományosésMüszaki Tájékoztatás",
+        "key": "p_115",
+        "volume": "20",
+        "year": "1973"
+      },
+      {
+        "DOI": "10.1002/asi.4630250209",
+        "doi-asserted-by": "publisher",
+        "key": "p_116"
+      },
+      {
+        "author": "LINE CE B",
+        "journal-title": "BLL Review",
+        "key": "p_117",
+        "volume": "2",
+        "year": "1974"
+      },
+      {
+        "DOI": "10.1086/617524",
+        "doi-asserted-by": "publisher",
+        "key": "p_119"
+      },
+      {
+        "author": "BROADUS RT N",
+        "key": "p_120",
+        "volume-title": "ACRL",
+        "year": "1953"
+      },
+      {
+        "author": "DANIEL RT S",
+        "first-page": "670",
+        "journal-title": "Library Trends",
+        "key": "p_121",
+        "volume": "15",
+        "year": "1967"
+      },
+      {
+        "author": "PARKER IN B",
+        "key": "p_122",
+        "volume-title": "Bibliographyc citation, as unobtrusive measures of scientific communication",
+        "year": "1967"
+      },
+      {
+        "DOI": "10.1037/h0024961",
+        "doi-asserted-by": "publisher",
+        "key": "p_123"
+      },
+      {
+        "author": "BROWN IA S",
+        "first-page": "283",
+        "journal-title": "American Sociologist",
+        "key": "p_124",
+        "volume": "4",
+        "year": "1969"
+      },
+      {
+        "DOI": "10.5860/crl_30_03_230",
+        "doi-asserted-by": "publisher",
+        "key": "p_125"
+      },
+      {
+        "DOI": "10.1108/eb026506",
+        "doi-asserted-by": "publisher",
+        "key": "p_126"
+      },
+      {
+        "DOI": "10.1108/eb026544",
+        "doi-asserted-by": "publisher",
+        "key": "p_127"
+      },
+      {
+        "author": "LINE CE B",
+        "key": "p_128",
+        "volume-title": "Patterns of citations to articles withinjournals: a preliminary test ofscatter, concentration, and obsolescence",
+        "year": "1972"
+      },
+      {
+        "author": "INNES HN M",
+        "first-page": "227",
+        "journal-title": "Bulletin of the British Psychological Society",
+        "key": "p_129",
+        "volume": "26",
+        "year": "1973"
+      },
+      {
+        "author": "RAVICHANDRA RAO I. K.",
+        "key": "p_130",
+        "volume-title": "Obsolescence and utility factors of periodical publications: a case study",
+        "year": "1973"
+      },
+      {
+        "DOI": "10.1159/000211128",
+        "doi-asserted-by": "crossref",
+        "key": "p_131",
+        "unstructured": "KESSLER, M. M., and HEART, F. E. Concerning the probability that a given paper will be cited. MIT. TIP. 5November 1962. Report R-6. AD 293 251."
+      },
+      {
+        "DOI": "10.1021/c160023a012",
+        "doi-asserted-by": "publisher",
+        "key": "p_132"
+      },
+      {
+        "DOI": "10.1002/asi.4630230306",
+        "doi-asserted-by": "publisher",
+        "key": "p_133"
+      },
+      {
+        "DOI": "10.1177/053901847301200205",
+        "doi-asserted-by": "publisher",
+        "key": "p_134"
+      },
+      {
+        "DOI": "10.1108/eb008443",
+        "doi-asserted-by": "publisher",
+        "key": "p_135"
+      },
+      {
+        "DOI": "10.1175/1520-0477-36.2.61",
+        "author": "BAUM RNER",
+        "doi-asserted-by": "crossref",
+        "first-page": "61",
+        "journal-title": "Bulletin of the American Meteorological Society",
+        "key": "p_137",
+        "volume": "36",
+        "year": "1955"
+      },
+      {
+        "author": "GOSNELL ES F",
+        "first-page": "531",
+        "journal-title": "LibraryJournal",
+        "key": "p_138",
+        "volume": "65",
+        "year": "1940"
+      },
+      {
+        "DOI": "10.5860/crl_02_03_216",
+        "doi-asserted-by": "publisher",
+        "key": "p_139"
+      },
+      {
+        "DOI": "10.5860/crl_05_02_115",
+        "doi-asserted-by": "publisher",
+        "key": "p_140"
+      },
+      {
+        "author": "BROADUS RT N",
+        "first-page": "8",
+        "issue": "1985",
+        "journal-title": "School and Society",
+        "key": "p_141",
+        "volume": "77",
+        "year": "1953"
+      },
+      {
+        "author": "BROADUS RT N",
+        "first-page": "330",
+        "journal-title": "Journal ofEducational Research",
+        "key": "p_142",
+        "volume": "58",
+        "year": "1965"
+      },
+      {
+        "author": "MORGAN LVIN",
+        "first-page": "416",
+        "journal-title": "AmericanJournalofPhysiology",
+        "key": "p_143",
+        "volume": "191",
+        "year": "1957"
+      },
+      {
+        "DOI": "10.1016/0020-7837(74)90021-1",
+        "doi-asserted-by": "publisher",
+        "key": "p_144"
+      },
+      {
+        "author": "ANDREWS DORA",
+        "first-page": "519",
+        "journal-title": "SpecialLibraries",
+        "key": "p_145",
+        "volume": "50",
+        "year": "1968"
+      },
+      {
+        "author": "AVRAMESCU UREL",
+        "key": "p_146",
+        "volume-title": "Studii şi Cercetări de Documentarc, 15",
+        "year": "1973"
+      },
+      {
+        "author": "AVRAMESCU UREL",
+        "first-page": "345",
+        "journal-title": "StudiişiCercetări de Dokumentari",
+        "key": "p_147",
+        "volume": "15",
+        "year": "1973"
+      },
+      {
+        "author": "BABA NORI",
+        "first-page": "283",
+        "key": "p_148",
+        "volume-title": "Kaula. P. N.",
+        "year": "1965"
+      },
+      {
+        "author": "BERNAL J. D.",
+        "first-page": "85",
+        "key": "p_149",
+        "volume": "1",
+        "volume-title": "Proceedings.",
+        "year": "1959"
+      },
+      {
+        "author": "BOURNE ES P",
+        "first-page": "93",
+        "key": "p_150",
+        "volume-title": "Kent, Allen and Taulbee, Orrin E. (eds) Electronic information handling. Washington",
+        "year": "1965"
+      },
+      {
+        "DOI": "10.1108/eb026551",
+        "doi-asserted-by": "publisher",
+        "key": "p_151"
+      },
+      {
+        "author": "BROADUS BERT",
+        "first-page": "236",
+        "journal-title": "International Social ScienceJournal",
+        "key": "p_152",
+        "volume": "23",
+        "year": "1971"
+      },
+      {
+        "DOI": "10.1108/eb026500",
+        "doi-asserted-by": "publisher",
+        "key": "p_153"
+      },
+      {
+        "author": "BROOKES B. C.",
+        "key": "p_154",
+        "volume-title": "Numerical methods of bibliographical analysis",
+        "year": "1973"
+      },
+      {
+        "DOI": "10.1038/232458a0",
+        "doi-asserted-by": "publisher",
+        "key": "p_155"
+      },
+      {
+        "author": "BROOKES B. C.",
+        "key": "p_156",
+        "volume-title": "Mackenzie, A. G. and Stuart, I. M. (eds). Planning library services"
+      },
+      {
+        "DOI": "10.1108/eb026542",
+        "doi-asserted-by": "publisher",
+        "key": "p_157"
+      },
+      {
+        "author": "BUCKLAND M. K.",
+        "key": "p_158",
+        "volume-title": "Some implicationsfor library management ofscattering and obsolescence"
+      },
+      {
+        "DOI": "10.1002/asi.5090110105",
+        "doi-asserted-by": "publisher",
+        "key": "p_159"
+      },
+      {
+        "DOI": "10.1108/eb026460",
+        "doi-asserted-by": "publisher",
+        "key": "p_160"
+      },
+      {
+        "author": "COLE P. F",
+        "journal-title": "Journal usage versus age of journal. Journal of Documentation",
+        "key": "p_161",
+        "volume": "19",
+        "year": "1963"
+      },
+      {
+        "DOI": "10.1086/224934",
+        "doi-asserted-by": "publisher",
+        "key": "p_162"
+      },
+      {
+        "DOI": "10.2307/2091085",
+        "doi-asserted-by": "publisher",
+        "key": "p_163"
+      },
+      {
+        "author": "COOPER ANNE",
+        "first-page": "339",
+        "journal-title": "Library Resources and Technical Resources",
+        "key": "p_164",
+        "volume": "12",
+        "year": "1968"
+      },
+      {
+        "DOI": "10.1037/h0048673",
+        "doi-asserted-by": "publisher",
+        "key": "p_165"
+      },
+      {
+        "DOI": "10.1038/239477a0",
+        "doi-asserted-by": "publisher",
+        "key": "p_166"
+      },
+      {
+        "DOI": "10.1109/TEM.1963.6449230",
+        "doi-asserted-by": "publisher",
+        "key": "p_167"
+      },
+      {
+        "DOI": "10.1038/227669a0",
+        "doi-asserted-by": "publisher",
+        "key": "p_168"
+      },
+      {
+        "DOI": "10.1002/asi.5090140304",
+        "doi-asserted-by": "publisher",
+        "key": "p_169"
+      },
+      {
+        "DOI": "10.1126/science.132.3427.625",
+        "doi-asserted-by": "publisher",
+        "key": "p_170"
+      },
+      {
+        "DOI": "10.1108/eb026448",
+        "doi-asserted-by": "publisher",
+        "key": "p_171"
+      },
+      {
+        "author": "GOR'KOVA V. I",
+        "first-page": "14",
+        "issue": "12",
+        "journal-title": "Nauchno-Tekhniheskaya Informatsiya, Series",
+        "key": "p_172",
+        "volume": "2",
+        "year": "1972"
+      },
+      {
+        "author": "HALL LA M",
+        "key": "p_173",
+        "volume-title": "The use and value ofcitations: a state-of-the-art report",
+        "year": "1970"
+      },
+      {
+        "author": "KOFNOVEC SLAV",
+        "first-page": "42",
+        "journal-title": "Dokumentation",
+        "key": "p_174",
+        "volume": "9",
+        "year": "1962"
+      },
+      {
+        "DOI": "10.1002/asi.4630220507",
+        "doi-asserted-by": "publisher",
+        "key": "p_175"
+      },
+      {
+        "DOI": "10.1108/eb026486",
+        "doi-asserted-by": "publisher",
+        "key": "p_176"
+      },
+      {
+        "DOI": "10.1108/eb050298",
+        "doi-asserted-by": "publisher",
+        "key": "p_177"
+      },
+      {
+        "author": "LINE M. B",
+        "first-page": "107",
+        "journal-title": "Journal of Documentation",
+        "key": "p_178",
+        "volume": "29",
+        "year": "1973"
+      },
+      {
+        "DOI": "10.2307/2092300",
+        "doi-asserted-by": "publisher",
+        "key": "p_179"
+      },
+      {
+        "DOI": "10.1126/science.155.3767.1213",
+        "doi-asserted-by": "publisher",
+        "key": "p_180"
+      },
+      {
+        "DOI": "10.1126/science.154.3757.1672",
+        "doi-asserted-by": "publisher",
+        "key": "p_181"
+      },
+      {
+        "author": "MICHAEL J. A",
+        "first-page": "108",
+        "journal-title": "Monographs in Neural Science",
+        "key": "p_182",
+        "volume": "1",
+        "year": "1973"
+      },
+      {
+        "DOI": "10.1287/opre.17.1.36",
+        "doi-asserted-by": "publisher",
+        "key": "p_183"
+      },
+      {
+        "DOI": "10.7312/pric91844",
+        "author": "PRICE EK J",
+        "doi-asserted-by": "crossref",
+        "key": "p_185",
+        "volume-title": "Little science, big science",
+        "year": "1963"
+      },
+      {
+        "DOI": "10.1126/science.149.3683.510",
+        "doi-asserted-by": "publisher",
+        "key": "p_186"
+      },
+      {
+        "author": "RAISIG ES L",
+        "first-page": "450",
+        "journal-title": "Bulletin of the Medical Library Association",
+        "key": "p_188",
+        "volume": "30",
+        "year": "1962"
+      },
+      {
+        "author": "REDMOND LD A",
+        "first-page": "40",
+        "journal-title": "Sci-Tech News",
+        "key": "p_189",
+        "volume": "20",
+        "year": "1966"
+      },
+      {
+        "DOI": "10.1038/234368b0",
+        "doi-asserted-by": "publisher",
+        "key": "p_190"
+      },
+      {
+        "author": "SANDISON A",
+        "first-page": "107",
+        "journal-title": "Journal of Documentation",
+        "key": "p_191",
+        "volume": "29",
+        "year": "1973"
+      },
+      {
+        "DOI": "10.1016/0020-7837(72)90030-1",
+        "doi-asserted-by": "publisher",
+        "key": "p_193"
+      },
+      {
+        "author": "SEYMOUR OL A",
+        "first-page": "137",
+        "journal-title": "Pt. I: Monographs. Libri",
+        "key": "p_194",
+        "volume": "22",
+        "year": "1972"
+      },
+      {
+        "author": "STEVENS ND E",
+        "key": "p_195",
+        "volume-title": "ACRL",
+        "year": "1953"
+      },
+      {
+        "DOI": "10.1086/618266",
+        "doi-asserted-by": "publisher",
+        "key": "p_196"
+      },
+      {
+        "DOI": "10.1108/eb026454",
+        "doi-asserted-by": "publisher",
+        "key": "p_197"
+      },
+      {
+        "DOI": "10.1126/science.131.3415.1716",
+        "doi-asserted-by": "publisher",
+        "key": "p_198"
+      },
+      {
+        "DOI": "10.1108/eb008444",
+        "doi-asserted-by": "publisher",
+        "key": "p_199"
+      },
+      {
+        "author": "WOODS LD A",
+        "first-page": "1193",
+        "journal-title": "Library Journal",
+        "key": "p_200",
+        "volume": "76",
+        "year": "1957"
+      }
+    ],
+    "reference-count": 181,
+    "references-count": 181,
+    "relation": {},
+    "resource": {
+      "primary": {
+        "URL": "http://www.emerald.com/jd/article/30/3/283-350/220365"
+      }
+    },
+    "score": 1,
+    "short-container-title": [],
+    "short-title": [],
+    "source": "Crossref",
+    "subject": [],
+    "subtitle": [
+      "‘obsolescence’ and changes in the use of literature with time"
+    ],
+    "title": [
+      "PROGRESS IN DOCUMENTATION"
+    ],
+    "type": "journal-article",
+    "volume": "30"
+  },
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "status": "ok"
+}

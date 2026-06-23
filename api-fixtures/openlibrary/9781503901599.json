@@ -1,0 +1,220 @@
+{
+  "ISBN:9781503901599": {
+    "authors": [
+      {
+        "name": "Mary Wollstonecraft",
+        "url": "http://openlibrary.org/authors/OL73405A/Mary_Wollstonecraft"
+      }
+    ],
+    "identifiers": {
+      "isbn_13": [
+        "9781503901599"
+      ],
+      "openlibrary": [
+        "OL48734343M"
+      ]
+    },
+    "key": "/books/OL48734343M",
+    "pagination": "270",
+    "publish_date": "2018",
+    "publishers": [
+      {
+        "name": "Amazon Publishing"
+      }
+    ],
+    "subject_people": [
+      {
+        "name": "Mary Wollstonecraft (1759-1797)",
+        "url": "https://openlibrary.org/subjects/person:mary_wollstonecraft_(1759-1797)"
+      }
+    ],
+    "subject_places": [
+      {
+        "name": "Great Britain",
+        "url": "https://openlibrary.org/subjects/place:great_britain"
+      }
+    ],
+    "subject_times": [
+      {
+        "name": "19th century",
+        "url": "https://openlibrary.org/subjects/time:19th_century"
+      },
+      {
+        "name": "18th century",
+        "url": "https://openlibrary.org/subjects/time:18th_century"
+      }
+    ],
+    "subjects": [
+      {
+        "name": "Women's rights",
+        "url": "https://openlibrary.org/subjects/women's_rights"
+      },
+      {
+        "name": "Women, education, great britain",
+        "url": "https://openlibrary.org/subjects/women,_education,_great_britain"
+      },
+      {
+        "name": "Feminism",
+        "url": "https://openlibrary.org/subjects/feminism"
+      },
+      {
+        "name": "Women",
+        "url": "https://openlibrary.org/subjects/women"
+      },
+      {
+        "name": "Education",
+        "url": "https://openlibrary.org/subjects/education"
+      },
+      {
+        "name": "History",
+        "url": "https://openlibrary.org/subjects/history"
+      },
+      {
+        "name": "Social conditions",
+        "url": "https://openlibrary.org/subjects/social_conditions"
+      },
+      {
+        "name": "Women's right",
+        "url": "https://openlibrary.org/subjects/women's_right"
+      },
+      {
+        "name": "Early works to 1800",
+        "url": "https://openlibrary.org/subjects/early_works_to_1800"
+      },
+      {
+        "name": "Social and moral questions",
+        "url": "https://openlibrary.org/subjects/social_and_moral_questions"
+      },
+      {
+        "name": "Great Britain",
+        "url": "https://openlibrary.org/subjects/great_britain"
+      },
+      {
+        "name": "Droits",
+        "url": "https://openlibrary.org/subjects/droits"
+      },
+      {
+        "name": "Femmes",
+        "url": "https://openlibrary.org/subjects/femmes"
+      },
+      {
+        "name": "Political rights",
+        "url": "https://openlibrary.org/subjects/political_rights"
+      },
+      {
+        "name": "Vindication of the rights of woman (Wollstonecraft, Mary)",
+        "url": "https://openlibrary.org/subjects/vindication_of_the_rights_of_woman_(wollstonecraft,_mary)"
+      },
+      {
+        "name": "Aufsatzsammlung",
+        "url": "https://openlibrary.org/subjects/aufsatzsammlung"
+      },
+      {
+        "name": "Geschichte",
+        "url": "https://openlibrary.org/subjects/geschichte"
+      },
+      {
+        "name": "Gleichberechtigung",
+        "url": "https://openlibrary.org/subjects/gleichberechtigung"
+      },
+      {
+        "name": "Éducation des femmes",
+        "url": "https://openlibrary.org/subjects/éducation_des_femmes"
+      },
+      {
+        "name": "Women, history, modern period, 1600-",
+        "url": "https://openlibrary.org/subjects/women,_history,_modern_period,_1600-"
+      },
+      {
+        "name": "Conditions sociales",
+        "url": "https://openlibrary.org/subjects/conditions_sociales"
+      },
+      {
+        "name": "Sociology",
+        "url": "https://openlibrary.org/subjects/sociology"
+      },
+      {
+        "name": "PHILOSOPHY / Political",
+        "url": "https://openlibrary.org/subjects/philosophy_/_political"
+      },
+      {
+        "name": "POLITICAL SCIENCE / Political Freedom & Security / Human Rights",
+        "url": "https://openlibrary.org/subjects/political_science_/_political_freedom_&_security_/_human_rights"
+      },
+      {
+        "name": "SOCIAL SCIENCE / Feminism & Feminist Theory",
+        "url": "https://openlibrary.org/subjects/social_science_/_feminism_&_feminist_theory"
+      },
+      {
+        "name": "Woman",
+        "url": "https://openlibrary.org/subjects/woman"
+      },
+      {
+        "name": "Rights of women",
+        "url": "https://openlibrary.org/subjects/rights_of_women"
+      },
+      {
+        "name": "Literary criticism",
+        "url": "https://openlibrary.org/subjects/literary_criticism"
+      },
+      {
+        "name": "European",
+        "url": "https://openlibrary.org/subjects/european"
+      },
+      {
+        "name": "Women in philosophy",
+        "url": "https://openlibrary.org/subjects/women_in_philosophy"
+      },
+      {
+        "name": "Women & education",
+        "url": "https://openlibrary.org/subjects/women_&_education"
+      },
+      {
+        "name": "Women authors - british - literary criticism",
+        "url": "https://openlibrary.org/subjects/women_authors_-_british_-_literary_criticism"
+      },
+      {
+        "name": "English fiction & prose literature - 18th century - literary criticism",
+        "url": "https://openlibrary.org/subjects/english_fiction_&_prose_literature_-_18th_century_-_literary_criticism"
+      },
+      {
+        "name": "Feminism - history",
+        "url": "https://openlibrary.org/subjects/feminism_-_history"
+      },
+      {
+        "name": "Women's rights--great britain",
+        "url": "https://openlibrary.org/subjects/women's_rights--great_britain"
+      },
+      {
+        "name": "Women--education",
+        "url": "https://openlibrary.org/subjects/women--education"
+      },
+      {
+        "name": "Women--education--great britain",
+        "url": "https://openlibrary.org/subjects/women--education--great_britain"
+      },
+      {
+        "name": "Women--history",
+        "url": "https://openlibrary.org/subjects/women--history"
+      },
+      {
+        "name": "Women--history--19th century",
+        "url": "https://openlibrary.org/subjects/women--history--19th_century"
+      },
+      {
+        "name": "Hq1596 .w6 1996",
+        "url": "https://openlibrary.org/subjects/hq1596_.w6_1996"
+      },
+      {
+        "name": "305.4/0941",
+        "url": "https://openlibrary.org/subjects/305.4/0941"
+      },
+      {
+        "name": "Hq1596 .w6 1992",
+        "url": "https://openlibrary.org/subjects/hq1596_.w6_1992"
+      }
+    ],
+    "title": "Vindication of the Rights of Woman (AmazonClassics Edition)",
+    "url": "http://openlibrary.org/books/OL48734343M/Vindication_of_the_Rights_of_Woman_(AmazonClassics_Edition)"
+  }
+}

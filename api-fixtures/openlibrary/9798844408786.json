@@ -1,0 +1,34 @@
+{
+  "ISBN:9798844408786": {
+    "authors": [
+      {
+        "name": "Michael R. Katz",
+        "url": "http://openlibrary.org/authors/OL1350915A/Michael_R._Katz"
+      },
+      {
+        "name": "Fyodor Dostoyevsky",
+        "url": "http://openlibrary.org/authors/OL22242A/Fyodor_Dostoyevsky"
+      }
+    ],
+    "identifiers": {
+      "isbn_13": [
+        "9798844408786"
+      ],
+      "openlibrary": [
+        "OL46747999M"
+      ]
+    },
+    "key": "/books/OL46747999M",
+    "pagination": "401",
+    "publish_date": "2022",
+    "publishers": [
+      {
+        "name": "Independently Published"
+      }
+    ],
+    "subtitle": "a New Translation",
+    "title": "Crime and Punishment",
+    "url": "http://openlibrary.org/books/OL46747999M/Crime_and_Punishment",
+    "weight": "1.141"
+  }
+}

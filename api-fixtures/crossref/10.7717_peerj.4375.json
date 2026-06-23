@@ -1,0 +1,867 @@
+{
+  "message": {
+    "DOI": "10.7717/peerj.4375",
+    "ISSN": [
+      "2167-8359"
+    ],
+    "URL": "https://doi.org/10.7717/peerj.4375",
+    "abstract": "<jats:p>Despite growing interest in Open Access (OA) to scholarly literature, there is an unmet need for large-scale, up-to-date, and reproducible studies assessing the prevalence and characteristics of OA. We address this need using oaDOI, an open online service that determines OA status for 67 million articles. We use three samples, each of 100,000 articles, to investigate OA in three populations: (1) all journal articles assigned a Crossref DOI, (2) recent journal articles indexed in Web of Science, and (3) articles viewed by users of Unpaywall, an open-source browser extension that lets users find OA articles using oaDOI. We estimate that at least 28% of the scholarly literature is OA (19M in total) and that this proportion is growing, driven particularly by growth in Gold and Hybrid. The most recent year analyzed (2015) also has the highest percentage of OA (45%). Because of this growth, and the fact that readers disproportionately access newer articles, we find that Unpaywall users encounter OA quite frequently: 47% of articles they view are OA. Notably, the most common mechanism for OA is not Gold, Green, or Hybrid OA, but rather an under-discussed category we dub Bronze: articles made free-to-read on the publisher website, without an explicit Open license. We also examine the citation impact of OA articles, corroborating the so-called open-access citation advantage: accounting for age and discipline, OA articles receive 18% more citations than average, an effect driven primarily by Green and Hybrid OA. We encourage further research using the free oaDOI service, as a way to inform OA policy and practice.</jats:p>",
+    "alternative-id": [
+      "10.7717/peerj.4375"
+    ],
+    "archive": [
+      "CLOCKSS",
+      "LOCKSS",
+      "Portico"
+    ],
+    "article-number": "e4375",
+    "author": [
+      {
+        "affiliation": [
+          {
+            "name": "Impactstory, Sanford, NC, USA"
+          }
+        ],
+        "family": "Piwowar",
+        "given": "Heather",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "first"
+      },
+      {
+        "affiliation": [
+          {
+            "name": "Impactstory, Sanford, NC, USA"
+          }
+        ],
+        "family": "Priem",
+        "given": "Jason",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "affiliation": [
+          {
+            "name": "École de bibliothéconomie et des sciences de l’information, Université de Montréal, Montréal, QC, Canada"
+          },
+          {
+            "name": "Observatoire des Sciences et des Technologies (OST), Centre Interuniversitaire de Recherche sur la Science et la Technologie (CIRST), Université du Québec à Montréal, Montréal, QC, Canada"
+          }
+        ],
+        "family": "Larivière",
+        "given": "Vincent",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "affiliation": [
+          {
+            "name": "Canadian Institute for Studies in Publishing, Simon Fraser University, Vancouver, BC, Canada"
+          },
+          {
+            "name": "Public Knowledge Project, Canada"
+          }
+        ],
+        "family": "Alperin",
+        "given": "Juan Pablo",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "affiliation": [
+          {
+            "name": "Scholarly Communications Lab, Simon Fraser University, Vancouver, Canada"
+          }
+        ],
+        "family": "Matthias",
+        "given": "Lisa",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "affiliation": [
+          {
+            "name": "Information School, University of Washington, Seattle, USA"
+          },
+          {
+            "name": "FlourishOA, USA"
+          }
+        ],
+        "family": "Norlander",
+        "given": "Bree",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "affiliation": [
+          {
+            "name": "Information School, University of Washington, Seattle, USA"
+          },
+          {
+            "name": "FlourishOA, USA"
+          }
+        ],
+        "family": "Farley",
+        "given": "Ashley",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "affiliation": [
+          {
+            "name": "Information School, University of Washington, Seattle, USA"
+          }
+        ],
+        "family": "West",
+        "given": "Jevin",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "affiliation": [
+          {
+            "name": "Observatoire des Sciences et des Technologies (OST), Centre Interuniversitaire de Recherche sur la Science et la Technologie (CIRST), Université du Québec à Montréal, Montréal, QC, Canada"
+          },
+          {
+            "name": "School of Information Studies, University of Ottawa, Ottawa, ON, Canada"
+          }
+        ],
+        "family": "Haustein",
+        "given": "Stefanie",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      }
+    ],
+    "container-title": [
+      "PeerJ"
+    ],
+    "content-domain": {
+      "crossmark-restriction": false,
+      "domain": []
+    },
+    "created": {
+      "date-parts": [
+        [
+          2018,
+          2,
+          13
+        ]
+      ],
+      "date-time": "2018-02-13T03:54:31Z",
+      "timestamp": 1518494071000
+    },
+    "deposited": {
+      "date-parts": [
+        [
+          2022,
+          8,
+          14
+        ]
+      ],
+      "date-time": "2022-08-14T03:10:18Z",
+      "timestamp": 1660446618000
+    },
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          22
+        ]
+      ],
+      "date-time": "2026-06-22T10:24:44Z",
+      "timestamp": 1782123884127,
+      "version": "3.54.5"
+    },
+    "is-referenced-by-count": 793,
+    "issn-type": [
+      {
+        "type": "electronic",
+        "value": "2167-8359"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          2,
+          13
+        ]
+      ]
+    },
+    "language": "en",
+    "license": [
+      {
+        "URL": "http://creativecommons.org/licenses/by/4.0/",
+        "content-version": "unspecified",
+        "delay-in-days": 0,
+        "start": {
+          "date-parts": [
+            [
+              2018,
+              2,
+              13
+            ]
+          ],
+          "date-time": "2018-02-13T00:00:00Z",
+          "timestamp": 1518480000000
+        }
+      }
+    ],
+    "link": [
+      {
+        "URL": "https://peerj.com/articles/4375.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://peerj.com/articles/4375.xml",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://peerj.com/articles/4375.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://peerj.com/articles/4375.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "member": "4443",
+    "original-title": [],
+    "page": "e4375",
+    "prefix": "10.7717",
+    "published": {
+      "date-parts": [
+        [
+          2018,
+          2,
+          13
+        ]
+      ]
+    },
+    "published-online": {
+      "date-parts": [
+        [
+          2018,
+          2,
+          13
+        ]
+      ]
+    },
+    "publisher": "PeerJ",
+    "reference": [
+      {
+        "article-title": "When the wolf finally arrives: big deal cancelations in North American Libraries",
+        "author": "Anderson",
+        "key": "10.7717/peerj.4375/ref-1",
+        "year": "2017"
+      },
+      {
+        "article-title": "The forbidden forecast: thinking about open access and library subscriptions",
+        "author": "Anderson",
+        "key": "10.7717/peerj.4375/ref-2",
+        "year": "2017"
+      },
+      {
+        "article-title": "Leveraging the growth of open access in library collection decision making",
+        "author": "Antelman",
+        "key": "10.7717/peerj.4375/ref-3",
+        "year": "2017"
+      },
+      {
+        "author": "Archambault",
+        "journal-title": "Proportion of open access peer-reviewed papers at the European and world levels–2004–2011",
+        "key": "10.7717/peerj.4375/ref-4",
+        "year": "2013"
+      },
+      {
+        "author": "Archambault",
+        "journal-title": "Proportion of open access papers published in peer-reviewed journals at the European and world levels–1996–2013",
+        "key": "10.7717/peerj.4375/ref-5",
+        "year": "2014"
+      },
+      {
+        "article-title": "Research impact of paywalled versus open access papers",
+        "author": "Archambault",
+        "key": "10.7717/peerj.4375/ref-6",
+        "year": "2016"
+      },
+      {
+        "article-title": "Measuring the scientific output and impact of NIGMS grants",
+        "author": "Berg",
+        "key": "10.7717/peerj.4375/ref-7",
+        "year": "2010"
+      },
+      {
+        "DOI": "10.1016/j.joi.2016.08.002",
+        "article-title": "Hybrid open access—a longitudinal study",
+        "author": "Björk",
+        "doi-asserted-by": "publisher",
+        "first-page": "919",
+        "issue": "4",
+        "journal-title": "Journal of Informetrics",
+        "key": "10.7717/peerj.4375/ref-8",
+        "volume": "10",
+        "year": "2016"
+      },
+      {
+        "DOI": "10.1002/leap.1021",
+        "article-title": "The open access movement at a crossroad: are the big publishers and academic social media taking over?",
+        "author": "Björk",
+        "doi-asserted-by": "publisher",
+        "first-page": "131",
+        "issue": "2",
+        "journal-title": "Learned Publishing",
+        "key": "10.7717/peerj.4375/ref-9",
+        "volume": "29",
+        "year": "2016"
+      },
+      {
+        "DOI": "10.1002/leap.1096",
+        "article-title": "Gold, green, and black open access",
+        "author": "Björk",
+        "doi-asserted-by": "publisher",
+        "first-page": "173",
+        "journal-title": "Learned Publishing",
+        "key": "10.7717/peerj.4375/ref-10",
+        "volume": "30",
+        "year": "2017"
+      },
+      {
+        "DOI": "10.1002/asi.22963",
+        "article-title": "Anatomy of green open access",
+        "author": "Björk",
+        "doi-asserted-by": "crossref",
+        "first-page": "237",
+        "issue": "2",
+        "journal-title": "Journal of the Association for Information Science and Technology",
+        "key": "10.7717/peerj.4375/ref-11",
+        "volume": "65",
+        "year": "2014"
+      },
+      {
+        "DOI": "10.1371/journal.pone.0011273",
+        "article-title": "Open access to the scientific journal literature: situation 2009",
+        "author": "Björk",
+        "doi-asserted-by": "publisher",
+        "first-page": "e11273",
+        "issue": "6",
+        "journal-title": "PLOS ONE",
+        "key": "10.7717/peerj.4375/ref-12",
+        "volume": "5",
+        "year": "2010"
+      },
+      {
+        "DOI": "10.1126/science.352.6285.508",
+        "article-title": "Who’s downloading pirated papers? Everyone",
+        "author": "Bohannon",
+        "doi-asserted-by": "publisher",
+        "first-page": "508",
+        "issue": "6285",
+        "journal-title": "Science",
+        "key": "10.7717/peerj.4375/ref-13",
+        "volume": "352",
+        "year": "2016"
+      },
+      {
+        "DOI": "10.1007/s11192-016-2225-6",
+        "article-title": "Availability of digital object identifiers in publications archived by PubMed",
+        "author": "Boudry",
+        "doi-asserted-by": "publisher",
+        "first-page": "1453",
+        "issue": "3",
+        "journal-title": "Scientometrics March",
+        "key": "10.7717/peerj.4375/ref-14",
+        "volume": "110",
+        "year": "2017"
+      },
+      {
+        "article-title": "Publishers take ResearchGate to court, alleging massive copyright infringement",
+        "author": "Chawla",
+        "journal-title": "Science News",
+        "key": "10.7717/peerj.4375/ref-15",
+        "year": "2017"
+      },
+      {
+        "DOI": "10.1080/19322909.2013.795426",
+        "article-title": "Journal article retrieval in an age of Open Access: how journal indexes indicate Open Access articles",
+        "author": "Chen",
+        "doi-asserted-by": "publisher",
+        "first-page": "243",
+        "issue": "3",
+        "journal-title": "Journal of Web Librarianship",
+        "key": "10.7717/peerj.4375/ref-16",
+        "volume": "7",
+        "year": "2013"
+      },
+      {
+        "DOI": "10.1080/00987913.2016.1182672",
+        "article-title": "Measuring the degrees of openness of scholarly journals with the open access spectrum (OAS) evaluation tool",
+        "author": "Chen",
+        "doi-asserted-by": "publisher",
+        "first-page": "108",
+        "issue": "2",
+        "journal-title": "Serials Review",
+        "key": "10.7717/peerj.4375/ref-17",
+        "volume": "42",
+        "year": "2016"
+      },
+      {
+        "DOI": "10.1016/j.joi.2007.04.001",
+        "article-title": "Do open access articles have greater citation impact?",
+        "author": "Craig",
+        "doi-asserted-by": "publisher",
+        "first-page": "239",
+        "issue": "3",
+        "journal-title": "Journal of Informetrics",
+        "key": "10.7717/peerj.4375/ref-18",
+        "volume": "1",
+        "year": "2007"
+      },
+      {
+        "article-title": "Attribution 4.0 International (CC BY 4.0)",
+        "author": "Creative Commons",
+        "key": "10.7717/peerj.4375/ref-19",
+        "year": "2018"
+      },
+      {
+        "DOI": "10.1096/fj.11-183988",
+        "article-title": "Open access, readership, citations: a randomized controlled trial of scientific journal publishing",
+        "author": "Davis",
+        "doi-asserted-by": "publisher",
+        "first-page": "2129",
+        "journal-title": "FASEB Journal",
+        "key": "10.7717/peerj.4375/ref-20",
+        "volume": "25",
+        "year": "2011"
+      },
+      {
+        "DOI": "10.3163/1536-5050.99.3.008",
+        "article-title": "The impact of free access to the scientific literature: a review of recent research",
+        "author": "Davis",
+        "doi-asserted-by": "publisher",
+        "first-page": "208",
+        "journal-title": "Journal of the Medical Library Association",
+        "key": "10.7717/peerj.4375/ref-21",
+        "volume": "99",
+        "year": "2011"
+      },
+      {
+        "article-title": "A social networking site is not an open access repository",
+        "author": "Fortney",
+        "journal-title": "Office of Scholarly Communication",
+        "key": "10.7717/peerj.4375/ref-22",
+        "year": "2015"
+      },
+      {
+        "DOI": "10.1371/journal.pone.0013636",
+        "article-title": "Self-selected or mandated, open access increases citation impact for higher quality research",
+        "author": "Gargouri",
+        "doi-asserted-by": "publisher",
+        "first-page": "e13636",
+        "issue": "10",
+        "journal-title": "PLOS ONE",
+        "key": "10.7717/peerj.4375/ref-23",
+        "volume": "5",
+        "year": "2010"
+      },
+      {
+        "article-title": "Green and gold open access percentages and growth, by discipline",
+        "author": "Gargouri",
+        "key": "10.7717/peerj.4375/ref-24",
+        "year": "2012"
+      },
+      {
+        "DOI": "10.1016/j.joi.2015.11.008",
+        "article-title": "Availability of digital object identifiers (DOIs) in web of science and scopus",
+        "author": "Gorraiz",
+        "doi-asserted-by": "publisher",
+        "first-page": "98",
+        "issue": "1",
+        "journal-title": "Journal of Informetrics",
+        "key": "10.7717/peerj.4375/ref-25",
+        "volume": "10",
+        "year": "2016"
+      },
+      {
+        "DOI": "10.12688/f1000research.11366.1",
+        "article-title": "Looking into Pandora’s Box: the content of Sci-Hub and its usage [version 1; referees: 2 approved, 2 approved with reservations]",
+        "author": "Greshake",
+        "doi-asserted-by": "publisher",
+        "journal-title": "F1000Research",
+        "key": "10.7717/peerj.4375/ref-26",
+        "volume": "6",
+        "year": "2017"
+      },
+      {
+        "article-title": "Ten-year cross-disciplinary comparison of the growth of open access and how it increases research citation impact",
+        "author": "Hajjem",
+        "key": "10.7717/peerj.4375/ref-27",
+        "year": "2006"
+      },
+      {
+        "DOI": "10.1080/00987913.2008.10765150",
+        "article-title": "The access/impact problem and the green and gold roads to open access: an update",
+        "author": "Harnad",
+        "doi-asserted-by": "publisher",
+        "first-page": "36",
+        "issue": "1",
+        "journal-title": "Serials Review",
+        "key": "10.7717/peerj.4375/ref-28",
+        "volume": "34",
+        "year": "2008"
+      },
+      {
+        "DOI": "10.7287/peerj.preprints.3100v1",
+        "article-title": "Sci-Hub provides access to nearly all scholarly literature (No. e3100v1)",
+        "author": "Himmelstein",
+        "doi-asserted-by": "publisher",
+        "journal-title": "PeerJ Preprints",
+        "key": "10.7717/peerj.4375/ref-29",
+        "year": "2017"
+      },
+      {
+        "DOI": "10.1007/s11192-017-2291-4",
+        "article-title": "Copyright compliance and infringement in ResearchGate full-text journal articles",
+        "author": "Jamali",
+        "doi-asserted-by": "publisher",
+        "first-page": "241",
+        "issue": "1",
+        "journal-title": "Scientometrics",
+        "key": "10.7717/peerj.4375/ref-30",
+        "volume": "112",
+        "year": "2017"
+      },
+      {
+        "DOI": "10.1186/1741-7015-10-124",
+        "article-title": "Anatomy of open access publishing: a study of longitudinal development and internal structure",
+        "author": "Laakso",
+        "doi-asserted-by": "publisher",
+        "journal-title": "BMC Medicine",
+        "key": "10.7717/peerj.4375/ref-31",
+        "volume": "10",
+        "year": "2012"
+      },
+      {
+        "DOI": "10.1002/asi.22856",
+        "article-title": "Delayed open access: an overlooked high-impact category of openly available scientific literature",
+        "author": "Laakso",
+        "doi-asserted-by": "publisher",
+        "first-page": "1323",
+        "issue": "7",
+        "journal-title": "Journal of the American Society for Information Science and Technology",
+        "key": "10.7717/peerj.4375/ref-32",
+        "volume": "64",
+        "year": "2013"
+      },
+      {
+        "DOI": "10.1371/journal.pone.0020961",
+        "article-title": "The development of open access journal publishing from 1993 to 2009",
+        "author": "Laakso",
+        "doi-asserted-by": "publisher",
+        "first-page": "e20961",
+        "issue": "6",
+        "journal-title": "PLOS ONE",
+        "key": "10.7717/peerj.4375/ref-33",
+        "volume": "6",
+        "year": "2011"
+      },
+      {
+        "DOI": "10.3163/1536-5050.97.1.002",
+        "article-title": "Status of open access in the biomedical field in 2005",
+        "author": "Matsubayashi",
+        "doi-asserted-by": "crossref",
+        "first-page": "4",
+        "issue": "1",
+        "journal-title": "Journal of the Medical Library Association",
+        "key": "10.7717/peerj.4375/ref-34",
+        "volume": "97",
+        "year": "2009"
+      },
+      {
+        "DOI": "10.1111/ecin.12064",
+        "article-title": "Identifying the effect of open access on citations using a panel of science journals",
+        "author": "McCabe",
+        "doi-asserted-by": "publisher",
+        "first-page": "1284",
+        "issue": "4",
+        "journal-title": "Economic Inquiry",
+        "key": "10.7717/peerj.4375/ref-35",
+        "volume": "52",
+        "year": "2014"
+      },
+      {
+        "DOI": "10.7554/eLife.16800",
+        "article-title": "How open science helps researchers succeed",
+        "author": "McKiernan",
+        "doi-asserted-by": "publisher",
+        "first-page": "e16800",
+        "journal-title": "eLife",
+        "key": "10.7717/peerj.4375/ref-36",
+        "volume": "5",
+        "year": "2016"
+      },
+      {
+        "DOI": "10.1007/s11192-015-1765-5",
+        "article-title": "The journal coverage of Web of Science and Scopus: a comparative analysis",
+        "author": "Mongeon",
+        "doi-asserted-by": "publisher",
+        "first-page": "213",
+        "issue": "1",
+        "journal-title": "Scientometrics",
+        "key": "10.7717/peerj.4375/ref-37",
+        "volume": "106",
+        "year": "2016"
+      },
+      {
+        "DOI": "10.1371/journal.pone.0159614",
+        "article-title": "The post-embargo open access citation advantage: it exists (probably), it’s modest (usually), and the rich get richer (of course)",
+        "author": "Ottaviani",
+        "doi-asserted-by": "publisher",
+        "first-page": "e0159614",
+        "issue": "8",
+        "journal-title": "PLOS ONE",
+        "key": "10.7717/peerj.4375/ref-38",
+        "volume": "11",
+        "year": "2016"
+      },
+      {
+        "DOI": "10.47678/cjhe.v39i3.479",
+        "article-title": "The SciELO open access: a gold way from the south",
+        "author": "Packer",
+        "doi-asserted-by": "crossref",
+        "first-page": "111",
+        "issue": "3",
+        "journal-title": "Canadian Journal of Higher Education",
+        "key": "10.7717/peerj.4375/ref-39",
+        "volume": "39",
+        "year": "2010"
+      },
+      {
+        "article-title": "Reviewer guidelines: criteria for publication",
+        "author": "PLOS",
+        "key": "10.7717/peerj.4375/ref-40",
+        "year": "2018"
+      },
+      {
+        "DOI": "10.1038/nature.2016.21223",
+        "article-title": "Scientists in Germany, Peru and Taiwan to lose access to Elsevier journals",
+        "author": "Schiermeier",
+        "doi-asserted-by": "publisher",
+        "first-page": "13",
+        "issue": "7635",
+        "journal-title": "Nature News",
+        "key": "10.7717/peerj.4375/ref-41",
+        "volume": "541",
+        "year": "2017"
+      },
+      {
+        "article-title": "Knowledge sharing in global health research; the impact, uptake and cost of open access to scholarly literature",
+        "author": "Smith",
+        "journal-title": "BMC Health Research Policy and System",
+        "key": "10.7717/peerj.4375/ref-42"
+      },
+      {
+        "article-title": "The open access citation advantage: list of studies until 2015",
+        "author": "SPARC Europe",
+        "key": "10.7717/peerj.4375/ref-43",
+        "year": "2015"
+      },
+      {
+        "article-title": "Gratis and libre open access",
+        "author": "Suber",
+        "journal-title": "SPARC Open Access Newsletter, 124",
+        "key": "10.7717/peerj.4375/ref-44",
+        "year": "2008"
+      },
+      {
+        "DOI": "10.14293/S2199-1006.1.SOR-EDU.CLPDPZB.v1",
+        "article-title": "The open access citation advantage",
+        "author": "Tennant",
+        "doi-asserted-by": "crossref",
+        "key": "10.7717/peerj.4375/ref-45",
+        "year": "2017"
+      },
+      {
+        "DOI": "10.12688/f1000research.8460.3",
+        "article-title": "The academic, economic and societal impacts of Open Access: an evidence-based review (version 3; referees: 3 approved, 2 approved with reservations)",
+        "author": "Tennant",
+        "doi-asserted-by": "publisher",
+        "journal-title": "F1000 Research",
+        "key": "10.7717/peerj.4375/ref-46",
+        "volume": "5",
+        "year": "2016"
+      },
+      {
+        "article-title": "Teurer als die Wissenschaft erlaubt",
+        "author": "Universitat Konstanz",
+        "key": "10.7717/peerj.4375/ref-47",
+        "year": "2014"
+      },
+      {
+        "article-title": "UdeM Libraries cancel Big Deal subscription to 2231 periodical titles published by Taylor & Francis Group",
+        "author": "Université de Montréal",
+        "key": "10.7717/peerj.4375/ref-48",
+        "year": "2017"
+      },
+      {
+        "DOI": "10.5062/F4Q81B0W",
+        "article-title": "Open access citation advantage: an annotated bibliography",
+        "author": "Wagner",
+        "doi-asserted-by": "publisher",
+        "first-page": "2",
+        "journal-title": "Issues in Science and Technology Librarianship",
+        "key": "10.7717/peerj.4375/ref-49",
+        "volume": "60",
+        "year": "2010"
+      },
+      {
+        "DOI": "10.1241/johokanri.41.678",
+        "article-title": "Free internet access to traditional journals",
+        "author": "Walker",
+        "doi-asserted-by": "publisher",
+        "first-page": "678",
+        "issue": "9",
+        "journal-title": "Journal of Information Processing and Management",
+        "key": "10.7717/peerj.4375/ref-50",
+        "volume": "41",
+        "year": "1998"
+      },
+      {
+        "article-title": "The nine flavours of open access scholarly publishing",
+        "author": "Willinsky",
+        "first-page": "263",
+        "journal-title": "Journal of Postgraduate Medicine",
+        "key": "10.7717/peerj.4375/ref-51",
+        "volume": "49",
+        "year": "2003"
+      },
+      {
+        "author": "Willinsky",
+        "edition": "1",
+        "key": "10.7717/peerj.4375/ref-52",
+        "volume-title": "The access principle: the case for open access to research and scholarship",
+        "year": "2009"
+      }
+    ],
+    "reference-count": 52,
+    "references-count": 52,
+    "relation": {
+      "has-review": [
+        {
+          "asserted-by": "object",
+          "id": "10.7287/peerj.4375v0.1/reviews/4",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "object",
+          "id": "10.7287/peerj.4375v0.1/reviews/2",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "object",
+          "id": "10.7287/peerj.4375v0.1/reviews/3",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "object",
+          "id": "10.7287/peerj.4375v0.1/reviews/1",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "object",
+          "id": "10.7287/peerj.4375v0.2/reviews/3",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "object",
+          "id": "10.7287/peerj.4375v0.2/reviews/1",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "object",
+          "id": "10.7287/peerj.4375v0.2/reviews/2",
+          "id-type": "doi"
+        }
+      ],
+      "has-translation": [
+        {
+          "asserted-by": "object",
+          "id": "10.24108/2658-3143-2019-2-4-228-247",
+          "id-type": "doi"
+        }
+      ]
+    },
+    "resource": {
+      "primary": {
+        "URL": "https://peerj.com/articles/4375"
+      }
+    },
+    "score": 1,
+    "short-container-title": [],
+    "short-title": [],
+    "source": "Crossref",
+    "subject": [],
+    "subtitle": [],
+    "title": [
+      "The state of OA: a large-scale analysis of the prevalence and impact of Open Access articles"
+    ],
+    "type": "journal-article",
+    "volume": "6"
+  },
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "status": "ok"
+}

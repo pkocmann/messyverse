@@ -1,0 +1,220 @@
+{
+  "ISBN:9783293200654": {
+    "authors": [
+      {
+        "name": "نجيب محفوظ",
+        "url": "http://openlibrary.org/authors/OL173760A/نجيب_محفوظ"
+      }
+    ],
+    "cover": {
+      "large": "https://covers.openlibrary.org/b/id/14816811-L.jpg",
+      "medium": "https://covers.openlibrary.org/b/id/14816811-M.jpg",
+      "small": "https://covers.openlibrary.org/b/id/14816811-S.jpg"
+    },
+    "ebooks": [
+      {
+        "availability": "borrow",
+        "borrow_url": "https://openlibrary.org/books/OL9024490M/Zwischen_den_Palästen/borrow",
+        "checkedout": false,
+        "formats": {},
+        "preview_url": "https://archive.org/details/zwischendenpalas0000mahf"
+      }
+    ],
+    "identifiers": {
+      "goodreads": [
+        "263671"
+      ],
+      "isbn_10": [
+        "3293200656"
+      ],
+      "isbn_13": [
+        "9783293200654"
+      ],
+      "librarything": [
+        "20291"
+      ],
+      "openlibrary": [
+        "OL9024490M"
+      ]
+    },
+    "key": "/books/OL9024490M",
+    "links": [
+      {
+        "title": "ar.wikipedia.org",
+        "url": "https://ar.wikipedia.org/wiki/%D8%A8%D9%8A%D9%86_%D8%A7%D9%84%D9%82%D8%B5%D8%B1%D9%8A%D9%86_(%D8%B1%D9%88%D8%A7%D9%8A%D8%A9)"
+      },
+      {
+        "title": "No longer preserved: A retrospective of Naguib Mahfouz’s ‘Palace Walk’ (غير محفوظ: “بين القصرين”, كتاب نجيب محفوظ)",
+        "url": "https://stanforddaily.com/2020/05/04/no-longer-preserved-a-retrospective-of-naguib-mahfouzs-palace-walk-%D8%BA%D9%8A%D8%B1-%D9%85%D8%AD%D9%81%D9%88%D8%B8-%D8%A8%D9%8A%D9%86-%D8%A7%D9%84%D9%82%D8%B5%D8%B1/"
+      },
+      {
+        "title": "Palace Walk, by Naguib Mahfouz - Elle Thinks",
+        "url": "https://ellethinks.wordpress.com/2022/06/23/palace-walk-by-naguib-mahfouz/"
+      },
+      {
+        "title": "booksyo.wordpress.com",
+        "url": "https://booksyo.wordpress.com/2014/07/02/palace-walk-the-cairo-trilogy-pt-1-by-naguib-mahfouz/"
+      },
+      {
+        "title": "thegreatestbooks.org",
+        "url": "https://thegreatestbooks.org/books/2450"
+      },
+      {
+        "title": "complete-review.com",
+        "url": "https://www.complete-review.com/reviews/mahfouzn/cairo1.htm"
+      }
+    ],
+    "number_of_pages": 686,
+    "pagination": "686 pages",
+    "publish_date": "1996",
+    "publish_places": [
+      {
+        "name": "Zurich"
+      }
+    ],
+    "publishers": [
+      {
+        "name": "Unionsverlag"
+      }
+    ],
+    "subject_people": [
+      {
+        "name": "al-Sayyid Ahmad Abd al-Jawad",
+        "url": "https://openlibrary.org/subjects/person:al-sayyid_ahmad_abd_al-jawad"
+      },
+      {
+        "name": "Amina",
+        "url": "https://openlibrary.org/subjects/person:amina"
+      },
+      {
+        "name": "Yasin",
+        "url": "https://openlibrary.org/subjects/person:yasin"
+      },
+      {
+        "name": "Fahmy",
+        "url": "https://openlibrary.org/subjects/person:fahmy"
+      },
+      {
+        "name": "Kamal",
+        "url": "https://openlibrary.org/subjects/person:kamal"
+      },
+      {
+        "name": "Khadija",
+        "url": "https://openlibrary.org/subjects/person:khadija"
+      },
+      {
+        "name": "Aisha",
+        "url": "https://openlibrary.org/subjects/person:aisha"
+      }
+    ],
+    "subject_places": [
+      {
+        "name": "Cairo",
+        "url": "https://openlibrary.org/subjects/place:cairo"
+      },
+      {
+        "name": "Egypt",
+        "url": "https://openlibrary.org/subjects/place:egypt"
+      },
+      {
+        "name": "Cairo (Egypt)",
+        "url": "https://openlibrary.org/subjects/place:cairo_(egypt)"
+      },
+      {
+        "name": "Egipto",
+        "url": "https://openlibrary.org/subjects/place:egipto"
+      }
+    ],
+    "subject_times": [
+      {
+        "name": "Early 20th century",
+        "url": "https://openlibrary.org/subjects/time:early_20th_century"
+      },
+      {
+        "name": "Early Twentieth Century",
+        "url": "https://openlibrary.org/subjects/time:early_twentieth_century"
+      },
+      {
+        "name": "1917",
+        "url": "https://openlibrary.org/subjects/time:1917"
+      },
+      {
+        "name": "1919",
+        "url": "https://openlibrary.org/subjects/time:1919"
+      }
+    ],
+    "subjects": [
+      {
+        "name": "Islam",
+        "url": "https://openlibrary.org/subjects/islam"
+      },
+      {
+        "name": "affairs",
+        "url": "https://openlibrary.org/subjects/affairs"
+      },
+      {
+        "name": "courtesans",
+        "url": "https://openlibrary.org/subjects/courtesans"
+      },
+      {
+        "name": "Prostitution",
+        "url": "https://openlibrary.org/subjects/prostitution"
+      },
+      {
+        "name": "law school",
+        "url": "https://openlibrary.org/subjects/law_school"
+      },
+      {
+        "name": "nationalism",
+        "url": "https://openlibrary.org/subjects/nationalism"
+      },
+      {
+        "name": "Middle East Fiction",
+        "url": "https://openlibrary.org/subjects/middle_east_fiction"
+      },
+      {
+        "name": "Arabic fiction",
+        "url": "https://openlibrary.org/subjects/arabic_fiction"
+      },
+      {
+        "name": "Fiction",
+        "url": "https://openlibrary.org/subjects/fiction"
+      },
+      {
+        "name": "History",
+        "url": "https://openlibrary.org/subjects/history"
+      },
+      {
+        "name": "Manners and customs",
+        "url": "https://openlibrary.org/subjects/manners_and_customs"
+      },
+      {
+        "name": "Middle East",
+        "url": "https://openlibrary.org/subjects/middle_east"
+      },
+      {
+        "name": "Politics and government",
+        "url": "https://openlibrary.org/subjects/politics_and_government"
+      },
+      {
+        "name": "Social conditions",
+        "url": "https://openlibrary.org/subjects/social_conditions"
+      },
+      {
+        "name": "parables",
+        "url": "https://openlibrary.org/subjects/parables"
+      },
+      {
+        "name": "1.",
+        "url": "https://openlibrary.org/subjects/1."
+      },
+      {
+        "name": "Translations into French",
+        "url": "https://openlibrary.org/subjects/translations_into_french"
+      }
+    ],
+    "title": "Zwischen den Palästen",
+    "url": "http://openlibrary.org/books/OL9024490M/Zwischen_den_Palästen",
+    "weight": "1.2 pounds"
+  }
+}

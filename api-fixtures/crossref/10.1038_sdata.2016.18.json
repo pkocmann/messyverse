@@ -1,0 +1,1297 @@
+{
+  "message": {
+    "DOI": "10.1038/sdata.2016.18",
+    "ISSN": [
+      "2052-4463"
+    ],
+    "URL": "https://doi.org/10.1038/sdata.2016.18",
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>There is an urgent need to improve the infrastructure supporting the reuse of scholarly data. A diverse set of stakeholders—representing academia, industry, funding agencies, and scholarly publishers—have come together to design and jointly endorse a concise and measureable set of principles that we refer to as the FAIR Data Principles. The intent is that these may act as a guideline for those wishing to enhance the reusability of their data holdings. Distinct from peer initiatives that focus on the human scholar, the FAIR Principles put specific emphasis on enhancing the ability of machines to automatically find and use the data, in addition to supporting its reuse by individuals. This Comment is the first formal publication of the FAIR Principles, and includes the rationale behind them, and some exemplar implementations in the community.</jats:p>",
+    "alternative-id": [
+      "BFsdata201618"
+    ],
+    "article-number": "160018",
+    "assertion": [
+      {
+        "group": {
+          "label": "Article History",
+          "name": "ArticleHistory"
+        },
+        "label": "Received",
+        "name": "received",
+        "order": 1,
+        "value": "10 December 2015"
+      },
+      {
+        "group": {
+          "label": "Article History",
+          "name": "ArticleHistory"
+        },
+        "label": "Accepted",
+        "name": "accepted",
+        "order": 2,
+        "value": "12 February 2016"
+      },
+      {
+        "group": {
+          "label": "Article History",
+          "name": "ArticleHistory"
+        },
+        "label": "First Online",
+        "name": "first_online",
+        "order": 3,
+        "value": "15 March 2016"
+      },
+      {
+        "group": {
+          "label": "Competing interests",
+          "name": "EthicsHeading"
+        },
+        "name": "Ethics",
+        "order": 1,
+        "value": "M.A. is the <i>Nature Genetics</i>’ Editor in Chief; S.A.S. is <i>Scientific Data</i>’s Honorary Academic Editor and consultant."
+      }
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-6960-357X",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Wilkinson",
+        "given": "Mark D.",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "first"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4727-9435",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Dumontier",
+        "given": "Michel",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-0209-4480",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Aalbersberg",
+        "given": "IJsbrand Jan",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0179-7384",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Appleton",
+        "given": "Gabrielle",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-8042-4131",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Axton",
+        "given": "Myles",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-2829-6715",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Baak",
+        "given": "Arie",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4155-5910",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Blomberg",
+        "given": "Niklas",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0327-638X",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Boiten",
+        "given": "Jan-Willem",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-1164-1351",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "da Silva Santos",
+        "given": "Luiz Bonino",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7618-7292",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Bourne",
+        "given": "Philip E.",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "affiliation": [],
+        "family": "Bouwman",
+        "given": "Jildau",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-8686-0017",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Brookes",
+        "given": "Anthony J.",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4060-7360",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Clark",
+        "given": "Tim",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-1304-1939",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Crosas",
+        "given": "Mercè",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5654-2392",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Dillo",
+        "given": "Ingrid",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-8599-7345",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Dumon",
+        "given": "Olivier",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-6444-1436",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Edmunds",
+        "given": "Scott",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5301-3142",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Evelo",
+        "given": "Chris T.",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4368-8058",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Finkers",
+        "given": "Richard",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-3499-8262",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Gonzalez-Beltran",
+        "given": "Alejandra",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5711-4872",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Gray",
+        "given": "Alasdair J.G.",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0183-6910",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Groth",
+        "given": "Paul",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-1219-2137",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Goble",
+        "given": "Carole",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5212-7052",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Grethe",
+        "given": "Jeffrey S.",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-8641-4930",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Heringa",
+        "given": "Jaap",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4450-3112",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "’t Hoen",
+        "given": "Peter A.C",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-6825-9439",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Hooft",
+        "given": "Rob",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-1267-0234",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Kuhn",
+        "given": "Tobias",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "affiliation": [],
+        "family": "Kok",
+        "given": "Ruben",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7352-1400",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Kok",
+        "given": "Joost",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-2401-4223",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Lusher",
+        "given": "Scott J.",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-8406-3871",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Martone",
+        "given": "Maryann E.",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "affiliation": [],
+        "family": "Mons",
+        "given": "Albert",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9610-5728",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Packer",
+        "given": "Abel L.",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-3165-5344",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Persson",
+        "given": "Bengt",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9853-5668",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Rocca-Serra",
+        "given": "Philippe",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-8691-772X",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Roos",
+        "given": "Marco",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "affiliation": [],
+        "family": "van Schaik",
+        "given": "Rene",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5306-5690",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Sansone",
+        "given": "Susanna-Assunta",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-8888-635X",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Schultes",
+        "given": "Erik",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7516-6246",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Sengstag",
+        "given": "Thierry",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-1386-0731",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Slater",
+        "given": "Ted",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "affiliation": [],
+        "family": "Strawn",
+        "given": "George",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-0979-3401",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Swertz",
+        "given": "Morris A.",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7633-1442",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Thompson",
+        "given": "Mark",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "affiliation": [],
+        "family": "van der Lei",
+        "given": "Johan",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-1377-9386",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "van Mulligen",
+        "given": "Erik",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4836-6568",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Velterop",
+        "given": "Jan",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9773-4008",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Waagmeester",
+        "given": "Andra",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "affiliation": [],
+        "family": "Wittenburg",
+        "given": "Peter",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-1279-5133",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Wolstencroft",
+        "given": "Katherine",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-6935-9028",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Zhao",
+        "given": "Jun",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-3934-0072",
+        "affiliation": [],
+        "authenticated-orcid": false,
+        "family": "Mons",
+        "given": "Barend",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "additional"
+      }
+    ],
+    "container-title": [
+      "Scientific Data"
+    ],
+    "content-domain": {
+      "crossmark-restriction": false,
+      "domain": [
+        "link.springer.com"
+      ]
+    },
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          3,
+          15
+        ]
+      ],
+      "date-time": "2016-03-15T10:23:08Z",
+      "timestamp": 1458037388000
+    },
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          1,
+          4
+        ]
+      ],
+      "date-time": "2023-01-04T07:47:12Z",
+      "timestamp": 1672818432000
+    },
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          23
+        ]
+      ],
+      "date-time": "2026-06-23T08:57:54Z",
+      "timestamp": 1782205074003,
+      "version": "3.54.5"
+    },
+    "is-referenced-by-count": 14045,
+    "issn-type": [
+      {
+        "type": "electronic",
+        "value": "2052-4463"
+      }
+    ],
+    "issue": "1",
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          3,
+          15
+        ]
+      ]
+    },
+    "journal-issue": {
+      "issue": "1",
+      "published-online": {
+        "date-parts": [
+          [
+            2016,
+            12,
+            20
+          ]
+        ]
+      }
+    },
+    "language": "en",
+    "license": [
+      {
+        "URL": "https://creativecommons.org/licenses/by/4.0",
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "start": {
+          "date-parts": [
+            [
+              2016,
+              3,
+              15
+            ]
+          ],
+          "date-time": "2016-03-15T00:00:00Z",
+          "timestamp": 1458000000000
+        }
+      },
+      {
+        "URL": "https://creativecommons.org/licenses/by/4.0",
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "start": {
+          "date-parts": [
+            [
+              2016,
+              3,
+              15
+            ]
+          ],
+          "date-time": "2016-03-15T00:00:00Z",
+          "timestamp": 1458000000000
+        }
+      }
+    ],
+    "link": [
+      {
+        "URL": "https://www.nature.com/articles/sdata201618.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.nature.com/articles/sdata201618",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.nature.com/articles/sdata201618.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "member": "297",
+    "original-title": [],
+    "prefix": "10.1038",
+    "published": {
+      "date-parts": [
+        [
+          2016,
+          3,
+          15
+        ]
+      ]
+    },
+    "published-online": {
+      "date-parts": [
+        [
+          2016,
+          3,
+          15
+        ]
+      ]
+    },
+    "publisher": "Springer Science and Business Media LLC",
+    "reference": [
+      {
+        "DOI": "10.1371/journal.pbio.1002295",
+        "author": "DG Roche",
+        "doi-asserted-by": "publisher",
+        "first-page": "e1002295",
+        "journal-title": "PLOS Biol.",
+        "key": "BFsdata201618_CR1",
+        "unstructured": "Roche, D. G., Kruuk, L. E. B., Lanfear, R. & Binning, S. A. Public Data Archiving in Ecology and Evolution: How Well Are We Doing? PLOS Biol. 13, e1002295 (2015).",
+        "volume": "13",
+        "year": "2015"
+      },
+      {
+        "DOI": "10.1038/npre.2010.4626.1",
+        "doi-asserted-by": "crossref",
+        "key": "BFsdata201618_CR2",
+        "unstructured": "Bechhofer, S. et al. Research Objects: Towards Exchange and Reuse of Digital Knowledge. Nat. Preced. 10.1038/npre.2010.4626.1 (2010)."
+      },
+      {
+        "DOI": "10.1093/nar/gks1195",
+        "author": "DA Benson",
+        "doi-asserted-by": "publisher",
+        "first-page": "D36",
+        "journal-title": "Nucleic Acids Res.",
+        "key": "BFsdata201618_CR3",
+        "unstructured": "Benson, D. A. et al. GenBank. Nucleic Acids Res. 41, D36–D42 (2013).",
+        "volume": "41",
+        "year": "2013"
+      },
+      {
+        "DOI": "10.1038/nsb1203-980",
+        "author": "H Berman",
+        "doi-asserted-by": "publisher",
+        "first-page": "980",
+        "journal-title": "Nat. Struct. Biol.",
+        "key": "BFsdata201618_CR4",
+        "unstructured": "Berman, H., Henrick, K. & Nakamura, H. Announcing the worldwide Protein Data Bank. Nat. Struct. Biol. 10, 980–980 (2003).",
+        "volume": "10",
+        "year": "2003"
+      },
+      {
+        "DOI": "10.1093/nar/gku989",
+        "author": "The Uniprot Consortium",
+        "doi-asserted-by": "publisher",
+        "first-page": "D204",
+        "journal-title": "Nucleic Acids Res.",
+        "key": "BFsdata201618_CR5",
+        "unstructured": "The Uniprot Consortium. UniProt: a hub for protein information. Nucleic Acids Res. 43, D204–D212 (2015).",
+        "volume": "43",
+        "year": "2015"
+      },
+      {
+        "DOI": "10.1051/aas:2000332",
+        "author": "M Wenger",
+        "doi-asserted-by": "publisher",
+        "first-page": "9",
+        "journal-title": "Astron. Astrophys. Suppl. Ser.",
+        "key": "BFsdata201618_CR6",
+        "unstructured": "Wenger, M. et al. The SIMBAD astronomical database-The CDS reference database for astronomical objects. Astron. Astrophys. Suppl. Ser. 143, 9–22 (2000).",
+        "volume": "143",
+        "year": "2000"
+      },
+      {
+        "author": "M Crosas",
+        "first-page": "p2",
+        "issue": "1",
+        "journal-title": "D-Lib Mag",
+        "key": "BFsdata201618_CR7",
+        "unstructured": "Crosas, M. \"The Dataverse Network®: An Open-Source Application for Sharing, Discovering and Preserving Data\". D-Lib Mag 17 (1), p2 (2011).",
+        "volume": "17",
+        "year": "2011"
+      },
+      {
+        "key": "BFsdata201618_CR8",
+        "unstructured": "White, H. C., Carrier, S., Thompson, A., Greenberg, J. & Scherle, R. The Dryad data repository: A Singapore framework metadata architecture in a DSpace environment. Univ. Göttingen, p157 (2008)."
+      },
+      {
+        "DOI": "10.2218/ijdc.v8i1.260",
+        "author": "D Lecarpentier",
+        "doi-asserted-by": "publisher",
+        "first-page": "279",
+        "journal-title": "Int. J. Digit. Curation",
+        "key": "BFsdata201618_CR9",
+        "unstructured": "Lecarpentier, D. et al. EUDAT: A New Cross-Disciplinary Data Infrastructure for Science. Int. J. Digit. Curation 8, 279–287 (2013).",
+        "volume": "8",
+        "year": "2013"
+      },
+      {
+        "DOI": "10.1093/biosci/biv095",
+        "author": "ME Martone",
+        "doi-asserted-by": "publisher",
+        "first-page": "635",
+        "journal-title": "Bioscience",
+        "key": "BFsdata201618_CR10",
+        "unstructured": "Martone, M. E. FORCE11: Building the Future for Research Communications and e-Scholarship. Bioscience 65, 635 (2015).",
+        "volume": "65",
+        "year": "2015"
+      },
+      {
+        "DOI": "10.4033/iee.2013.6b.6.f",
+        "doi-asserted-by": "crossref",
+        "key": "BFsdata201618_CR11",
+        "unstructured": "White, E. et al. Nine simple ways to make it easier to (re)use your data. Ideas Ecol. Evol. 6 (2013)."
+      },
+      {
+        "DOI": "10.1371/journal.pcbi.1003285",
+        "author": "GK Sandve",
+        "doi-asserted-by": "publisher",
+        "first-page": "e1003285",
+        "journal-title": "PLoS Comput. Biol.",
+        "key": "BFsdata201618_CR12",
+        "unstructured": "Sandve, G. K., Nekrutenko, A., Taylor, J. & Hovig, E. Ten Simple Rules for Reproducible Computational Research. PLoS Comput. Biol. 9, e1003285 (2013).",
+        "volume": "9",
+        "year": "2013"
+      },
+      {
+        "author": "M Altman",
+        "key": "BFsdata201618_CR13",
+        "unstructured": "Altman, M. & King, G. in D-Lib Magazine 13, no. 3/4 (2007).",
+        "volume-title": "D-Lib Magazine",
+        "year": "2007"
+      },
+      {
+        "DOI": "10.1186/s12918-015-0174-y",
+        "author": "K Wolstencroft",
+        "doi-asserted-by": "publisher",
+        "first-page": "33",
+        "journal-title": "BMC Syst. Biol.",
+        "key": "BFsdata201618_CR14",
+        "unstructured": "Wolstencroft, K. et al. SEEK: a systems biology data and model management platform. BMC Syst. Biol. 9, 33 (2015).",
+        "volume": "9",
+        "year": "2015"
+      },
+      {
+        "DOI": "10.1186/1471-2105-12-468",
+        "author": "A Bauch",
+        "doi-asserted-by": "publisher",
+        "first-page": "468",
+        "journal-title": "BMC Bioinformatics",
+        "key": "BFsdata201618_CR15",
+        "unstructured": "Bauch, A. et al. openBIS: a flexible framework for managing and analyzing complex data in biology research. BMC Bioinformatics 12, 468 (2011).",
+        "volume": "12",
+        "year": "2011"
+      },
+      {
+        "DOI": "10.1038/ng.1054",
+        "author": "S-A Sansone",
+        "doi-asserted-by": "publisher",
+        "first-page": "121",
+        "journal-title": "Nat. Genet.",
+        "key": "BFsdata201618_CR16",
+        "unstructured": "Sansone, S.-A. et al. Toward interoperable bioscience data. Nat. Genet. 44, 121–126 (2012).",
+        "volume": "44",
+        "year": "2012"
+      },
+      {
+        "DOI": "10.1186/1471-2105-15-S14-S4",
+        "author": "A González-Beltrán",
+        "doi-asserted-by": "publisher",
+        "first-page": "S4",
+        "journal-title": "BMC Bioinformatics",
+        "key": "BFsdata201618_CR17",
+        "unstructured": "González-Beltrán, A., Maguire, E., Sansone, S.-A. & Rocca-Serra, P. linkedISA: semantic representation of ISA-Tab experimental metadata. BMC Bioinformatics 15, S4 (2014).",
+        "volume": "15",
+        "year": "2014"
+      },
+      {
+        "DOI": "10.1371/journal.pone.0127612",
+        "author": "A González-Beltrán",
+        "doi-asserted-by": "publisher",
+        "first-page": "e0127612",
+        "journal-title": "PLoS ONE",
+        "key": "BFsdata201618_CR18",
+        "unstructured": "González-Beltrán, A. et al. From Peer-Reviewed to Peer-Reproduced in Scholarly Publishing: The Complementary Roles of Data Models and Workflows in Bioinformatics. PLoS ONE 10, e0127612 (2015).",
+        "volume": "10",
+        "year": "2015"
+      },
+      {
+        "author": "L Harland",
+        "first-page": "1",
+        "journal-title": "Knowl. Eng. Knowl. Manag. Lect. Notes Comput. Sci.",
+        "key": "BFsdata201618_CR19",
+        "unstructured": "Harland, L. Open PHACTS: A Semantic Knowledge Infrastructure for Public and Commercial Drug Discovery Research. Knowl. Eng. Knowl. Manag. Lect. Notes Comput. Sci. 7603/2012, 1–7 (2012).",
+        "volume": "7603/2012",
+        "year": "2012"
+      },
+      {
+        "DOI": "10.1016/j.websem.2014.03.003",
+        "author": "P Groth",
+        "doi-asserted-by": "publisher",
+        "first-page": "12",
+        "journal-title": "Web Semant. Sci. Serv. Agents World Wide Web",
+        "key": "BFsdata201618_CR20",
+        "unstructured": "Groth, P. et al. API-centric Linked Data integration: The Open PHACTS Discovery Platform case study. Web Semant. Sci. Serv. Agents World Wide Web 29, 12–18 (2014).",
+        "volume": "29",
+        "year": "2014"
+      },
+      {
+        "DOI": "10.1093/nar/28.1.235",
+        "author": "HM Berman",
+        "doi-asserted-by": "publisher",
+        "first-page": "235",
+        "journal-title": "Nucleic Acids Res.",
+        "key": "BFsdata201618_CR21",
+        "unstructured": "Berman, H. M. et al. The Protein Data Bank. Nucleic Acids Res. 28, 235–242 (2000).",
+        "volume": "28",
+        "year": "2000"
+      },
+      {
+        "DOI": "10.1016/S0076-6879(97)77032-0",
+        "author": "PE Bourne",
+        "doi-asserted-by": "publisher",
+        "first-page": "571",
+        "journal-title": "Meth. Enzym",
+        "key": "BFsdata201618_CR22",
+        "unstructured": "Bourne, P. E., Berman, H. M., Watenpaugh, K., Westbrook, J. D. & Fitzgerald, P. M. D. The macromolecular crystallographic information file (mmCIF). Meth. Enzym 277, 571–590 (1997).",
+        "volume": "277",
+        "year": "1997"
+      },
+      {
+        "DOI": "10.1093/nar/gku1214",
+        "author": "PW Rose",
+        "doi-asserted-by": "publisher",
+        "first-page": "D345",
+        "journal-title": "Nucleic Acids Res.",
+        "key": "BFsdata201618_CR23",
+        "unstructured": "Rose, P. W. et al. The RCSB Protein Data Bank: views of structural biology for basic and applied research and education. Nucleic Acids Res. 43, D345–D356 (2015).",
+        "volume": "43",
+        "year": "2015"
+      },
+      {
+        "DOI": "10.1093/nar/gkr811",
+        "author": "AR Kinjo",
+        "doi-asserted-by": "publisher",
+        "first-page": "D453",
+        "journal-title": "Nucleic Acids Res.",
+        "key": "BFsdata201618_CR24",
+        "unstructured": "Kinjo, A. R. et al. Protein Data Bank Japan (PDBj): maintaining a structural data archive and resource description framework format. Nucleic Acids Res. 40, D453–D460 (2012).",
+        "volume": "40",
+        "year": "2012"
+      },
+      {
+        "DOI": "10.1093/nar/gkt1180",
+        "author": "A Gutmanas",
+        "doi-asserted-by": "publisher",
+        "first-page": "D285",
+        "journal-title": "Nucleic Acids Res.",
+        "key": "BFsdata201618_CR25",
+        "unstructured": "Gutmanas, A. et al. PDBe: Protein Data Bank in Europe. Nucleic Acids Res. 42, D285–D291 (2014).",
+        "volume": "42",
+        "year": "2014"
+      },
+      {
+        "DOI": "10.1093/nar/gku989",
+        "author": "UniProt Consortium",
+        "doi-asserted-by": "publisher",
+        "first-page": "D204",
+        "journal-title": "Nucleic Acids Res.",
+        "key": "BFsdata201618_CR26",
+        "unstructured": "UniProt Consortium. UniProt: a hub for protein information. Nucleic Acids Res. 43, D204–D212 (2015).",
+        "volume": "43",
+        "year": "2015"
+      },
+      {
+        "DOI": "10.7717/peerj-cs.1",
+        "author": "J Starr",
+        "doi-asserted-by": "publisher",
+        "first-page": "e1",
+        "journal-title": "PeerJ Comput. Sci.",
+        "key": "BFsdata201618_CR27",
+        "unstructured": "Starr, J. et al. Achieving human and machine accessibility of cited data in scholarly publications. PeerJ Comput. Sci. 1, e1 (2015).",
+        "volume": "1",
+        "year": "2015"
+      },
+      {
+        "key": "BFsdata201618_CR28",
+        "unstructured": "Wilkinson, M., Dumontier, M. & Durbin, P. DataFairPort: The Perl libraries version 0.231 10.5281/zenodo.33584 (2015)."
+      },
+      {
+        "key": "BFsdata201618_CR29",
+        "unstructured": "Data Citation Synthesis Group: Joint Declaration of Data Citation Principles. San Diego CA: FORCE11 https://www.force11.org/datacitation (2014)."
+      },
+      {
+        "DOI": "10.6084/m9.figshare.1362572",
+        "doi-asserted-by": "publisher",
+        "key": "BFsdata201618_CR30",
+        "unstructured": "Ohno-machado, L. et al. NIH BD2K bioCADDIE white paper—Data Discovery Index. http://dx.doi.org/10.6084/m9.figshare.1362572 (2015)."
+      },
+      {
+        "key": "BFsdata201618_CR31",
+        "unstructured": "NIH BD2K bioCADDIE WG3 Members. WG3-MetadataSpecifications: NIH BD2K bioCADDIE Data Discovery Index WG3 Metadata Specification v1 doi:10.5281/zenodo.28019 (2015)."
+      },
+      {
+        "DOI": "10.1093/jamia/ocv048",
+        "author": "MA Musen",
+        "doi-asserted-by": "crossref",
+        "first-page": "1148",
+        "journal-title": "J. Am. Med. Informatics Assoc.",
+        "key": "BFsdata201618_CR32",
+        "unstructured": "Musen, M. A. et al. The center for expanded data annotation and retrieval. J. Am. Med. Informatics Assoc. 22, 1148–1152 (2015).",
+        "volume": "22",
+        "year": "2015"
+      }
+    ],
+    "reference-count": 32,
+    "references-count": 32,
+    "relation": {
+      "has-review": [
+        {
+          "asserted-by": "object",
+          "id": "10.3410/f.726216348.793543848",
+          "id-type": "doi"
+        }
+      ],
+      "is-referenced-by": [
+        {
+          "asserted-by": "object",
+          "id": "10.1186/s12913-026-14123-y",
+          "id-type": "doi"
+        }
+      ]
+    },
+    "resource": {
+      "primary": {
+        "URL": "https://www.nature.com/articles/sdata201618"
+      }
+    },
+    "score": 1,
+    "short-container-title": [
+      "Sci Data"
+    ],
+    "short-title": [],
+    "source": "Crossref",
+    "subject": [],
+    "subtitle": [],
+    "title": [
+      "The FAIR Guiding Principles for scientific data management and stewardship"
+    ],
+    "type": "journal-article",
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "updated-by": [
+      {
+        "DOI": "10.1038/s41597-019-0009-6",
+        "label": "Addendum",
+        "source": "publisher",
+        "type": "addendum",
+        "updated": {
+          "date-parts": [
+            [
+              2019,
+              3,
+              19
+            ]
+          ],
+          "date-time": "2019-03-19T00:00:00Z",
+          "timestamp": 1552953600000
+        }
+      }
+    ],
+    "volume": "3"
+  },
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "status": "ok"
+}
