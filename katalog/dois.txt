@@ -1,0 +1,7 @@
+# GENERIERT -- nicht editieren (Quelle: generieren.py). Aenderungen gehen beim naechsten Lauf verloren.
+10.1038/sdata.2016.18
+10.7717/peerj.4375
+10.1073/pnas.0507655102
+10.1108/eb026583
+10.1002/asi.20416
+10.1515/pdtc-2024-2001
