@@ -1,0 +1,65 @@
+{
+  "ISBN:9783150012413": {
+    "authors": [
+      {
+        "name": "Marcus Aurelius",
+        "url": "http://openlibrary.org/authors/OL133986A/Marcus_Aurelius"
+      }
+    ],
+    "by_statement": "Marcus Aurelius Antoninus. U bers., Einl. und Anm. von Albert Wittstock",
+    "cover": {
+      "large": "https://covers.openlibrary.org/b/id/9929759-L.jpg",
+      "medium": "https://covers.openlibrary.org/b/id/9929759-M.jpg",
+      "small": "https://covers.openlibrary.org/b/id/9929759-S.jpg"
+    },
+    "identifiers": {
+      "isbn_10": [
+        "3150012414"
+      ],
+      "isbn_13": [
+        "9783150012413"
+      ],
+      "oclc": [
+        "180515787",
+        "41107714"
+      ],
+      "openlibrary": [
+        "OL25548938M"
+      ]
+    },
+    "key": "/books/OL25548938M",
+    "number_of_pages": 188,
+    "pagination": "188 S.",
+    "publish_date": "2005",
+    "publish_places": [
+      {
+        "name": "Stuttgart"
+      }
+    ],
+    "publishers": [
+      {
+        "name": "Reclam"
+      }
+    ],
+    "subjects": [
+      {
+        "name": "Stoa",
+        "url": "https://openlibrary.org/subjects/stoa"
+      },
+      {
+        "name": "Ethics",
+        "url": "https://openlibrary.org/subjects/ethics"
+      },
+      {
+        "name": "Stoics",
+        "url": "https://openlibrary.org/subjects/stoics"
+      },
+      {
+        "name": "Life",
+        "url": "https://openlibrary.org/subjects/life"
+      }
+    ],
+    "title": "Selbstbetrachtungen",
+    "url": "http://openlibrary.org/books/OL25548938M/Selbstbetrachtungen"
+  }
+}

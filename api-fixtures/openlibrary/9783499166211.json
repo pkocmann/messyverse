@@ -1,0 +1,207 @@
+{
+  "ISBN:9783499166211": {
+    "authors": [
+      {
+        "name": "Simone de Beauvoir",
+        "url": "http://openlibrary.org/authors/OL63285A/Simone_de_Beauvoir"
+      }
+    ],
+    "cover": {
+      "large": "https://covers.openlibrary.org/b/id/12645085-L.jpg",
+      "medium": "https://covers.openlibrary.org/b/id/12645085-M.jpg",
+      "small": "https://covers.openlibrary.org/b/id/12645085-S.jpg"
+    },
+    "excerpts": [
+      {
+        "comment": "",
+        "first_sentence": true,
+        "text": "Woman? Very simple, say the fanciers of simple formulas: she is a womb, an ovary; she is a female-this word is sufficient to define her."
+      },
+      {
+        "comment": "",
+        "text": "Woman? Very simple, say the fanciers of simple formulas: she is a womb, an ovary; she is a female-this word is sufficient to define her."
+      }
+    ],
+    "identifiers": {
+      "isbn_10": [
+        "3499166216"
+      ],
+      "openlibrary": [
+        "OL37076892M"
+      ]
+    },
+    "key": "/books/OL37076892M",
+    "links": [
+      {
+        "title": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/The_Second_Sex"
+      },
+      {
+        "title": "VIAF ID: 185451435",
+        "url": "https://viaf.org/viaf/185451435"
+      },
+      {
+        "title": "New York Times review",
+        "url": "http://www.nytimes.com/2010/05/30/books/review/Gray-t.html"
+      },
+      {
+        "title": "inventaire.io",
+        "url": "https://inventaire.io/entity/wd:Q470098"
+      }
+    ],
+    "number_of_pages": 715,
+    "publish_date": "September 1991",
+    "publishers": [
+      {
+        "name": "Rowohlt"
+      }
+    ],
+    "subject_people": [
+      {
+        "name": "Simone de Beauvoir (1908-1986)",
+        "url": "https://openlibrary.org/subjects/person:simone_de_beauvoir_(1908-1986)"
+      },
+      {
+        "name": "Judith Thurman",
+        "url": "https://openlibrary.org/subjects/person:judith_thurman"
+      }
+    ],
+    "subject_places": [
+      {
+        "name": "France",
+        "url": "https://openlibrary.org/subjects/place:france"
+      }
+    ],
+    "subject_times": [
+      {
+        "name": "20th Century",
+        "url": "https://openlibrary.org/subjects/time:20th_century"
+      }
+    ],
+    "subjects": [
+      {
+        "name": "Women",
+        "url": "https://openlibrary.org/subjects/women"
+      },
+      {
+        "name": "Sex",
+        "url": "https://openlibrary.org/subjects/sex"
+      },
+      {
+        "name": "Feminism",
+        "url": "https://openlibrary.org/subjects/feminism"
+      },
+      {
+        "name": "Sexual Behavior",
+        "url": "https://openlibrary.org/subjects/sexual_behavior"
+      },
+      {
+        "name": "Non-Fiction",
+        "url": "https://openlibrary.org/subjects/non-fiction"
+      },
+      {
+        "name": "Gender",
+        "url": "https://openlibrary.org/subjects/gender"
+      },
+      {
+        "name": "Gender Studies",
+        "url": "https://openlibrary.org/subjects/gender_studies"
+      },
+      {
+        "name": "Theory",
+        "url": "https://openlibrary.org/subjects/theory"
+      },
+      {
+        "name": "Philosophy",
+        "url": "https://openlibrary.org/subjects/philosophy"
+      },
+      {
+        "name": "Sociology",
+        "url": "https://openlibrary.org/subjects/sociology"
+      },
+      {
+        "name": "Classics",
+        "url": "https://openlibrary.org/subjects/classics"
+      },
+      {
+        "name": "Cultural",
+        "url": "https://openlibrary.org/subjects/cultural"
+      },
+      {
+        "name": "France",
+        "url": "https://openlibrary.org/subjects/france"
+      },
+      {
+        "name": "Sexuality",
+        "url": "https://openlibrary.org/subjects/sexuality"
+      },
+      {
+        "name": "Economics",
+        "url": "https://openlibrary.org/subjects/economics"
+      },
+      {
+        "name": "Biology",
+        "url": "https://openlibrary.org/subjects/biology"
+      },
+      {
+        "name": "Deuxième sexe (Beauvoir, Simone de)",
+        "url": "https://openlibrary.org/subjects/deuxième_sexe_(beauvoir,_simone_de)"
+      },
+      {
+        "name": "SOCIAL SCIENCE / Feminism & Feminist Theory",
+        "url": "https://openlibrary.org/subjects/social_science_/_feminism_&_feminist_theory"
+      },
+      {
+        "name": "PHILOSOPHY / Movements / Existentialism",
+        "url": "https://openlibrary.org/subjects/philosophy_/_movements_/_existentialism"
+      },
+      {
+        "name": "New York Times reviewed",
+        "url": "https://openlibrary.org/subjects/new_york_times_reviewed"
+      },
+      {
+        "name": "Féminisme",
+        "url": "https://openlibrary.org/subjects/féminisme"
+      },
+      {
+        "name": "Society",
+        "url": "https://openlibrary.org/subjects/society"
+      },
+      {
+        "name": "Social sciences",
+        "url": "https://openlibrary.org/subjects/social_sciences"
+      },
+      {
+        "name": "Women's studies",
+        "url": "https://openlibrary.org/subjects/women's_studies"
+      },
+      {
+        "name": "Teori, filosofi",
+        "url": "https://openlibrary.org/subjects/teori,_filosofi"
+      },
+      {
+        "name": "Genus (socialt kön)",
+        "url": "https://openlibrary.org/subjects/genus_(socialt_kön)"
+      },
+      {
+        "name": "Hq1208 .b352 1989",
+        "url": "https://openlibrary.org/subjects/hq1208_.b352_1989"
+      },
+      {
+        "name": "Reference",
+        "url": "https://openlibrary.org/subjects/reference"
+      },
+      {
+        "name": "Dictionaries",
+        "url": "https://openlibrary.org/subjects/dictionaries"
+      },
+      {
+        "name": "Sex role",
+        "url": "https://openlibrary.org/subjects/sex_role"
+      }
+    ],
+    "subtitle": "Sitte und Sexus der Frau",
+    "title": "Das andere Geschlecht",
+    "url": "http://openlibrary.org/books/OL37076892M/Das_andere_Geschlecht"
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "ISBN:9781533358905": {
+    "authors": [
+      {
+        "name": "Rabindranath Tagore",
+        "url": "http://openlibrary.org/authors/OL1770A/Rabindranath_Tagore"
+      },
+      {
+        "name": "Marie Luise Gothein",
+        "url": "http://openlibrary.org/authors/OL4324199A/Marie_Luise_Gothein"
+      },
+      {
+        "name": "William Butler Yeats",
+        "url": "http://openlibrary.org/authors/OL21207A/William_Butler_Yeats"
+      }
+    ],
+    "excerpts": [
+      {
+        "comment": "",
+        "first_sentence": true,
+        "text": "Thou hast made me endless, such is thy pleasure."
+      },
+      {
+        "comment": "",
+        "text": "Thou hast made me endless, such is thy pleasure."
+      }
+    ],
+    "identifiers": {
+      "isbn_13": [
+        "9781533358905"
+      ],
+      "openlibrary": [
+        "OL54745734M"
+      ]
+    },
+    "key": "/books/OL54745734M",
+    "number_of_pages": 118,
+    "publish_date": "2016",
+    "publishers": [
+      {
+        "name": "CreateSpace Independent Publishing Platform"
+      }
+    ],
+    "subject_people": [
+      {
+        "name": "Rabindranath Tagore (1861-1941)",
+        "url": "https://openlibrary.org/subjects/person:rabindranath_tagore_(1861-1941)"
+      },
+      {
+        "name": "Bengali Prose poems",
+        "url": "https://openlibrary.org/subjects/person:bengali_prose_poems"
+      }
+    ],
+    "subjects": [
+      {
+        "name": "Bengali poetry",
+        "url": "https://openlibrary.org/subjects/bengali_poetry"
+      },
+      {
+        "name": "Translations into English",
+        "url": "https://openlibrary.org/subjects/translations_into_english"
+      },
+      {
+        "name": "Translations from Bengali",
+        "url": "https://openlibrary.org/subjects/translations_from_bengali"
+      },
+      {
+        "name": "English poetry",
+        "url": "https://openlibrary.org/subjects/english_poetry"
+      },
+      {
+        "name": "Translations into Vietnamese",
+        "url": "https://openlibrary.org/subjects/translations_into_vietnamese"
+      },
+      {
+        "name": "Bengali Prose poems",
+        "url": "https://openlibrary.org/subjects/bengali_prose_poems"
+      },
+      {
+        "name": "Translations into Telugu",
+        "url": "https://openlibrary.org/subjects/translations_into_telugu"
+      },
+      {
+        "name": "Poetry (poetic works by one author)",
+        "url": "https://openlibrary.org/subjects/poetry_(poetic_works_by_one_author)"
+      },
+      {
+        "name": "Bengali poetry, translations into english",
+        "url": "https://openlibrary.org/subjects/bengali_poetry,_translations_into_english"
+      },
+      {
+        "name": "Songs",
+        "url": "https://openlibrary.org/subjects/songs"
+      },
+      {
+        "name": "Children's songs",
+        "url": "https://openlibrary.org/subjects/children's_songs"
+      },
+      {
+        "name": "Translations into German",
+        "url": "https://openlibrary.org/subjects/translations_into_german"
+      },
+      {
+        "name": "Bengali literature",
+        "url": "https://openlibrary.org/subjects/bengali_literature"
+      },
+      {
+        "name": "Fiction",
+        "url": "https://openlibrary.org/subjects/fiction"
+      },
+      {
+        "name": "Poetry",
+        "url": "https://openlibrary.org/subjects/poetry"
+      },
+      {
+        "name": "Criticism and interpretation",
+        "url": "https://openlibrary.org/subjects/criticism_and_interpretation"
+      },
+      {
+        "name": "Indic poetry",
+        "url": "https://openlibrary.org/subjects/indic_poetry"
+      },
+      {
+        "name": "Yeats, W. B. (William Butler), 1865-1939",
+        "url": "https://openlibrary.org/subjects/yeats,_w._b._(william_butler),_1865-1939"
+      },
+      {
+        "name": "Philosophy",
+        "url": "https://openlibrary.org/subjects/philosophy"
+      },
+      {
+        "name": "Poetry, collections",
+        "url": "https://openlibrary.org/subjects/poetry,_collections"
+      },
+      {
+        "name": "Fiction anthologies & collections",
+        "url": "https://openlibrary.org/subjects/fiction_anthologies_&_collections"
+      },
+      {
+        "name": "Asian",
+        "url": "https://openlibrary.org/subjects/asian"
+      },
+      {
+        "name": "Fiction / General",
+        "url": "https://openlibrary.org/subjects/fiction_/_general"
+      },
+      {
+        "name": "Tagore, rabindranath, 1861-1941",
+        "url": "https://openlibrary.org/subjects/tagore,_rabindranath,_1861-1941"
+      },
+      {
+        "name": "Spirituality",
+        "url": "https://openlibrary.org/subjects/spirituality"
+      },
+      {
+        "name": "Translations into Bambara",
+        "url": "https://openlibrary.org/subjects/translations_into_bambara"
+      },
+      {
+        "name": "Bambara language",
+        "url": "https://openlibrary.org/subjects/bambara_language"
+      },
+      {
+        "name": "Texts",
+        "url": "https://openlibrary.org/subjects/texts"
+      },
+      {
+        "name": "Bengali Ballads",
+        "url": "https://openlibrary.org/subjects/bengali_ballads"
+      },
+      {
+        "name": "Bengali Love poetry",
+        "url": "https://openlibrary.org/subjects/bengali_love_poetry"
+      }
+    ],
+    "subtitle": "Sangesopfer. Hohe Lieder",
+    "title": "Gitanjali",
+    "url": "http://openlibrary.org/books/OL54745734M/Gitanjali",
+    "weight": "0.368"
+  }
+}

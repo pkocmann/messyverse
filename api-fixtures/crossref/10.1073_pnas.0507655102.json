@@ -1,0 +1,252 @@
+{
+  "message": {
+    "DOI": "10.1073/pnas.0507655102",
+    "ISSN": [
+      "0027-8424",
+      "1091-6490"
+    ],
+    "URL": "https://doi.org/10.1073/pnas.0507655102",
+    "abstract": "<jats:p>\n                    I propose the index\n                    <jats:italic>h</jats:italic>\n                    , defined as the number of papers with citation number ≥\n                    <jats:italic>h</jats:italic>\n                    , as a useful index to characterize the scientific output of a researcher.\n                  </jats:p>",
+    "alternative-id": [
+      "10.1073/pnas.0507655102"
+    ],
+    "assertion": [
+      {
+        "group": {
+          "label": "Publication History",
+          "name": "publication_history"
+        },
+        "label": "Received",
+        "name": "received",
+        "order": 0,
+        "value": "2005-08-15"
+      },
+      {
+        "group": {
+          "label": "Publication History",
+          "name": "publication_history"
+        },
+        "label": "Published",
+        "name": "published",
+        "order": 2,
+        "value": "2005-11-07"
+      }
+    ],
+    "author": [
+      {
+        "affiliation": [
+          {
+            "name": "Department of Physics, University of California at San Diego, La Jolla, CA 92093-0319"
+          }
+        ],
+        "family": "Hirsch",
+        "given": "J. E.",
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ],
+        "sequence": "first"
+      }
+    ],
+    "container-title": [
+      "Proceedings of the National Academy of Sciences"
+    ],
+    "content-domain": {
+      "crossmark-restriction": true,
+      "domain": [
+        "www.pnas.org"
+      ]
+    },
+    "created": {
+      "date-parts": [
+        [
+          2005,
+          11,
+          7
+        ]
+      ],
+      "date-time": "2005-11-07T20:33:47Z",
+      "timestamp": 1131395627000
+    },
+    "deposited": {
+      "date-parts": [
+        [
+          2022,
+          4,
+          12
+        ]
+      ],
+      "date-time": "2022-04-12T14:09:21Z",
+      "timestamp": 1649772561000
+    },
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          23
+        ]
+      ],
+      "date-time": "2026-06-23T08:46:07Z",
+      "timestamp": 1782204367420,
+      "version": "3.54.5"
+    },
+    "is-referenced-by-count": 8572,
+    "issn-type": [
+      {
+        "type": "print",
+        "value": "0027-8424"
+      },
+      {
+        "type": "electronic",
+        "value": "1091-6490"
+      }
+    ],
+    "issue": "46",
+    "issued": {
+      "date-parts": [
+        [
+          2005,
+          11,
+          7
+        ]
+      ]
+    },
+    "journal-issue": {
+      "issue": "46",
+      "published-print": {
+        "date-parts": [
+          [
+            2005,
+            11,
+            15
+          ]
+        ]
+      }
+    },
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://pnas.org/doi/pdf/10.1073/pnas.0507655102",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "member": "341",
+    "original-title": [],
+    "page": "16569-16572",
+    "prefix": "10.1073",
+    "published": {
+      "date-parts": [
+        [
+          2005,
+          11,
+          7
+        ]
+      ]
+    },
+    "published-online": {
+      "date-parts": [
+        [
+          2005,
+          11,
+          7
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2005,
+          11,
+          15
+        ]
+      ]
+    },
+    "publisher": "National Academy of Sciences",
+    "reference": [
+      {
+        "first-page": "525",
+        "journal-title": "Eur. Phys. J. E Soft Matter",
+        "key": "e_1_3_2_1_2",
+        "unstructured": "Laherrere, J. & Sornette, D. (1998) Eur. Phys. J. E Soft Matter B2, 525–539.",
+        "volume": "2",
+        "year": "1998"
+      },
+      {
+        "first-page": "131",
+        "journal-title": "Eur. Phys. J. E Soft Matter",
+        "key": "e_1_3_2_2_2",
+        "unstructured": "Redner, S. (1998) Eur. Phys. J. E Soft Matter B4, 131–134.",
+        "volume": "4",
+        "year": "1998"
+      },
+      {
+        "first-page": "49",
+        "journal-title": "Phys. Today",
+        "key": "e_1_3_2_3_2",
+        "unstructured": "Redner, S. (2005) Phys. Today 58, 49–54.",
+        "volume": "58",
+        "year": "2005"
+      },
+      {
+        "DOI": "10.1023/B:SCIE.0000018543.82441.f1",
+        "doi-asserted-by": "publisher",
+        "key": "e_1_3_2_4_2"
+      },
+      {
+        "first-page": "1",
+        "journal-title": "Sci. Watch",
+        "key": "e_1_3_2_5_2",
+        "unstructured": "King, C. (2003) Sci. Watch 14, no. 5, 1.",
+        "volume": "14",
+        "year": "2003"
+      },
+      {
+        "key": "e_1_3_2_6_2",
+        "unstructured": "Hirsch J. E. (2005) arXiv.org E-Print Archive (Aug. 3 2005). Available at http://arxiv.org/abs/physics/0508025."
+      }
+    ],
+    "reference-count": 6,
+    "references-count": 6,
+    "relation": {
+      "has-review": [
+        {
+          "asserted-by": "object",
+          "id": "10.3410/f.1028955.343445",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "object",
+          "id": "10.3410/f.1028955.342697",
+          "id-type": "doi"
+        }
+      ]
+    },
+    "resource": {
+      "primary": {
+        "URL": "https://pnas.org/doi/full/10.1073/pnas.0507655102"
+      }
+    },
+    "score": 1,
+    "short-container-title": [
+      "Proc. Natl. Acad. Sci. U.S.A."
+    ],
+    "short-title": [],
+    "source": "Crossref",
+    "subject": [],
+    "subtitle": [],
+    "title": [
+      "An index to quantify an individual's scientific research output"
+    ],
+    "type": "journal-article",
+    "update-policy": "https://doi.org/10.1073/pnas.cm10313",
+    "volume": "102"
+  },
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "status": "ok"
+}

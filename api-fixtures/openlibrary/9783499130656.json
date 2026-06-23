@@ -1,0 +1,287 @@
+{
+  "ISBN:9783499130656": {
+    "authors": [
+      {
+        "name": "Toni Morrison",
+        "url": "http://openlibrary.org/authors/OL31120A/Toni_Morrison"
+      }
+    ],
+    "cover": {
+      "large": "https://covers.openlibrary.org/b/id/9317263-L.jpg",
+      "medium": "https://covers.openlibrary.org/b/id/9317263-M.jpg",
+      "small": "https://covers.openlibrary.org/b/id/9317263-S.jpg"
+    },
+    "ebooks": [
+      {
+        "availability": "restricted",
+        "formats": {},
+        "preview_url": "https://archive.org/details/menschenkind00toni"
+      }
+    ],
+    "identifiers": {
+      "isbn_13": [
+        "9783499130656"
+      ],
+      "openlibrary": [
+        "OL26398794M"
+      ]
+    },
+    "key": "/books/OL26398794M",
+    "links": [
+      {
+        "title": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Beloved_(novel)"
+      },
+      {
+        "title": "VIAF ID: 179309327",
+        "url": "https://viaf.org/viaf/179309327"
+      },
+      {
+        "title": "inventaire.io",
+        "url": "https://inventaire.io/entity/wd:Q971767"
+      },
+      {
+        "title": "Open Library subject",
+        "url": "https://openlibrary.org/subjects/beloved_(morrison_toni)"
+      }
+    ],
+    "publish_date": "1995",
+    "publishers": [
+      {
+        "name": "Rowohlt"
+      }
+    ],
+    "subject_places": [
+      {
+        "name": "Ohio",
+        "url": "https://openlibrary.org/subjects/place:ohio"
+      },
+      {
+        "name": "United States",
+        "url": "https://openlibrary.org/subjects/place:united_states"
+      }
+    ],
+    "subject_times": [
+      {
+        "name": "19th century",
+        "url": "https://openlibrary.org/subjects/time:19th_century"
+      },
+      {
+        "name": "To 1964",
+        "url": "https://openlibrary.org/subjects/time:to_1964"
+      }
+    ],
+    "subjects": [
+      {
+        "name": "African American History",
+        "url": "https://openlibrary.org/subjects/african_american_history"
+      },
+      {
+        "name": "Ohio",
+        "url": "https://openlibrary.org/subjects/ohio"
+      },
+      {
+        "name": "History",
+        "url": "https://openlibrary.org/subjects/history"
+      },
+      {
+        "name": "19th century",
+        "url": "https://openlibrary.org/subjects/19th_century"
+      },
+      {
+        "name": "Fiction",
+        "url": "https://openlibrary.org/subjects/fiction"
+      },
+      {
+        "name": "Reading Level-Grade 9",
+        "url": "https://openlibrary.org/subjects/reading_level-grade_9"
+      },
+      {
+        "name": "Reading Level-Grade 11",
+        "url": "https://openlibrary.org/subjects/reading_level-grade_11"
+      },
+      {
+        "name": "Reading Level-Grade 10",
+        "url": "https://openlibrary.org/subjects/reading_level-grade_10"
+      },
+      {
+        "name": "Reading Level-Grade 12",
+        "url": "https://openlibrary.org/subjects/reading_level-grade_12"
+      },
+      {
+        "name": "1000blackgirlbooks",
+        "url": "https://openlibrary.org/subjects/1000blackgirlbooks"
+      },
+      {
+        "name": "African American women",
+        "url": "https://openlibrary.org/subjects/african_american_women"
+      },
+      {
+        "name": "Infanticide",
+        "url": "https://openlibrary.org/subjects/infanticide"
+      },
+      {
+        "name": "African Americans",
+        "url": "https://openlibrary.org/subjects/african_americans"
+      },
+      {
+        "name": "Slavery",
+        "url": "https://openlibrary.org/subjects/slavery"
+      },
+      {
+        "name": "Women slaves",
+        "url": "https://openlibrary.org/subjects/women_slaves"
+      },
+      {
+        "name": "Race Relations",
+        "url": "https://openlibrary.org/subjects/race_relations"
+      },
+      {
+        "name": "African Continental Ancestry Group",
+        "url": "https://openlibrary.org/subjects/african_continental_ancestry_group"
+      },
+      {
+        "name": "Modern Literature",
+        "url": "https://openlibrary.org/subjects/modern_literature"
+      },
+      {
+        "name": "Sklaverei",
+        "url": "https://openlibrary.org/subjects/sklaverei"
+      },
+      {
+        "name": "Psychische Verarbeitung",
+        "url": "https://openlibrary.org/subjects/psychische_verarbeitung"
+      },
+      {
+        "name": "Historical fiction",
+        "url": "https://openlibrary.org/subjects/historical_fiction"
+      },
+      {
+        "name": "Social conditions",
+        "url": "https://openlibrary.org/subjects/social_conditions"
+      },
+      {
+        "name": "Schwarze",
+        "url": "https://openlibrary.org/subjects/schwarze"
+      },
+      {
+        "name": "American fiction (fictional works by one author)",
+        "url": "https://openlibrary.org/subjects/american_fiction_(fictional_works_by_one_author)"
+      },
+      {
+        "name": "Ohio, fiction",
+        "url": "https://openlibrary.org/subjects/ohio,_fiction"
+      },
+      {
+        "name": "African americans, fiction",
+        "url": "https://openlibrary.org/subjects/african_americans,_fiction"
+      },
+      {
+        "name": "Slaves, fiction",
+        "url": "https://openlibrary.org/subjects/slaves,_fiction"
+      },
+      {
+        "name": "Fiction, historical",
+        "url": "https://openlibrary.org/subjects/fiction,_historical"
+      },
+      {
+        "name": "Large type books",
+        "url": "https://openlibrary.org/subjects/large_type_books"
+      },
+      {
+        "name": "National Black Family Month",
+        "url": "https://openlibrary.org/subjects/national_black_family_month"
+      },
+      {
+        "name": "nyt:combined-print-and-e-book-fiction=2019-08-25",
+        "url": "https://openlibrary.org/subjects/nyt:combined-print-and-e-book-fiction=2019-08-25"
+      },
+      {
+        "name": "New York Times bestseller",
+        "url": "https://openlibrary.org/subjects/new_york_times_bestseller"
+      },
+      {
+        "name": "Fiction, historical, general",
+        "url": "https://openlibrary.org/subjects/fiction,_historical,_general"
+      },
+      {
+        "name": "Crime, fiction",
+        "url": "https://openlibrary.org/subjects/crime,_fiction"
+      },
+      {
+        "name": "American literature",
+        "url": "https://openlibrary.org/subjects/american_literature"
+      },
+      {
+        "name": "collectionID:EanesChallenge",
+        "url": "https://openlibrary.org/subjects/collectionid:eaneschallenge"
+      },
+      {
+        "name": "Noires américaines",
+        "url": "https://openlibrary.org/subjects/noires_américaines"
+      },
+      {
+        "name": "Romans, nouvelles",
+        "url": "https://openlibrary.org/subjects/romans,_nouvelles"
+      },
+      {
+        "name": "Femmes esclaves",
+        "url": "https://openlibrary.org/subjects/femmes_esclaves"
+      },
+      {
+        "name": "Literary",
+        "url": "https://openlibrary.org/subjects/literary"
+      },
+      {
+        "name": "Enslaved Persons",
+        "url": "https://openlibrary.org/subjects/enslaved_persons"
+      },
+      {
+        "name": "Women",
+        "url": "https://openlibrary.org/subjects/women"
+      },
+      {
+        "name": "collectionID:bannedbooks",
+        "url": "https://openlibrary.org/subjects/collectionid:bannedbooks"
+      },
+      {
+        "name": "African american women--fiction",
+        "url": "https://openlibrary.org/subjects/african_american_women--fiction"
+      },
+      {
+        "name": "Women slaves--fiction",
+        "url": "https://openlibrary.org/subjects/women_slaves--fiction"
+      },
+      {
+        "name": "Infanticide--fiction",
+        "url": "https://openlibrary.org/subjects/infanticide--fiction"
+      },
+      {
+        "name": "Ps3563.o8749 b4 2000",
+        "url": "https://openlibrary.org/subjects/ps3563.o8749_b4_2000"
+      },
+      {
+        "name": "813/.54",
+        "url": "https://openlibrary.org/subjects/813/.54"
+      },
+      {
+        "name": "Afro-americans",
+        "url": "https://openlibrary.org/subjects/afro-americans"
+      },
+      {
+        "name": "Literary collections",
+        "url": "https://openlibrary.org/subjects/literary_collections"
+      },
+      {
+        "name": "Trials, litigation",
+        "url": "https://openlibrary.org/subjects/trials,_litigation"
+      },
+      {
+        "name": "Fictional Works [Publication Type]",
+        "url": "https://openlibrary.org/subjects/fictional_works_[publication_type]"
+      }
+    ],
+    "title": "Menschenkind",
+    "url": "http://openlibrary.org/books/OL26398794M/Menschenkind"
+  }
+}

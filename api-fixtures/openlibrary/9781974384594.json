@@ -1,0 +1,285 @@
+{
+  "ISBN:9781974384594": {
+    "authors": [
+      {
+        "name": "Frederick Douglass",
+        "url": "http://openlibrary.org/authors/OL23684A/Frederick_Douglass"
+      }
+    ],
+    "identifiers": {
+      "isbn_13": [
+        "9781974384594"
+      ],
+      "openlibrary": [
+        "OL48742521M"
+      ]
+    },
+    "key": "/books/OL48742521M",
+    "links": [
+      {
+        "title": "Narrative of the Life of Frederick Douglass, an American Slave-Ebookzy",
+        "url": "https://ebookzy.com/narrative-of-the-life-of-frederick-douglass-an-american-slave/"
+      }
+    ],
+    "pagination": "116",
+    "publish_date": "2017",
+    "publishers": [
+      {
+        "name": "CreateSpace Independent Publishing Platform"
+      }
+    ],
+    "subject_people": [
+      {
+        "name": "Frederick Douglass (1818-1895)",
+        "url": "https://openlibrary.org/subjects/person:frederick_douglass_(1818-1895)"
+      },
+      {
+        "name": "William Lloyd Garrison (1805-1879)",
+        "url": "https://openlibrary.org/subjects/person:william_lloyd_garrison_(1805-1879)"
+      }
+    ],
+    "subject_places": [
+      {
+        "name": "United States",
+        "url": "https://openlibrary.org/subjects/place:united_states"
+      },
+      {
+        "name": "Maryland",
+        "url": "https://openlibrary.org/subjects/place:maryland"
+      },
+      {
+        "name": "États-Unis",
+        "url": "https://openlibrary.org/subjects/place:états-unis"
+      }
+    ],
+    "subjects": [
+      {
+        "name": "Douglass, frederick, 1818-1895",
+        "url": "https://openlibrary.org/subjects/douglass,_frederick,_1818-1895"
+      },
+      {
+        "name": "Biography",
+        "url": "https://openlibrary.org/subjects/biography"
+      },
+      {
+        "name": "African American abolitionists",
+        "url": "https://openlibrary.org/subjects/african_american_abolitionists"
+      },
+      {
+        "name": "Abolitionists",
+        "url": "https://openlibrary.org/subjects/abolitionists"
+      },
+      {
+        "name": "Slaves",
+        "url": "https://openlibrary.org/subjects/slaves"
+      },
+      {
+        "name": "Slavery",
+        "url": "https://openlibrary.org/subjects/slavery"
+      },
+      {
+        "name": "History",
+        "url": "https://openlibrary.org/subjects/history"
+      },
+      {
+        "name": "African Americans",
+        "url": "https://openlibrary.org/subjects/african_americans"
+      },
+      {
+        "name": "Slaves, united states",
+        "url": "https://openlibrary.org/subjects/slaves,_united_states"
+      },
+      {
+        "name": "Biographies &amp; autobiographies",
+        "url": "https://openlibrary.org/subjects/biographies_&amp;_autobiographies"
+      },
+      {
+        "name": "General",
+        "url": "https://openlibrary.org/subjects/general"
+      },
+      {
+        "name": "Personal narratives",
+        "url": "https://openlibrary.org/subjects/personal_narratives"
+      },
+      {
+        "name": "African americans, biography",
+        "url": "https://openlibrary.org/subjects/african_americans,_biography"
+      },
+      {
+        "name": "Dictionaries",
+        "url": "https://openlibrary.org/subjects/dictionaries"
+      },
+      {
+        "name": "English language",
+        "url": "https://openlibrary.org/subjects/english_language"
+      },
+      {
+        "name": "Historical",
+        "url": "https://openlibrary.org/subjects/historical"
+      },
+      {
+        "name": "BIOGRAPHY & AUTOBIOGRAPHY",
+        "url": "https://openlibrary.org/subjects/biography_&_autobiography"
+      },
+      {
+        "name": "Korean",
+        "url": "https://openlibrary.org/subjects/korean"
+      },
+      {
+        "name": "Antislavery movements, united states",
+        "url": "https://openlibrary.org/subjects/antislavery_movements,_united_states"
+      },
+      {
+        "name": "United states, history, 19th century",
+        "url": "https://openlibrary.org/subjects/united_states,_history,_19th_century"
+      },
+      {
+        "name": "Enslaved persons, united states",
+        "url": "https://openlibrary.org/subjects/enslaved_persons,_united_states"
+      },
+      {
+        "name": "BIOGRAPHY & AUTOBIOGRAPHY / Cultural Heritage",
+        "url": "https://openlibrary.org/subjects/biography_&_autobiography_/_cultural_heritage"
+      },
+      {
+        "name": "HISTORY / United States / Civil War Period (1850-1877)",
+        "url": "https://openlibrary.org/subjects/history_/_united_states_/_civil_war_period_(1850-1877)"
+      },
+      {
+        "name": "SOCIAL SCIENCE / Ethnic Studies / African American Studies",
+        "url": "https://openlibrary.org/subjects/social_science_/_ethnic_studies_/_african_american_studies"
+      },
+      {
+        "name": "Douglass, frederick , 1818-1895",
+        "url": "https://openlibrary.org/subjects/douglass,_frederick_,_1818-1895"
+      },
+      {
+        "name": "African american abolitionists--biography",
+        "url": "https://openlibrary.org/subjects/african_american_abolitionists--biography"
+      },
+      {
+        "name": "Abolitionists--biography",
+        "url": "https://openlibrary.org/subjects/abolitionists--biography"
+      },
+      {
+        "name": "Slaves--united states--biography",
+        "url": "https://openlibrary.org/subjects/slaves--united_states--biography"
+      },
+      {
+        "name": "E449 .d749 2014",
+        "url": "https://openlibrary.org/subjects/e449_.d749_2014"
+      },
+      {
+        "name": "973.8/092 b",
+        "url": "https://openlibrary.org/subjects/973.8/092_b"
+      },
+      {
+        "name": "Bio002000 his036050 soc001000",
+        "url": "https://openlibrary.org/subjects/bio002000_his036050_soc001000"
+      },
+      {
+        "name": "Autobiography",
+        "url": "https://openlibrary.org/subjects/autobiography"
+      },
+      {
+        "name": "United states, history",
+        "url": "https://openlibrary.org/subjects/united_states,_history"
+      },
+      {
+        "name": "Fiction, historical, general",
+        "url": "https://openlibrary.org/subjects/fiction,_historical,_general"
+      },
+      {
+        "name": "Slaves' writings",
+        "url": "https://openlibrary.org/subjects/slaves'_writings"
+      },
+      {
+        "name": "African American abolitionists -- Biography",
+        "url": "https://openlibrary.org/subjects/african_american_abolitionists_--_biography"
+      },
+      {
+        "name": "Abolitionists -- United States -- Biography",
+        "url": "https://openlibrary.org/subjects/abolitionists_--_united_states_--_biography"
+      },
+      {
+        "name": "Slaves -- United States -- Biography",
+        "url": "https://openlibrary.org/subjects/slaves_--_united_states_--_biography"
+      },
+      {
+        "name": "Abolitionnistes noirs américains",
+        "url": "https://openlibrary.org/subjects/abolitionnistes_noirs_américains"
+      },
+      {
+        "name": "Biographies",
+        "url": "https://openlibrary.org/subjects/biographies"
+      },
+      {
+        "name": "Abolitionnistes",
+        "url": "https://openlibrary.org/subjects/abolitionnistes"
+      },
+      {
+        "name": "Esclaves",
+        "url": "https://openlibrary.org/subjects/esclaves"
+      },
+      {
+        "name": "Collectors and collecting",
+        "url": "https://openlibrary.org/subjects/collectors_and_collecting"
+      },
+      {
+        "name": "Social sciences",
+        "url": "https://openlibrary.org/subjects/social_sciences"
+      },
+      {
+        "name": "Language arts",
+        "url": "https://openlibrary.org/subjects/language_arts"
+      },
+      {
+        "name": "Antislavery movements",
+        "url": "https://openlibrary.org/subjects/antislavery_movements"
+      },
+      {
+        "name": "Mouvements antiesclavagistes",
+        "url": "https://openlibrary.org/subjects/mouvements_antiesclavagistes"
+      },
+      {
+        "name": "Histoire",
+        "url": "https://openlibrary.org/subjects/histoire"
+      },
+      {
+        "name": "Long Now Manual for Civilization",
+        "url": "https://openlibrary.org/subjects/long_now_manual_for_civilization"
+      },
+      {
+        "name": "Slavar",
+        "url": "https://openlibrary.org/subjects/slavar"
+      },
+      {
+        "name": "Biografi",
+        "url": "https://openlibrary.org/subjects/biografi"
+      },
+      {
+        "name": "Abolitionister",
+        "url": "https://openlibrary.org/subjects/abolitionister"
+      },
+      {
+        "name": "Slaveri",
+        "url": "https://openlibrary.org/subjects/slaveri"
+      },
+      {
+        "name": "Historia",
+        "url": "https://openlibrary.org/subjects/historia"
+      },
+      {
+        "name": "Women slaves",
+        "url": "https://openlibrary.org/subjects/women_slaves"
+      },
+      {
+        "name": "Social conditions",
+        "url": "https://openlibrary.org/subjects/social_conditions"
+      }
+    ],
+    "title": "Narrative of the Life of Frederick Douglass",
+    "url": "http://openlibrary.org/books/OL48742521M/Narrative_of_the_Life_of_Frederick_Douglass",
+    "weight": "0.232"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "ISBN:9783458333593": {
+    "authors": [
+      {
+        "name": "Murasaki Shikibu",
+        "url": "http://openlibrary.org/authors/OL365212A/Murasaki_Shikibu"
+      }
+    ],
+    "cover": {
+      "large": "https://covers.openlibrary.org/b/id/3205096-L.jpg",
+      "medium": "https://covers.openlibrary.org/b/id/3205096-M.jpg",
+      "small": "https://covers.openlibrary.org/b/id/3205096-S.jpg"
+    },
+    "identifiers": {
+      "goodreads": [
+        "2143192"
+      ],
+      "isbn_10": [
+        "3458333592"
+      ],
+      "isbn_13": [
+        "9783458333593"
+      ],
+      "librarything": [
+        "18323"
+      ],
+      "openlibrary": [
+        "OL12727240M"
+      ]
+    },
+    "key": "/books/OL12727240M",
+    "number_of_pages": 583,
+    "publish_date": "January 1, 1995",
+    "publishers": [
+      {
+        "name": "Insel, Frankfurt"
+      }
+    ],
+    "title": "Die Geschichte vom Prinzen Genji. 2 Bde.",
+    "url": "http://openlibrary.org/books/OL12727240M/Die_Geschichte_vom_Prinzen_Genji._2_Bde.",
+    "weight": "1.4 pounds"
+  }
+}

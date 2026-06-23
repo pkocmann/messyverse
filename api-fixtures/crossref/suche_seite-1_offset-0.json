@@ -1,0 +1,237 @@
+{
+  "message": {
+    "facets": {},
+    "items": [
+      {
+        "DOI": "10.5771/0943-7444-1986-3-133",
+        "author": [
+          {
+            "affiliation": [],
+            "family": "Harris",
+            "given": "Kevin",
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ],
+            "sequence": "first"
+          }
+        ],
+        "container-title": [
+          "KNOWLEDGE ORGANIZATION"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              1986
+            ]
+          ]
+        },
+        "title": [
+          "Part-controlled vocabulary for literature studies"
+        ],
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.1093/acprof:oso/9780190210274.003.0004",
+        "author": [
+          {
+            "affiliation": [],
+            "family": "Dóczi",
+            "given": "Brigitta",
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ],
+            "sequence": "first"
+          },
+          {
+            "affiliation": [],
+            "family": "Kormos",
+            "given": "Judit",
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ],
+            "sequence": "additional"
+          }
+        ],
+        "container-title": [
+          "Longitudinal Developments in Vocabulary Knowledge and Lexical Organization"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2016,
+              1,
+              1
+            ]
+          ]
+        },
+        "title": [
+          "Longitudinal Developments in the Depth of Vocabulary Knowledge"
+        ],
+        "type": "book-chapter"
+      },
+      {
+        "DOI": "10.1093/acprof:oso/9780190210274.003.0003",
+        "author": [
+          {
+            "affiliation": [],
+            "family": "Dóczi",
+            "given": "Brigitta",
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ],
+            "sequence": "first"
+          },
+          {
+            "affiliation": [],
+            "family": "Kormos",
+            "given": "Judit",
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ],
+            "sequence": "additional"
+          }
+        ],
+        "container-title": [
+          "Longitudinal Developments in Vocabulary Knowledge and Lexical Organization"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2016,
+              1,
+              1
+            ]
+          ]
+        },
+        "title": [
+          "Longitudinal Developments in the Breadth of Vocabulary Knowledge"
+        ],
+        "type": "book-chapter"
+      },
+      {
+        "DOI": "10.1093/acprof:oso/9780190210274.003.0008",
+        "author": [
+          {
+            "affiliation": [],
+            "family": "Dóczi",
+            "given": "Brigitta",
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ],
+            "sequence": "first"
+          },
+          {
+            "affiliation": [],
+            "family": "Kormos",
+            "given": "Judit",
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ],
+            "sequence": "additional"
+          }
+        ],
+        "container-title": [
+          "Longitudinal Developments in Vocabulary Knowledge and Lexical Organization"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2016,
+              1,
+              1
+            ]
+          ]
+        },
+        "title": [
+          "Research Implications for Vocabulary Teaching"
+        ],
+        "type": "book-chapter"
+      },
+      {
+        "DOI": "10.5771/0943-7444-2007-4-247",
+        "author": [
+          {
+            "affiliation": [],
+            "family": "Golub",
+            "given": "Koraljka",
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ],
+            "sequence": "first"
+          },
+          {
+            "affiliation": [],
+            "family": "Hamon",
+            "given": "Thierry",
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ],
+            "sequence": "additional"
+          },
+          {
+            "affiliation": [],
+            "family": "Ardö",
+            "given": "Anders",
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ],
+            "sequence": "additional"
+          }
+        ],
+        "container-title": [
+          "KNOWLEDGE ORGANIZATION"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2007
+            ]
+          ]
+        },
+        "title": [
+          "Automated Classification of Textual Documents Based on a Controlled Vocabulary in Engineering"
+        ],
+        "type": "journal-article"
+      }
+    ],
+    "items-per-page": 5,
+    "query": {
+      "search-terms": null,
+      "start-index": 0
+    },
+    "total-results": 1911927
+  },
+  "message-type": "work-list",
+  "message-version": "1.0.0",
+  "status": "ok"
+}

@@ -1,0 +1,432 @@
+{
+  "ISBN:9783518111383": {
+    "authors": [
+      {
+        "name": "Chinua Achebe",
+        "url": "http://openlibrary.org/authors/OL78910A/Chinua_Achebe"
+      }
+    ],
+    "identifiers": {
+      "goodreads": [
+        "947550"
+      ],
+      "isbn_10": [
+        "3518111388"
+      ],
+      "isbn_13": [
+        "9783518111383"
+      ],
+      "librarything": [
+        "5061284"
+      ],
+      "openlibrary": [
+        "OL12761384M"
+      ]
+    },
+    "key": "/books/OL12761384M",
+    "links": [
+      {
+        "title": "VIAF ID: 177467671 (Work)",
+        "url": "http://viaf.org/viaf/177467671"
+      },
+      {
+        "title": "Things Fall Apart - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Things_Fall_Apart"
+      },
+      {
+        "title": "SparkNotes: Things Fall Apart",
+        "url": "https://www.sparknotes.com/lit/things/"
+      },
+      {
+        "title": "Chinua Achebe’s Things Fall Apart 60 years on and the power of Africa’s universal English",
+        "url": "https://qz.com/africa/1480548/chinua-achebes-things-fall-apart-at-60-and-african-english/"
+      },
+      {
+        "title": "Things Fall Apart by Chinua Achebe",
+        "url": "https://www.theguardian.com/books/2010/jan/31/things-fall-apart-achebe-review"
+      },
+      {
+        "title": "shmoop.com/things-fall-apart",
+        "url": "https://www.shmoop.com/things-fall-apart/"
+      },
+      {
+        "title": "Things Fall Apart | Summary, Themes, & Facts | Britannica.com",
+        "url": "https://www.britannica.com/topic/Things-Fall-Apart"
+      }
+    ],
+    "number_of_pages": 227,
+    "publish_date": "December 31, 1998",
+    "publishers": [
+      {
+        "name": "Suhrkamp Verlag"
+      }
+    ],
+    "subject_people": [
+      {
+        "name": "Chinua Achebe",
+        "url": "https://openlibrary.org/subjects/person:chinua_achebe"
+      },
+      {
+        "name": "Igbo (African people)",
+        "url": "https://openlibrary.org/subjects/person:igbo_(african_people)"
+      },
+      {
+        "name": "Igbo",
+        "url": "https://openlibrary.org/subjects/person:igbo"
+      },
+      {
+        "name": "Okonkwo",
+        "url": "https://openlibrary.org/subjects/person:okonkwo"
+      },
+      {
+        "name": "Nwoye",
+        "url": "https://openlibrary.org/subjects/person:nwoye"
+      },
+      {
+        "name": "Ezinma",
+        "url": "https://openlibrary.org/subjects/person:ezinma"
+      },
+      {
+        "name": "Ikemefuna",
+        "url": "https://openlibrary.org/subjects/person:ikemefuna"
+      },
+      {
+        "name": "Mr. Brown",
+        "url": "https://openlibrary.org/subjects/person:mr._brown"
+      },
+      {
+        "name": "James Smith",
+        "url": "https://openlibrary.org/subjects/person:james_smith"
+      },
+      {
+        "name": "Uchendu",
+        "url": "https://openlibrary.org/subjects/person:uchendu"
+      },
+      {
+        "name": "The District Commissioner",
+        "url": "https://openlibrary.org/subjects/person:the_district_commissioner"
+      },
+      {
+        "name": "Unoka",
+        "url": "https://openlibrary.org/subjects/person:unoka"
+      },
+      {
+        "name": "Obierika",
+        "url": "https://openlibrary.org/subjects/person:obierika"
+      },
+      {
+        "name": "Ekwefi",
+        "url": "https://openlibrary.org/subjects/person:ekwefi"
+      },
+      {
+        "name": "Enoch",
+        "url": "https://openlibrary.org/subjects/person:enoch"
+      },
+      {
+        "name": "Ogbuefi Ezeudu",
+        "url": "https://openlibrary.org/subjects/person:ogbuefi_ezeudu"
+      },
+      {
+        "name": "Chielo",
+        "url": "https://openlibrary.org/subjects/person:chielo"
+      },
+      {
+        "name": "Akunna",
+        "url": "https://openlibrary.org/subjects/person:akunna"
+      },
+      {
+        "name": "Nwakibie",
+        "url": "https://openlibrary.org/subjects/person:nwakibie"
+      },
+      {
+        "name": "Mr. Kiaga",
+        "url": "https://openlibrary.org/subjects/person:mr._kiaga"
+      },
+      {
+        "name": "Okagbue Uyanwa",
+        "url": "https://openlibrary.org/subjects/person:okagbue_uyanwa"
+      },
+      {
+        "name": "Maduka",
+        "url": "https://openlibrary.org/subjects/person:maduka"
+      },
+      {
+        "name": "Obiageli",
+        "url": "https://openlibrary.org/subjects/person:obiageli"
+      },
+      {
+        "name": "Ojiugo",
+        "url": "https://openlibrary.org/subjects/person:ojiugo"
+      }
+    ],
+    "subject_places": [
+      {
+        "name": "Umuofia",
+        "url": "https://openlibrary.org/subjects/place:umuofia"
+      },
+      {
+        "name": "Nigeria",
+        "url": "https://openlibrary.org/subjects/place:nigeria"
+      },
+      {
+        "name": "Mbanta",
+        "url": "https://openlibrary.org/subjects/place:mbanta"
+      }
+    ],
+    "subject_times": [
+      {
+        "name": "late 19th century",
+        "url": "https://openlibrary.org/subjects/time:late_19th_century"
+      }
+    ],
+    "subjects": [
+      {
+        "name": "20th century literature",
+        "url": "https://openlibrary.org/subjects/20th_century_literature"
+      },
+      {
+        "name": "Christianity",
+        "url": "https://openlibrary.org/subjects/christianity"
+      },
+      {
+        "name": "masculinity",
+        "url": "https://openlibrary.org/subjects/masculinity"
+      },
+      {
+        "name": "British colonialism",
+        "url": "https://openlibrary.org/subjects/british_colonialism"
+      },
+      {
+        "name": "LANGUAGE & LITERARY STUDIES",
+        "url": "https://openlibrary.org/subjects/language_&_literary_studies"
+      },
+      {
+        "name": "CONTEMPORARY FICTION",
+        "url": "https://openlibrary.org/subjects/contemporary_fiction"
+      },
+      {
+        "name": "literature",
+        "url": "https://openlibrary.org/subjects/literature"
+      },
+      {
+        "name": "Race relations",
+        "url": "https://openlibrary.org/subjects/race_relations"
+      },
+      {
+        "name": "Men",
+        "url": "https://openlibrary.org/subjects/men"
+      },
+      {
+        "name": "British",
+        "url": "https://openlibrary.org/subjects/british"
+      },
+      {
+        "name": "Fiction",
+        "url": "https://openlibrary.org/subjects/fiction"
+      },
+      {
+        "name": "African fiction",
+        "url": "https://openlibrary.org/subjects/african_fiction"
+      },
+      {
+        "name": "Nigerian fiction",
+        "url": "https://openlibrary.org/subjects/nigerian_fiction"
+      },
+      {
+        "name": "colonization",
+        "url": "https://openlibrary.org/subjects/colonization"
+      },
+      {
+        "name": "historical fiction",
+        "url": "https://openlibrary.org/subjects/historical_fiction"
+      },
+      {
+        "name": "Ficción",
+        "url": "https://openlibrary.org/subjects/ficción"
+      },
+      {
+        "name": "Hombres",
+        "url": "https://openlibrary.org/subjects/hombres"
+      },
+      {
+        "name": "Missionaries",
+        "url": "https://openlibrary.org/subjects/missionaries"
+      },
+      {
+        "name": "Novela histórica",
+        "url": "https://openlibrary.org/subjects/novela_histórica"
+      },
+      {
+        "name": "Readers (Adult)",
+        "url": "https://openlibrary.org/subjects/readers_(adult)"
+      },
+      {
+        "name": "Relaciones raciales",
+        "url": "https://openlibrary.org/subjects/relaciones_raciales"
+      },
+      {
+        "name": "Social life and customs",
+        "url": "https://openlibrary.org/subjects/social_life_and_customs"
+      },
+      {
+        "name": "Tribes",
+        "url": "https://openlibrary.org/subjects/tribes"
+      },
+      {
+        "name": "open_syllabus_project",
+        "url": "https://openlibrary.org/subjects/open_syllabus_project"
+      },
+      {
+        "name": "Long Now Manual for Civilization",
+        "url": "https://openlibrary.org/subjects/long_now_manual_for_civilization"
+      },
+      {
+        "name": "African literature",
+        "url": "https://openlibrary.org/subjects/african_literature"
+      },
+      {
+        "name": "audiobooks",
+        "url": "https://openlibrary.org/subjects/audiobooks"
+      },
+      {
+        "name": "Igbo (African people)",
+        "url": "https://openlibrary.org/subjects/igbo_(african_people)"
+      },
+      {
+        "name": "Classics",
+        "url": "https://openlibrary.org/subjects/classics"
+      },
+      {
+        "name": "Juvenile Fiction",
+        "url": "https://openlibrary.org/subjects/juvenile_fiction"
+      },
+      {
+        "name": "Children: Young Adult (Gr. 10-12)",
+        "url": "https://openlibrary.org/subjects/children:_young_adult_(gr._10-12)"
+      },
+      {
+        "name": "Skönlitteratur",
+        "url": "https://openlibrary.org/subjects/skönlitteratur"
+      },
+      {
+        "name": "Briten",
+        "url": "https://openlibrary.org/subjects/briten"
+      },
+      {
+        "name": "Missionärer",
+        "url": "https://openlibrary.org/subjects/missionärer"
+      },
+      {
+        "name": "Igbo (folk)",
+        "url": "https://openlibrary.org/subjects/igbo_(folk)"
+      },
+      {
+        "name": "FICTION / Political",
+        "url": "https://openlibrary.org/subjects/fiction_/_political"
+      },
+      {
+        "name": "Kolonialismus",
+        "url": "https://openlibrary.org/subjects/kolonialismus"
+      },
+      {
+        "name": "FICTION / Literary",
+        "url": "https://openlibrary.org/subjects/fiction_/_literary"
+      },
+      {
+        "name": "Fiction (fictional works by one author)",
+        "url": "https://openlibrary.org/subjects/fiction_(fictional_works_by_one_author)"
+      },
+      {
+        "name": "Nigeria, fiction",
+        "url": "https://openlibrary.org/subjects/nigeria,_fiction"
+      },
+      {
+        "name": "Fiction, general",
+        "url": "https://openlibrary.org/subjects/fiction,_general"
+      },
+      {
+        "name": "Romans",
+        "url": "https://openlibrary.org/subjects/romans"
+      },
+      {
+        "name": "Hommes",
+        "url": "https://openlibrary.org/subjects/hommes"
+      },
+      {
+        "name": "Relations raciales",
+        "url": "https://openlibrary.org/subjects/relations_raciales"
+      },
+      {
+        "name": "Britanniques",
+        "url": "https://openlibrary.org/subjects/britanniques"
+      },
+      {
+        "name": "Fiction, historical, general",
+        "url": "https://openlibrary.org/subjects/fiction,_historical,_general"
+      },
+      {
+        "name": "Criticism and interpretation",
+        "url": "https://openlibrary.org/subjects/criticism_and_interpretation"
+      },
+      {
+        "name": "Readers (Secondary)",
+        "url": "https://openlibrary.org/subjects/readers_(secondary)"
+      },
+      {
+        "name": "History",
+        "url": "https://openlibrary.org/subjects/history"
+      },
+      {
+        "name": "Wrestlers",
+        "url": "https://openlibrary.org/subjects/wrestlers"
+      },
+      {
+        "name": "Igbo (african people)--fiction",
+        "url": "https://openlibrary.org/subjects/igbo_(african_people)--fiction"
+      },
+      {
+        "name": "Wrestlers--nigeria--fiction",
+        "url": "https://openlibrary.org/subjects/wrestlers--nigeria--fiction"
+      },
+      {
+        "name": "823",
+        "url": "https://openlibrary.org/subjects/823"
+      },
+      {
+        "name": "Literary",
+        "url": "https://openlibrary.org/subjects/literary"
+      },
+      {
+        "name": "Political",
+        "url": "https://openlibrary.org/subjects/political"
+      },
+      {
+        "name": "Cultural heritage",
+        "url": "https://openlibrary.org/subjects/cultural_heritage"
+      },
+      {
+        "name": "Historical",
+        "url": "https://openlibrary.org/subjects/historical"
+      },
+      {
+        "name": "English & college success -> english -> fiction",
+        "url": "https://openlibrary.org/subjects/english_&_college_success_->_english_->_fiction"
+      },
+      {
+        "name": "English literature",
+        "url": "https://openlibrary.org/subjects/english_literature"
+      },
+      {
+        "name": "Ibo (Peuple d'Afrique)",
+        "url": "https://openlibrary.org/subjects/ibo_(peuple_d'afrique)"
+      },
+      {
+        "name": "Romans, nouvelles",
+        "url": "https://openlibrary.org/subjects/romans,_nouvelles"
+      }
+    ],
+    "title": "Okonkwo oder Das Alte stürzt",
+    "url": "http://openlibrary.org/books/OL12761384M/Okonkwo_oder_Das_Alte_stürzt",
+    "weight": "6.1 ounces"
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "message": {
+    "facets": {},
+    "items": [
+      {
+        "DOI": "10.1093/acprof:oso/9780190210274.003.0007",
+        "author": [
+          {
+            "affiliation": [],
+            "family": "Dóczi",
+            "given": "Brigitta",
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ],
+            "sequence": "first"
+          },
+          {
+            "affiliation": [],
+            "family": "Kormos",
+            "given": "Judit",
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ],
+            "sequence": "additional"
+          }
+        ],
+        "container-title": [
+          "Longitudinal Developments in Vocabulary Knowledge and Lexical Organization"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2016,
+              1,
+              1
+            ]
+          ]
+        },
+        "title": [
+          "Individual Differences in Vocabulary Development"
+        ],
+        "type": "book-chapter"
+      },
+      {
+        "DOI": "10.1093/acprof:oso/9780190210274.003.0006",
+        "author": [
+          {
+            "affiliation": [],
+            "family": "Dóczi",
+            "given": "Brigitta",
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ],
+            "sequence": "first"
+          },
+          {
+            "affiliation": [],
+            "family": "Kormos",
+            "given": "Judit",
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ],
+            "sequence": "additional"
+          }
+        ],
+        "container-title": [
+          "Longitudinal Developments in Vocabulary Knowledge and Lexical Organization"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2016,
+              1,
+              1
+            ]
+          ]
+        },
+        "title": [
+          "Second Language Learning and Vocabulary Development"
+        ],
+        "type": "book-chapter"
+      },
+      {
+        "DOI": "10.1093/acprof:oso/9780190210274.001.0001",
+        "author": [
+          {
+            "affiliation": [],
+            "family": "Dóczi",
+            "given": "Brigitta",
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ],
+            "sequence": "first"
+          },
+          {
+            "affiliation": [],
+            "family": "Kormos",
+            "given": "Judit",
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ],
+            "sequence": "additional"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2016,
+              1,
+              1
+            ]
+          ]
+        },
+        "title": [
+          "Longitudinal Developments in Vocabulary Knowledge and Lexical Organization"
+        ],
+        "type": "monograph"
+      },
+      {
+        "DOI": "10.18329/09757597/2021/14206",
+        "author": [
+          {
+            "affiliation": [],
+            "name": "The University of Burdwan",
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ],
+            "sequence": "first"
+          },
+          {
+            "affiliation": [],
+            "family": "Mandal",
+            "given": "S",
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ],
+            "sequence": "first"
+          }
+        ],
+        "container-title": [
+          "World Digital Libraries: An International Journal"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2021
+            ]
+          ]
+        },
+        "title": [
+          "Controlled Vocabulary System for Knowledge Organization: designing a framework"
+        ],
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.1016/b978-0-08-102025-8.00011-9",
+        "author": [
+          {
+            "affiliation": [],
+            "family": "Chatterjee",
+            "given": "Amitabha",
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ],
+            "sequence": "first"
+          }
+        ],
+        "container-title": [
+          "Elements of Information Organization and Dissemination"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2017
+            ]
+          ]
+        },
+        "title": [
+          "Controlled Vocabulary (CV)"
+        ],
+        "type": "book-chapter"
+      }
+    ],
+    "items-per-page": 5,
+    "query": {
+      "search-terms": null,
+      "start-index": 5
+    },
+    "total-results": 1911927
+  },
+  "message-type": "work-list",
+  "message-version": "1.0.0",
+  "status": "ok"
+}
