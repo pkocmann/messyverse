@@ -1,0 +1,17 @@
+{
+  "pflicht_facetten": [
+    "Literatur & Sprache",
+    "Gesellschaft & Soziales",
+    "Philosophie & Ethik"
+  ],
+  "verfahren": "Constraint-Pruefung (E12): jedes vergebene Schlagwort muss aus dem kontrollierten Vokabular katalog/schlagworte.csv stammen; die Pflicht-Facetten muessen besetzt sein.",
+  "vokabular": [
+    "Philosophie & Ethik",
+    "Geschichte & Politik",
+    "Literatur & Sprache",
+    "Gesellschaft & Soziales",
+    "Naturwissenschaft & Technik",
+    "Religion & Weltanschauung",
+    "Kunst & Kultur"
+  ]
+}
