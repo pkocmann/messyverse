@@ -329,25 +329,41 @@ def gen_loesungen():
     schreibe_text(ldir / "pdf_extraktion.golden.json",
                   json.dumps(pdf_golden, ensure_ascii=False, indent=2, sort_keys=True) + "\n")
 
-    # 3) Datei-Sortieren: Digest-first (E15) -- nur Hash des Soll-Endzustands + undatiert-Liste,
-    #    NICHT die Antwortzuordnung selbst.
-    soll = []
-    undatiert = []
-    for m in MAGAZIN:
-        if m["datum"] is None:
-            undatiert.append(m["name"])
-        else:
-            # Soll-Zielname: JJJJ-MM-TT__<vorgang-slug>.pdf
-            slug = "".join(ch.lower() if ch.isalnum() else "-" for ch in (m["text"] or "datei")).strip("-")[:24]
-            soll.append(f"{m['datum']}__{slug}.pdf")
-    soll_sorted = sorted(soll)
-    digest = hashlib.sha256(("\n".join(soll_sorted)).encode("utf-8")).hexdigest()
-    schreibe_text(ldir / "datei_sortieren.manifest.json", json.dumps({
-        "verfahren": "Digest-first (E15): committet wird nur der SHA-256 des sortierten Soll-Endzustands, "
-                     "nicht die Zuordnung. Die Pruefzelle bildet denselben Digest ueber den TN-Output.",
-        "soll_anzahl_datierbar": len(soll_sorted),
-        "soll_sha256": digest,
-        "sammelordner_undatiert": sorted(undatiert),
+    # 2b) DOI-Lookup Golden (Klartext OK: aus oeffentlicher Welt herleitbar)
+    doi_golden = {}
+    crdir = ROOT / "api-fixtures" / "crossref"
+    for doi in DOIS:
+        m = json.loads((crdir / f"{doi.replace('/', '_')}.json").read_text(encoding="utf-8")).get("message", {})
+        jahr = None
+        dp = m.get("issued", {}).get("date-parts", [[None]])
+        if dp and dp[0]:
+            jahr = dp[0][0]
+        doi_golden[doi] = {"titel": (m.get("title") or [None])[0],
+                           "container": (m.get("container-title") or [None])[0], "jahr": jahr}
+    schreibe_text(ldir / "doi_lookup.golden.json",
+                  json.dumps(doi_golden, ensure_ascii=False, indent=2, sort_keys=True) + "\n")
+
+    # 2c) Pagination-Golden: die ueber rows/offset geblaetterten DOIs zu EINER Liste zusammengefuehrt
+    suche_dois = []
+    for seite in sorted(crdir.glob("suche_seite-*.json")):
+        for it in json.loads(seite.read_text(encoding="utf-8")).get("message", {}).get("items", []):
+            if it.get("DOI"):
+                suche_dois.append(it["DOI"])
+    schreibe_text(ldir / "doi_suche.golden.json", json.dumps({
+        "verfahren": "Pagination ueber rows/offset: die drei Seiten zu einer Treffer-Liste zusammenfuehren.",
+        "anzahl": len(suche_dois), "dois": suche_dois,
+    }, ensure_ascii=False, indent=2, sort_keys=True) + "\n")
+
+    # 3) Datei-Sortieren: Klartext-Mapping (E15(2): Datum steht ohnehin im oeffentlichen Datei-Inhalt).
+    #    Soll = Datum je Datei bzw. "undatiert"; zusaetzlich ein Integritaets-Digest als Sekundaer-Check.
+    mapping = {m["name"]: (m["datum"] if m["datum"] else "undatiert") for m in MAGAZIN}
+    digest = hashlib.sha256(json.dumps(mapping, sort_keys=True, ensure_ascii=False).encode("utf-8")).hexdigest()
+    schreibe_text(ldir / "datei_sortieren.golden.json", json.dumps({
+        "verfahren": "Soll-Datum je Datei (ISO) bzw. 'undatiert'. Die Pruefzelle vergleicht dein Mapping "
+                     "Dateiname -> Datum gegen dieses Soll und benennt Abweichungen.",
+        "mapping": mapping,
+        "sammelordner_undatiert": sorted(n for n, d in mapping.items() if d == "undatiert"),
+        "integritaets_sha256": digest,
     }, ensure_ascii=False, indent=2, sort_keys=True) + "\n")
 
     # 4) Verschlagwortung: Constraint-Manifest (kein exaktes Soll, E12)
