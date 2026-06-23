@@ -1,0 +1,26 @@
+{
+  "integritaets_sha256": "9caae668261cff460e5a68d251f1904f5757d00700790b5176220564f12d1820",
+  "mapping": {
+    "2025_11_05 Eingang.pdf": "2025-11-05",
+    "Behoerden-Uebersicht_Aussenstelle.pdf": "2025-06-20",
+    "Bestellung 2025_09.pdf": "2025-09-12",
+    "DOC20250912.pdf": "2025-09-12",
+    "IMG_0421.pdf": "undatiert",
+    "Kopie von Lieferschein.pdf": "2025-10-01",
+    "Notiz zB Rueckgabe.pdf": "2025-07-14",
+    "Rechnung_Quellmann_2025-04-08.pdf": "2025-04-08",
+    "Scan_2025_03_final_FINAL_v2.pdf": "2025-03-15",
+    "Vermerk_Erwerbung_Q2.pdf": "2025-06-30",
+    "dokument (3).pdf": "2025-04-08",
+    "final final FINAL.pdf": "2025-08-19",
+    "leer_scan.pdf": "undatiert",
+    "protokoll 2. Maerz 2025.pdf": "2025-03-02",
+    "scan0001.pdf": "2025-05-03",
+    "uebersicht_2025.pdf": "2025-12-01"
+  },
+  "sammelordner_undatiert": [
+    "IMG_0421.pdf",
+    "leer_scan.pdf"
+  ],
+  "verfahren": "Soll-Datum je Datei (ISO) bzw. 'undatiert'. Die Pruefzelle vergleicht dein Mapping Dateiname -> Datum gegen dieses Soll und benennt Abweichungen."
+}
