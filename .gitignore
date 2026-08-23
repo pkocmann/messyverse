@@ -26,6 +26,8 @@
 !/WELT.md
 !/PLAN.md
 !/generieren.py
+# pruefen.py -- Bereitschaftspruefung, muss mit dem ZIP bei den Teilnehmenden landen
+!/pruefen.py
 
 # 3) Pro Welt-Ordner exakt die oeffentlichen Inhaltstypen
 # erwerbung/ -- Rechnungen, Bestellbestaetigungen
@@ -52,6 +54,9 @@
 # notebooks/ -- Uebungs-Notebooks
 !/notebooks/**/*.ipynb
 !/notebooks/**/*.md
+# tests/ -- Regressionstests der ausgelieferten Artefakte (Entwicklungs-Infrastruktur)
+!/tests/**/*.py
+
 # loesungen/ -- Verifikations-Layer (Digest-Manifest)
 !/loesungen/**/*.json
 !/loesungen/**/*.csv
