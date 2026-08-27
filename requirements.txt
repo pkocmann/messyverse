@@ -1,0 +1,9 @@
+# Pakete fuer den Kurs "Python mit KI".
+# Visual Studio Code liest diese Datei beim Anlegen einer Umgebung
+# (Strg+Shift+P -> "Python: Create Environment") und bietet an, sie
+# gleich mitzuinstallieren. Ohne diese Datei bliebe die neue Umgebung leer.
+# Bewusst ohne Versions-Pins: der Kurs braucht keine bestimmte Fassung,
+# und Pins wuerden mit vorhandenen Installationen kollidieren.
+pandas
+requests
+pypdf

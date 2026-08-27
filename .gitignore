@@ -28,6 +28,9 @@
 !/generieren.py
 # pruefen.py -- Bereitschaftspruefung, muss mit dem ZIP bei den Teilnehmenden landen
 !/pruefen.py
+# requirements.txt -- Paketliste, aus der VS Code beim Anlegen einer Umgebung
+# die Pakete installiert; ohne sie bliebe die neue Umgebung leer
+!/requirements.txt
 
 # 3) Pro Welt-Ordner exakt die oeffentlichen Inhaltstypen
 # erwerbung/ -- Rechnungen, Bestellbestaetigungen
