@@ -392,7 +392,8 @@ def gen_loesungen():
         "zusätzliche integritaets_sha256 ist nur ein Sekundär-Check gegen versehentliche Veränderung, "
         "keine Verschleierung des Solls. Die Sollwerte des Berichtswesens (verwaltung/statistik/) stehen "
         "in statistik.golden.json: Anzahl, Summe, Mittelwert, Median, Minimum und Maximum, die "
-        "Orange, R und Python gleich rechnen.\n")
+        "Orange, R und Python gleich rechnen. Diese Daten sind erfunden (CC0-1.0); Hinweis, Lizenz "
+        "und Rechenregeln stehen in verwaltung/statistik/README.md und WELT.md.\n")
 
 
 # ------------------------------------------------------------------ Berichtswesen (verwaltung/statistik/)
@@ -691,11 +692,14 @@ def statistik_sollwerte(sdir):
     Anzahl, Minimum, Maximum: diese rechnen alle drei Werkzeuge gleich (keine Quantil-Varianten)."""
     import statistics as stx
 
-    def kennwerte(werte):
+    def kennwerte(werte, mit_summe=True):
         w = [v for v in werte if v is not None]
-        return {"n": len(w), "fehlend": len(werte) - len(w), "summe": round(sum(w), 2),
-                "mittelwert": round(stx.mean(w), 2), "median": stx.median(w),
-                "min": min(w), "max": max(w)}
+        k = {"n": len(w), "fehlend": len(werte) - len(w),
+             "mittelwert": round(stx.mean(w), 2), "median": stx.median(w),
+             "min": min(w), "max": max(w)}
+        if mit_summe:
+            k["summe"] = round(sum(w), 2)
+        return k
 
     out = {"verfahren": "Sollwerte aus den CSV-Dateien unter verwaltung/statistik/, gerechnet von "
                         "generieren.py (Python statistics). Fehlende Werte zaehlen nicht mit; wo das eine "
@@ -709,7 +713,9 @@ def statistik_sollwerte(sdir):
         for spalte in ["besuche", "ausleihen", "fernleihbestellungen", "platzauslastung"]:
             teil[spalte] = {}
             for st in STANDORTE:
-                teil[spalte][st] = kennwerte([zahl(r[spalte]) for r in z if r["standort"] == st])
+                # Prozentwerte werden nicht summiert (WELT.md): ohne "summe".
+                teil[spalte][st] = kennwerte([zahl(r[spalte]) for r in z if r["standort"] == st],
+                                             mit_summe=spalte != "platzauslastung")
             if spalte != "platzauslastung":
                 # Jahressummen nur fuer Zaehlgroessen; "monate_mit_wert" zeigt, ob das Jahr vollstaendig ist.
                 teil[spalte]["je_jahr_und_standort_summe"] = {
