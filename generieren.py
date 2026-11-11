@@ -619,7 +619,9 @@ def gen_statistik():
     schreibe_xlsx(sdir / "fernleihe_dauer.xlsx", fl_spalten, bestellungen)
 
     # 5) Unordentlicher Export aus dem Bibliothekssystem (Uebung "sauber einlesen")
-    #    Vorspann, Semikolon, Dezimalkomma, Tausenderpunkt, "k. A." -- Datum bleibt ISO (JJJJ-MM),
+    #    Vorspann, Semikolon, Dezimalkomma, Tausenderpunkt, Punkt "." fuer fehlende Werte -- Datum bleibt
+    #    ISO (JJJJ-MM). Der Punkt steht auf Oranges Fehlwertliste (owcsvimport.NA_DEFAULT); "k. A." stuende
+    #    nicht darauf und machte die Spalte im CSV File Import unrettbar zu Text (gemessen 2026-11-11).
     #    weil Orange deutsche Datumsangaben beim CSV-Import still vertauscht (Tag <-> Monat).
     with (sdir / "benutzung_export.csv").open("w", encoding="utf-8", newline="") as f:
         f.write("Bibliothek und Archiv des Instituts für Verwaltungs- und Regionalkunde – "
@@ -629,7 +631,7 @@ def gen_statistik():
         for z in monatlich:
             def feld(v):
                 if v is None:
-                    return "k. A."
+                    return "."
                 if isinstance(v, float):
                     return f"{v:.1f}".replace(".", ",")
                 return tausender(v)
@@ -762,7 +764,7 @@ Das Berichtswesen sammelt die Zahlen, die die Verwaltung jeden Monat zusammentr�
 | `besuche_jahresverlauf` | die Besuche aus `benutzung_monatlich` in Breitform: eine Zeile je Jahr und Standort, Spalten `jan` bis `dez` |
 | `evaluation_schulungen` | Rückmeldebögen zu vier Schulungen 2022 bis 2025: `zielgruppe`, `zufriedenheit` und `verstaendlichkeit` von 1 (gar nicht) bis 5 (sehr), `weiterempfehlung` ja/nein; unbeantwortete Fragen bleiben leer |
 | `fernleihe_dauer` | alle Fernleihbestellungen der Außenstelle 2025 mit `lieferweg`, `medium` und `dauer_tage` (Tage bis zur Bereitstellung); die Anzahl je Monat entspricht `fernleihbestellungen` der Außenstelle |
-| `benutzung_export.csv` | `benutzung_monatlich` als unordentlicher Systemexport: zwei Vorspannzeilen, Semikolon, Dezimalkomma, Tausenderpunkt, „k. A.“ für fehlende Werte |
+| `benutzung_export.csv` | `benutzung_monatlich` als unordentlicher Systemexport: zwei Vorspannzeilen, Semikolon, Dezimalkomma, Tausenderpunkt, ein Punkt „.“ für fehlende Werte |
 | `jahresbericht_besuche.xlsx` | `besuche_jahresverlauf` als Berichtstabelle: Titelzeile, Leerzeile, Summenspalte, Summenzeile, Hinweisblatt |
 
 Bekannte Lücken (feste Positionen): Besuche der Außenstelle Juni bis August 2024 und März 2026 (Zählgerät defekt), Ausleihen der Hauptstelle November 2023 (Systemumstellung).
