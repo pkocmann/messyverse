@@ -94,8 +94,7 @@
         "median": 69.0,
         "min": 40.2,
         "mittelwert": 66.26,
-        "n": 10,
-        "summe": 662.6
+        "n": 10
       },
       "Hauptstelle": {
         "fehlend": 0,
@@ -103,8 +102,7 @@
         "median": 70.05,
         "min": 39.8,
         "mittelwert": 65.38,
-        "n": 10,
-        "summe": 653.8
+        "n": 10
       },
       "je_jahr_und_standort_mittel_der_monate": {
         "2026|Außenstelle": 66.26,
@@ -287,8 +285,7 @@
         "median": 63.3,
         "min": 32.6,
         "mittelwert": 62.78,
-        "n": 48,
-        "summe": 3013.5
+        "n": 48
       },
       "Hauptstelle": {
         "fehlend": 0,
@@ -296,8 +293,7 @@
         "median": 62.35,
         "min": 35.4,
         "mittelwert": 61.9,
-        "n": 48,
-        "summe": 2971.3
+        "n": 48
       },
       "je_jahr_und_standort_mittel_der_monate": {
         "2022|Außenstelle": 59.53,

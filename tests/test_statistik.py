@@ -317,8 +317,19 @@ def test_sollwerte():
            v["2025|Hauptstelle|besuche"]["summe"] == sum(int(r["besuche"]) for r in z if r["standort"] == "Hauptstelle"
                                                        and r["jahr"] == "2025" and r["monat"][5:7] <= "10")
            and v["2026|Hauptstelle|besuche"]["summe"] == sum(int(r["besuche"]) for r in z26 if r["standort"] == "Hauptstelle"))
-    pruefe("keine Jahressummen von Prozentwerten",
-           "je_jahr_und_standort_summe" not in datei["benutzung_monatlich"]["platzauslastung"])
+    v_ok = True
+    for jahr, quelle in [("2025", z), ("2026", z26)]:
+        for st in KANON_STANDORTE:
+            for sp in ["besuche", "ausleihen"]:
+                w = [r[sp] for r in quelle if r["jahr"] == jahr and r["standort"] == st and r["monat"][5:7] <= "10"]
+                soll = {"summe": sum(int(x) for x in w if x), "monate_mit_wert": sum(1 for x in w if x)}
+                v_ok &= v[f"{jahr}|{st}|{sp}"] == soll
+    pruefe("Vergleich Januar bis Oktober: alle acht Eintraege (Summe und Monate mit Wert) unabhaengig gerechnet",
+           v_ok and v["2026|Außenstelle|besuche"]["monate_mit_wert"] == 9)
+    prozent = [datei[n]["platzauslastung"] for n in ("benutzung_monatlich", "benutzung_2026")]
+    pruefe("keine Summen von Prozentwerten (Jahre und Standorte, beide Datensaetze)",
+           all("je_jahr_und_standort_summe" not in p and all("summe" not in p[st] for st in KANON_STANDORTE)
+               for p in prozent))
     readme = (SDIR / "README.md").read_text(encoding="utf-8")
     pruefe("README kennzeichnet die Daten als erfunden, mit SPDX CC0-1.0 und Marker",
            "erfunden" in readme and "SPDX-License-Identifier: CC0-1.0" in readme and gen.MARKER in readme)
