@@ -1,0 +1,447 @@
+{
+  "benutzung_2026": {
+    "ausleihen": {
+      "Außenstelle": {
+        "fehlend": 0,
+        "max": 374,
+        "median": 319.5,
+        "min": 178,
+        "mittelwert": 305.3,
+        "n": 10,
+        "summe": 3053
+      },
+      "Hauptstelle": {
+        "fehlend": 0,
+        "max": 1471,
+        "median": 1251.5,
+        "min": 750,
+        "mittelwert": 1203.8,
+        "n": 10,
+        "summe": 12038
+      },
+      "je_jahr_und_standort_summe": {
+        "2026|Außenstelle": 3053,
+        "2026|Hauptstelle": 12038
+      }
+    },
+    "besuche": {
+      "Außenstelle": {
+        "fehlend": 1,
+        "max": 855,
+        "median": 701,
+        "min": 413,
+        "mittelwert": 690.67,
+        "n": 9,
+        "summe": 6216
+      },
+      "Hauptstelle": {
+        "fehlend": 0,
+        "max": 3117,
+        "median": 2676.5,
+        "min": 1555,
+        "mittelwert": 2542.5,
+        "n": 10,
+        "summe": 25425
+      },
+      "je_jahr_und_standort_summe": {
+        "2026|Außenstelle": 6216,
+        "2026|Hauptstelle": 25425
+      }
+    },
+    "fernleihbestellungen": {
+      "Außenstelle": {
+        "fehlend": 0,
+        "max": 26,
+        "median": 21.0,
+        "min": 18,
+        "mittelwert": 21.2,
+        "n": 10,
+        "summe": 212
+      },
+      "Hauptstelle": {
+        "fehlend": 0,
+        "max": 100,
+        "median": 90.5,
+        "min": 80,
+        "mittelwert": 89.3,
+        "n": 10,
+        "summe": 893
+      },
+      "je_jahr_und_standort_summe": {
+        "2026|Außenstelle": 212,
+        "2026|Hauptstelle": 893
+      }
+    },
+    "luecken": [
+      "Außenstelle|2026-03-01|besuche"
+    ],
+    "platzauslastung": {
+      "Außenstelle": {
+        "fehlend": 0,
+        "max": 81.7,
+        "median": 69.0,
+        "min": 40.2,
+        "mittelwert": 66.26,
+        "n": 10,
+        "summe": 662.6
+      },
+      "Hauptstelle": {
+        "fehlend": 0,
+        "max": 79.2,
+        "median": 70.05,
+        "min": 39.8,
+        "mittelwert": 65.38,
+        "n": 10,
+        "summe": 653.8
+      },
+      "je_jahr_und_standort_summe": {
+        "2026|Außenstelle": 662.6,
+        "2026|Hauptstelle": 653.8
+      }
+    },
+    "spalten": [
+      "monat",
+      "jahr",
+      "standort",
+      "besuche",
+      "ausleihen",
+      "fernleihbestellungen",
+      "platzauslastung"
+    ],
+    "zeilen": 20
+  },
+  "benutzung_monatlich": {
+    "ausleihen": {
+      "Außenstelle": {
+        "fehlend": 0,
+        "max": 460,
+        "median": 344.0,
+        "min": 191,
+        "mittelwert": 338.4,
+        "n": 48,
+        "summe": 16243
+      },
+      "Hauptstelle": {
+        "fehlend": 1,
+        "max": 1780,
+        "median": 1355,
+        "min": 799,
+        "mittelwert": 1327.38,
+        "n": 47,
+        "summe": 62387
+      },
+      "je_jahr_und_standort_summe": {
+        "2022|Außenstelle": 4345,
+        "2022|Hauptstelle": 17087,
+        "2023|Außenstelle": 4132,
+        "2023|Hauptstelle": 14337,
+        "2024|Außenstelle": 3950,
+        "2024|Hauptstelle": 15846,
+        "2025|Außenstelle": 3816,
+        "2025|Hauptstelle": 15117
+      }
+    },
+    "aussenstelle_besuche_sommermittel_jun_aug": {
+      "2022": 489.67,
+      "2023": 504,
+      "2024": null,
+      "2025": 541.33
+    },
+    "besuche": {
+      "Außenstelle": {
+        "fehlend": 3,
+        "max": 886,
+        "median": 677,
+        "min": 353,
+        "mittelwert": 664.27,
+        "n": 45,
+        "summe": 29892
+      },
+      "Hauptstelle": {
+        "fehlend": 0,
+        "max": 3304,
+        "median": 2437.5,
+        "min": 1421,
+        "mittelwert": 2414.77,
+        "n": 48,
+        "summe": 115909
+      },
+      "je_jahr_und_standort_summe": {
+        "2022|Außenstelle": 7499,
+        "2022|Hauptstelle": 27885,
+        "2023|Außenstelle": 7740,
+        "2023|Hauptstelle": 28704,
+        "2024|Außenstelle": 6497,
+        "2024|Hauptstelle": 29255,
+        "2025|Außenstelle": 8156,
+        "2025|Hauptstelle": 30065
+      }
+    },
+    "fernleihbestellungen": {
+      "Außenstelle": {
+        "fehlend": 0,
+        "max": 26,
+        "median": 22.0,
+        "min": 16,
+        "mittelwert": 21.65,
+        "n": 48,
+        "summe": 1039
+      },
+      "Hauptstelle": {
+        "fehlend": 0,
+        "max": 110,
+        "median": 90.5,
+        "min": 72,
+        "mittelwert": 93.33,
+        "n": 48,
+        "summe": 4480
+      },
+      "je_jahr_und_standort_summe": {
+        "2022|Außenstelle": 265,
+        "2022|Hauptstelle": 1163,
+        "2023|Außenstelle": 258,
+        "2023|Hauptstelle": 1122,
+        "2024|Außenstelle": 256,
+        "2024|Hauptstelle": 1101,
+        "2025|Außenstelle": 260,
+        "2025|Hauptstelle": 1094
+      }
+    },
+    "hauptstelle_ausleihen_je_100_besuche_je_jahr": {
+      "2022": 61.28,
+      "2023": 55.96,
+      "2024": 54.17,
+      "2025": 50.28
+    },
+    "luecken": [
+      "Außenstelle|2024-06-01|besuche",
+      "Außenstelle|2024-07-01|besuche",
+      "Außenstelle|2024-08-01|besuche",
+      "Hauptstelle|2023-11-01|ausleihen"
+    ],
+    "platzauslastung": {
+      "Außenstelle": {
+        "fehlend": 0,
+        "max": 86.8,
+        "median": 63.3,
+        "min": 32.6,
+        "mittelwert": 62.78,
+        "n": 48,
+        "summe": 3013.5
+      },
+      "Hauptstelle": {
+        "fehlend": 0,
+        "max": 85.6,
+        "median": 62.35,
+        "min": 35.4,
+        "mittelwert": 61.9,
+        "n": 48,
+        "summe": 2971.3
+      },
+      "je_jahr_und_standort_summe": {
+        "2022|Außenstelle": 714.4,
+        "2022|Hauptstelle": 721.0,
+        "2023|Außenstelle": 731.9,
+        "2023|Hauptstelle": 734.0,
+        "2024|Außenstelle": 785.2,
+        "2024|Hauptstelle": 738.6,
+        "2025|Außenstelle": 782.0,
+        "2025|Hauptstelle": 777.7
+      }
+    },
+    "spalten": [
+      "monat",
+      "jahr",
+      "standort",
+      "besuche",
+      "ausleihen",
+      "fernleihbestellungen",
+      "platzauslastung"
+    ],
+    "zeilen": 96
+  },
+  "evaluation_schulungen": {
+    "fehlend_nach_zielgruppe": {
+      "Beschäftigte": {
+        "verstaendlichkeit": 8,
+        "weiterempfehlung": 4,
+        "zufriedenheit": 6
+      },
+      "Externe": {
+        "verstaendlichkeit": 6,
+        "weiterempfehlung": 14,
+        "zufriedenheit": 3
+      },
+      "Studierende": {
+        "verstaendlichkeit": 9,
+        "weiterempfehlung": 12,
+        "zufriedenheit": 5
+      }
+    },
+    "leere_boegen": [
+      "EV-2023-021",
+      "EV-2025-037"
+    ],
+    "verstaendlichkeit": {
+      "fehlend": 23,
+      "max": 5,
+      "median": 4,
+      "min": 1,
+      "mittelwert": 3.9,
+      "n": 219,
+      "nach_schulung": {
+        "Archivführung": {
+          "fehlend": 6,
+          "max": 5,
+          "median": 5.0,
+          "min": 3,
+          "mittelwert": 4.5,
+          "n": 28,
+          "summe": 126
+        },
+        "Datenbankrecherche": {
+          "fehlend": 5,
+          "max": 5,
+          "median": 4.0,
+          "min": 1,
+          "mittelwert": 3.47,
+          "n": 58,
+          "summe": 201
+        },
+        "Fernleihe und Dokumentlieferung": {
+          "fehlend": 4,
+          "max": 5,
+          "median": 4,
+          "min": 2,
+          "mittelwert": 3.87,
+          "n": 45,
+          "summe": 174
+        },
+        "Katalogrecherche": {
+          "fehlend": 8,
+          "max": 5,
+          "median": 4.0,
+          "min": 1,
+          "mittelwert": 4.01,
+          "n": 88,
+          "summe": 353
+        }
+      },
+      "summe": 854
+    },
+    "weiterempfehlung": {
+      "anteil_ja_unter_antworten": 0.77,
+      "fehlend": 30,
+      "ja": 163,
+      "nein": 49
+    },
+    "zeilen": 242,
+    "zeilen_nach_zielgruppe": {
+      "Beschäftigte": 86,
+      "Externe": 52,
+      "Studierende": 104
+    },
+    "zufriedenheit": {
+      "fehlend": 14,
+      "max": 5,
+      "median": 4.0,
+      "min": 1,
+      "mittelwert": 4.07,
+      "n": 228,
+      "nach_schulung": {
+        "Archivführung": {
+          "fehlend": 3,
+          "max": 5,
+          "median": 5,
+          "min": 2,
+          "mittelwert": 4.55,
+          "n": 31,
+          "summe": 141
+        },
+        "Datenbankrecherche": {
+          "fehlend": 4,
+          "max": 5,
+          "median": 4,
+          "min": 1,
+          "mittelwert": 3.93,
+          "n": 59,
+          "summe": 232
+        },
+        "Fernleihe und Dokumentlieferung": {
+          "fehlend": 0,
+          "max": 5,
+          "median": 4,
+          "min": 1,
+          "mittelwert": 4.04,
+          "n": 49,
+          "summe": 198
+        },
+        "Katalogrecherche": {
+          "fehlend": 7,
+          "max": 5,
+          "median": 4,
+          "min": 1,
+          "mittelwert": 4,
+          "n": 89,
+          "summe": 356
+        }
+      },
+      "summe": 927
+    }
+  },
+  "fernleihe_dauer": {
+    "dauer_tage": {
+      "fehlend": 0,
+      "max": 143,
+      "median": 6.0,
+      "min": 1,
+      "mittelwert": 9.12,
+      "n": 260,
+      "summe": 2372
+    },
+    "nach_lieferweg": {
+      "Ausland": {
+        "fehlend": 0,
+        "max": 143,
+        "median": 13,
+        "min": 4,
+        "mittelwert": 19.78,
+        "n": 55,
+        "summe": 1088
+      },
+      "Inland": {
+        "fehlend": 0,
+        "max": 27,
+        "median": 5,
+        "min": 1,
+        "mittelwert": 6.26,
+        "n": 205,
+        "summe": 1284
+      }
+    },
+    "nach_medium": {
+      "Aufsatz": {
+        "fehlend": 0,
+        "max": 19,
+        "median": 3.5,
+        "min": 1,
+        "mittelwert": 3.98,
+        "n": 106,
+        "summe": 422
+      },
+      "Buch": {
+        "fehlend": 0,
+        "max": 143,
+        "median": 9.0,
+        "min": 2,
+        "mittelwert": 12.66,
+        "n": 154,
+        "summe": 1950
+      }
+    },
+    "ueber_30_tage": 5,
+    "ueber_90_tage": 3,
+    "zeilen": 260
+  },
+  "verfahren": "Sollwerte aus den CSV-Dateien unter verwaltung/statistik/, gerechnet von generieren.py (Python statistics). Fehlende Werte zaehlen nicht mit. Mittelwerte auf zwei Nachkommastellen gerundet."
+}
