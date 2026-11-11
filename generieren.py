@@ -3,7 +3,9 @@
 """generieren.py -- seed-fester Generator des messyverse-Uebungsuniversums.
 
 Baut das komplette Welt-Universum reproduzierbar aus den gepinnten API-Fixtures
-(api-fixtures/, Wahrheitsquelle fuer die Bibliografie). Dieser Generator geht
+(api-fixtures/, Wahrheitsquelle fuer die Bibliografie). Dazu das Berichtswesen
+verwaltung/statistik/ (Mehrjahresdaten fuer Statistik-Kurse, eigener Zufallsstrom
+STAT_SEED, damit der uebrige Bestand byte-gleich bleibt; Kanon: WELT.md). Dieser Generator geht
 NIE ins Netz -- so bleibt das Reproduzieren-Gate (E6) stabil: zwei Laeufe
 hintereinander erzeugen byte-identische Dateien.
 
@@ -24,6 +26,7 @@ import csv
 import hashlib
 import io
 import json
+import math
 import pathlib
 import random
 import shutil
@@ -387,7 +390,383 @@ def gen_loesungen():
         "Datei-Sortieren steht im Datei-Inhalt (Zeile 'Datum:'). Für das Datei-Sortieren liegt deshalb "
         "das vollständige Klartext-Mapping Dateiname -> Datum in datei_sortieren.golden.json; der "
         "zusätzliche integritaets_sha256 ist nur ein Sekundär-Check gegen versehentliche Veränderung, "
-        "keine Verschleierung des Solls.\n")
+        "keine Verschleierung des Solls. Die Sollwerte des Berichtswesens (verwaltung/statistik/) stehen "
+        "in statistik.golden.json: Anzahl, Summe, Mittelwert, Median, Minimum und Maximum, die "
+        "Orange, R und Python gleich rechnen.\n")
+
+
+# ------------------------------------------------------------------ Berichtswesen (verwaltung/statistik/)
+# Erster Verbraucher: WBZ-Kurs fif10 "Statistik verstehen und visualisieren" (Orange, R, Python).
+# Kanon: WELT.md, Abschnitt "Berichtswesen". Eigener Zufallsstrom (STAT_SEED), damit die Dateien
+# der uebrigen Welt byte-gleich bleiben, egal was sich hier aendert. Alle Werte sind erfunden.
+STAT_SEED = SEED + 1
+STAT_JAHRE = [2022, 2023, 2024, 2025]
+STAT_FORTSCHREIBUNG = (2026, 10)          # Januar bis Oktober 2026 als "neue Daten"
+STANDORTE = {                             # Grundwerte je Monat 2022 (vor Saison und Trend)
+    "Hauptstelle": {"besuche": 2400, "ausleihen": 1500, "fernleihe": 95, "kapazitaet": 3900},
+    "Außenstelle": {"besuche": 650, "ausleihen": 380, "fernleihe": 22, "kapazitaet": 1050},
+}
+SAISON = {1: 1.00, 2: 0.97, 3: 1.04, 4: 1.08, 5: 1.06, 6: 0.93,
+          7: 0.78, 8: 0.58, 9: 0.92, 10: 1.18, 11: 1.22, 12: 0.80}
+TREND = {"besuche": 0.025, "ausleihen": -0.04, "fernleihe": -0.01}   # je Jahr
+# Feste Luecken (WELT.md): Position aendert sich nie, damit Uebungen und loesungen stabil bleiben.
+STAT_LUECKEN = {
+    ("Außenstelle", "2024-06-01", "besuche"): "Zaehlgeraet defekt",
+    ("Außenstelle", "2024-07-01", "besuche"): "Zaehlgeraet defekt",
+    ("Außenstelle", "2024-08-01", "besuche"): "Zaehlgeraet defekt",
+    ("Hauptstelle", "2023-11-01", "ausleihen"): "Systemumstellung im Ausleihsystem",
+    ("Außenstelle", "2026-03-01", "besuche"): "Zaehlgeraet defekt",
+}
+MONATSNAMEN = ["jan", "feb", "mrz", "apr", "mai", "jun", "jul", "aug", "sep", "okt", "nov", "dez"]
+MONATSNAMEN_LANG = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August",
+                    "September", "Oktober", "November", "Dezember"]
+SCHULUNGEN = [  # name, Termine je Jahr, Gewichte Zufriedenheit 1..5, Gewichte Verstaendlichkeit 1..5
+    ("Katalogrecherche", 6, [2, 4, 12, 42, 40], [2, 5, 15, 45, 33]),
+    ("Datenbankrecherche", 4, [3, 6, 18, 43, 30], [5, 12, 28, 35, 20]),
+    ("Fernleihe und Dokumentlieferung", 3, [2, 4, 14, 45, 35], [2, 6, 18, 44, 30]),
+    ("Archivführung", 2, [1, 2, 7, 30, 60], [1, 3, 10, 36, 50]),
+]
+ZIELGRUPPEN = [("Studierende", 45), ("Beschäftigte", 35), ("Externe", 20)]
+P_EMPFEHLUNG = {1: 0.10, 2: 0.25, 3: 0.55, 4: 0.85, 5: 0.97}
+EVAL_LEERE_BOEGEN = ["EV-2023-021", "EV-2025-037"]   # vollstaendig leer abgegebene Boegen
+FERNLEIHE_AUSREISSER = {2: 96, 6: 118, 9: 143}         # Monat 2025 -> Tage (je eine Buchbestellung Ausland)
+STAT_HINWEIS = ("Fiktive Übungsdaten des messyverse (Bibliothek und Archiv des Instituts für "
+                "Verwaltungs- und Regionalkunde, Berichtswesen). Alle Werte sind erfunden. "
+                "Lizenz CC0 1.0.")
+
+
+def stat_rng(teil):
+    """Eigener, reproduzierbarer Zufallsstrom je Datenteil (Aenderung an einem Teil verschiebt keinen anderen)."""
+    return random.Random(f"{STAT_SEED}-{teil}")
+
+
+def stat_monate(bis=None):
+    jahre = STAT_JAHRE if bis is None else [bis[0]]
+    for j in jahre:
+        for m in range(1, 13 if bis is None else bis[1] + 1):
+            yield j, m
+
+
+def stat_benutzung_zeilen(jahr_monate, rng):
+    """Monatswerte je Standort. Gibt Zeilen als dict zurueck; Luecken als None."""
+    zeilen = []
+    for j, m in jahr_monate:
+        t = (j - STAT_JAHRE[0]) + (m - 1) / 12
+        monat = f"{j}-{m:02d}-01"
+        for st, g in STANDORTE.items():
+            def wert(art):
+                return g[art] * SAISON[m] * (1 + TREND[art]) ** t * rng.gauss(1, 0.035)
+            besuche = round(wert("besuche"))
+            ausleihen = round(wert("ausleihen"))
+            fernleihe = max(1, round(g["fernleihe"] * (1 + TREND["fernleihe"]) ** t
+                                     * (0.6 + 0.4 * SAISON[m]) * rng.gauss(1, 0.08)))
+            # Platzauslastung kommt aus der Sitzplatzbuchung, nicht vom Zaehlgeraet: sie bleibt auch
+            # in Monaten mit fehlender Besuchszaehlung erhalten (Anker fuer eine modellbasierte Schaetzung).
+            auslastung = round(min(98.0, besuche / g["kapazitaet"] * 100 * rng.gauss(1, 0.03)), 1)
+            z = {"monat": monat, "jahr": j, "standort": st, "besuche": besuche,
+                 "ausleihen": ausleihen, "fernleihbestellungen": fernleihe,
+                 "platzauslastung": auslastung}
+            for (lst, lmon, spalte) in STAT_LUECKEN:
+                if lst == st and lmon == monat:
+                    z[spalte] = None
+            zeilen.append(z)
+    return zeilen
+
+
+BENUTZUNG_SPALTEN = ["monat", "jahr", "standort", "besuche", "ausleihen",
+                     "fernleihbestellungen", "platzauslastung"]
+
+
+def zelle_text(v):
+    if v is None:
+        return ""
+    if isinstance(v, float):
+        return f"{v:.1f}"
+    return str(v)
+
+
+def schreibe_csv(path, spalten, zeilen):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(spalten)
+        for z in zeilen:
+            w.writerow([zelle_text(z[s]) for s in spalten])
+
+
+def speichere_xlsx(wb, path):
+    wb.properties.created = DATUM_FIX
+    wb.properties.modified = DATUM_FIX
+    wb.properties.creator = "generieren.py"
+    wb.properties.lastModifiedBy = "generieren.py"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    wb.save(path)
+    normalize_zip(path)
+
+
+def hinweisblatt(wb, zusatz=""):
+    ws = wb.create_sheet("Hinweis")
+    ws.append([STAT_HINWEIS])
+    if zusatz:
+        ws.append([zusatz])
+    ws.append([f"# {MARKER}"])
+
+
+def schreibe_xlsx(path, spalten, zeilen, blattname="Daten"):
+    """Saubere Excel-Fassung: Kopf in Zeile 1, Daten ab Zeile 2, Hinweis auf eigenem Blatt.
+    Datumsangaben bleiben ISO-Text wie in der CSV, damit Orange beide Dateien gleich liest."""
+    wb = openpyxl.Workbook()
+    ws = wb.active
+    ws.title = blattname
+    ws.append(spalten)
+    for z in zeilen:
+        ws.append([z[s] for s in spalten])
+    hinweisblatt(wb)
+    speichere_xlsx(wb, path)
+
+
+def tausender(n):
+    return f"{n:,}".replace(",", ".")
+
+
+def gen_statistik():
+    sdir = ROOT / "verwaltung" / "statistik"
+    sdir.mkdir(parents=True, exist_ok=True)
+
+    # 1) Monatswerte 2022-2025 und Fortschreibung 2026
+    monatlich = stat_benutzung_zeilen(stat_monate(), stat_rng("benutzung"))
+    neu = stat_benutzung_zeilen(stat_monate(STAT_FORTSCHREIBUNG), stat_rng("benutzung-2026"))
+    for name, zeilen in [("benutzung_monatlich", monatlich), ("benutzung_2026", neu)]:
+        schreibe_csv(sdir / f"{name}.csv", BENUTZUNG_SPALTEN, zeilen)
+        schreibe_xlsx(sdir / f"{name}.xlsx", BENUTZUNG_SPALTEN, zeilen)
+
+    # 2) Jahresverlauf der Besuche in Breitform (eine Zeile je Jahr und Standort)
+    breit_spalten = ["jahr", "standort"] + MONATSNAMEN
+    breit = []
+    for j in STAT_JAHRE:
+        for st in STANDORTE:
+            z = {"jahr": j, "standort": st}
+            for m, kurz in enumerate(MONATSNAMEN, 1):
+                z[kurz] = next(r["besuche"] for r in monatlich
+                               if r["standort"] == st and r["monat"] == f"{j}-{m:02d}-01")
+            breit.append(z)
+    schreibe_csv(sdir / "besuche_jahresverlauf.csv", breit_spalten, breit)
+    schreibe_xlsx(sdir / "besuche_jahresverlauf.xlsx", breit_spalten, breit)
+
+    # 3) Evaluation der Schulungen 2022-2025
+    rng = stat_rng("evaluation")
+    eval_spalten = ["bogen_nr", "datum", "jahr", "schulung", "zielgruppe",
+                    "zufriedenheit", "verstaendlichkeit", "weiterempfehlung"]
+    boegen = []
+    for j in STAT_JAHRE:
+        termine = []
+        for name, anzahl, w_zuf, w_ver in SCHULUNGEN:
+            monate = sorted(rng.sample([1, 2, 3, 4, 5, 6, 9, 10, 11, 12], anzahl))
+            for m in monate:
+                tag = rng.randint(2, 26)
+                d = datetime(j, m, tag)
+                while d.weekday() not in (1, 2, 3):   # Dienstag bis Donnerstag
+                    d = d.replace(day=d.day + 1)
+                termine.append((d.strftime("%Y-%m-%d"), name, w_zuf, w_ver))
+        termine.sort()
+        nr = 0
+        for datum, name, w_zuf, w_ver in termine:
+            for _ in range(rng.randint(3, 5)):
+                nr += 1
+                zg_gew = [g for _, g in ZIELGRUPPEN]
+                if name == "Archivführung":
+                    zg_gew = [30, 30, 40]
+                zg = rng.choices([z for z, _ in ZIELGRUPPEN], weights=zg_gew)[0]
+                zuf = rng.choices([1, 2, 3, 4, 5], weights=w_zuf)[0]
+                ver = rng.choices([1, 2, 3, 4, 5], weights=w_ver)[0]
+                emp = "ja" if rng.random() < P_EMPFEHLUNG[zuf] else "nein"
+                extern = zg == "Externe"
+                b = {"bogen_nr": f"EV-{j}-{nr:03d}", "datum": datum, "jahr": j, "schulung": name,
+                     "zielgruppe": zg,
+                     "zufriedenheit": None if rng.random() < 0.03 else zuf,
+                     "verstaendlichkeit": None if rng.random() < (0.13 if extern else 0.05) else ver,
+                     "weiterempfehlung": None if rng.random() < (0.20 if extern else 0.07) else emp}
+                if b["bogen_nr"] in EVAL_LEERE_BOEGEN:
+                    b.update(zufriedenheit=None, verstaendlichkeit=None, weiterempfehlung=None)
+                boegen.append(b)
+    schreibe_csv(sdir / "evaluation_schulungen.csv", eval_spalten, boegen)
+    schreibe_xlsx(sdir / "evaluation_schulungen.xlsx", eval_spalten, boegen)
+
+    # 4) Fernleihbestellungen der Aussenstelle 2025; Anzahl je Monat = benutzung_monatlich
+    rng = stat_rng("fernleihe")
+    fl_spalten = ["bestellnr", "bestelldatum", "monat", "lieferweg", "medium", "dauer_tage"]
+    bestellungen = []
+    median_tage = {("Inland", "Aufsatz"): 3, ("Inland", "Buch"): 8,
+                   ("Ausland", "Aufsatz"): 6, ("Ausland", "Buch"): 19}
+    for m in range(1, 13):
+        monat = f"2025-{m:02d}-01"
+        anzahl = next(r["fernleihbestellungen"] for r in monatlich
+                      if r["standort"] == "Außenstelle" and r["monat"] == monat)
+        letzter = (datetime(2025 + m // 12, m % 12 + 1, 1) - datetime(2025, m, 1)).days
+        tage = sorted(rng.randint(1, letzter) for _ in range(anzahl))
+        ausreisser = FERNLEIHE_AUSREISSER.get(m)
+        for i, tag in enumerate(tage):
+            weg = "Ausland" if rng.random() < 0.18 else "Inland"
+            medium = "Aufsatz" if rng.random() < 0.40 else "Buch"
+            dauer = max(1, round(median_tage[(weg, medium)] * math.exp(rng.gauss(0, 0.45))))
+            if ausreisser and i == len(tage) // 2:
+                weg, medium, dauer = "Ausland", "Buch", ausreisser
+            bestellungen.append({"bestelldatum": f"2025-{m:02d}-{tag:02d}", "monat": monat,
+                                 "lieferweg": weg, "medium": medium, "dauer_tage": dauer})
+    for i, b in enumerate(bestellungen, 1):
+        b["bestellnr"] = f"FL-A-2025-{i:04d}"
+    schreibe_csv(sdir / "fernleihe_dauer.csv", fl_spalten, bestellungen)
+    schreibe_xlsx(sdir / "fernleihe_dauer.xlsx", fl_spalten, bestellungen)
+
+    # 5) Unordentlicher Export aus dem Bibliothekssystem (Uebung "sauber einlesen")
+    #    Vorspann, Semikolon, Dezimalkomma, Tausenderpunkt, "k. A." -- Datum bleibt ISO (JJJJ-MM),
+    #    weil Orange deutsche Datumsangaben beim CSV-Import still vertauscht (Tag <-> Monat).
+    with (sdir / "benutzung_export.csv").open("w", encoding="utf-8", newline="") as f:
+        f.write("Bibliothek und Archiv des Instituts für Verwaltungs- und Regionalkunde – "
+                "Export Benutzungsstatistik\r\n")
+        f.write(f"{STAT_HINWEIS} Erzeugt von generieren.py.\r\n")
+        f.write("Monat;Standort;Besuche;Ausleihen;Fernleihbestellungen;Platzauslastung (%)\r\n")
+        for z in monatlich:
+            def feld(v):
+                if v is None:
+                    return "k. A."
+                if isinstance(v, float):
+                    return f"{v:.1f}".replace(".", ",")
+                return tausender(v)
+            f.write(";".join([z["monat"][:7], z["standort"], feld(z["besuche"]), feld(z["ausleihen"]),
+                              feld(z["fernleihbestellungen"]), feld(z["platzauslastung"])]) + "\r\n")
+
+    # 6) Jahresbericht als Excel, wie er fuer einen Bericht gebaut wurde (Uebung "Excel aufraeumen")
+    wb = openpyxl.Workbook()
+    ws = wb.active
+    ws.title = "Besuche"
+    ws.append(["Jahresbericht Benutzung: Besuche je Monat (fiktive Übungsdaten)"])
+    ws.append([])
+    ws.append(["Jahr", "Standort"] + MONATSNAMEN_LANG + ["Summe"])
+    spaltensummen = [0] * 12
+    for z in breit:
+        werte = [z[k] for k in MONATSNAMEN]
+        for i, v in enumerate(werte):
+            spaltensummen[i] += v or 0
+        ws.append([z["jahr"], z["standort"]] + werte + [sum(v for v in werte if v is not None)])
+    ws.append([])
+    ws.append(["Summe", None] + spaltensummen + [sum(spaltensummen)])
+    hinweisblatt(wb, "Leere Zellen: Zählgerät der Außenstelle Juni bis August 2024 defekt.")
+    speichere_xlsx(wb, sdir / "jahresbericht_besuche.xlsx")
+
+    # 7) README des Datenteils
+    schreibe_text(sdir / "README.md", STAT_README.format(marker=MARKER, hinweis=STAT_HINWEIS))
+
+    # 8) Sollwerte (loesungen/statistik.golden.json), gerechnet aus den geschriebenen CSV-Dateien
+    golden = statistik_sollwerte(sdir)
+    schreibe_text(ROOT / "loesungen" / "statistik.golden.json",
+                  json.dumps(golden, ensure_ascii=False, indent=2, sort_keys=True) + "\n")
+    return golden
+
+
+def lies_csv(path):
+    with path.open(encoding="utf-8", newline="") as f:
+        return list(csv.DictReader(f))
+
+
+def zahl(s):
+    return None if s == "" else (float(s) if "." in s else int(s))
+
+
+def statistik_sollwerte(sdir):
+    """Sollwerte fuer Uebungen und Abgleich Orange/R/Python. Nur Mittelwert, Median, Summe,
+    Anzahl, Minimum, Maximum: diese rechnen alle drei Werkzeuge gleich (keine Quantil-Varianten)."""
+    import statistics as stx
+
+    def kennwerte(werte):
+        w = [v for v in werte if v is not None]
+        return {"n": len(w), "fehlend": len(werte) - len(w), "summe": round(sum(w), 2),
+                "mittelwert": round(stx.mean(w), 2), "median": stx.median(w),
+                "min": min(w), "max": max(w)}
+
+    out = {"verfahren": "Sollwerte aus den CSV-Dateien unter verwaltung/statistik/, gerechnet von "
+                        "generieren.py (Python statistics). Fehlende Werte zaehlen nicht mit. "
+                        "Mittelwerte auf zwei Nachkommastellen gerundet."}
+    for name in ["benutzung_monatlich", "benutzung_2026"]:
+        z = lies_csv(sdir / f"{name}.csv")
+        teil = {"zeilen": len(z), "spalten": list(z[0].keys())}
+        for spalte in ["besuche", "ausleihen", "fernleihbestellungen", "platzauslastung"]:
+            teil[spalte] = {}
+            for st in STANDORTE:
+                teil[spalte][st] = kennwerte([zahl(r[spalte]) for r in z if r["standort"] == st])
+            teil[spalte]["je_jahr_und_standort_summe"] = {
+                f"{j}|{st}": round(sum(v for v in (zahl(r[spalte]) for r in z
+                                                  if r["jahr"] == str(j) and r["standort"] == st)
+                                       if v is not None), 2)
+                for j in sorted({int(r["jahr"]) for r in z}) for st in STANDORTE}
+        teil["luecken"] = sorted(f"{r['standort']}|{r['monat']}|{s}" for r in z
+                                 for s in BENUTZUNG_SPALTEN if r[s] == "")
+        out[name] = teil
+    z = lies_csv(sdir / "benutzung_monatlich.csv")
+    sommer = {}
+    for j in STAT_JAHRE:
+        werte = [zahl(r["besuche"]) for r in z if r["standort"] == "Außenstelle" and r["jahr"] == str(j)
+                 and r["monat"][5:7] in ("06", "07", "08")]
+        sommer[str(j)] = None if None in werte else round(stx.mean(werte), 2)
+    out["benutzung_monatlich"]["aussenstelle_besuche_sommermittel_jun_aug"] = sommer
+    kz = {}
+    for j in STAT_JAHRE:
+        rs = [r for r in z if r["standort"] == "Hauptstelle" and r["jahr"] == str(j)
+              and r["ausleihen"] != "" and r["besuche"] != ""]
+        kz[str(j)] = round(sum(int(r["ausleihen"]) for r in rs) / sum(int(r["besuche"]) for r in rs) * 100, 2)
+    out["benutzung_monatlich"]["hauptstelle_ausleihen_je_100_besuche_je_jahr"] = kz
+
+    fl = lies_csv(sdir / "fernleihe_dauer.csv")
+    out["fernleihe_dauer"] = {"zeilen": len(fl), "dauer_tage": kennwerte([int(r["dauer_tage"]) for r in fl])}
+    for gruppe in ["lieferweg", "medium"]:
+        out["fernleihe_dauer"][f"nach_{gruppe}"] = {
+            g: kennwerte([int(r["dauer_tage"]) for r in fl if r[gruppe] == g])
+            for g in sorted({r[gruppe] for r in fl})}
+    out["fernleihe_dauer"]["ueber_30_tage"] = sum(int(r["dauer_tage"]) > 30 for r in fl)
+    out["fernleihe_dauer"]["ueber_90_tage"] = sum(int(r["dauer_tage"]) > 90 for r in fl)
+
+    ev = lies_csv(sdir / "evaluation_schulungen.csv")
+    out["evaluation_schulungen"] = {"zeilen": len(ev)}
+    for spalte in ["zufriedenheit", "verstaendlichkeit"]:
+        out["evaluation_schulungen"][spalte] = kennwerte([zahl(r[spalte]) for r in ev])
+        out["evaluation_schulungen"][spalte]["nach_schulung"] = {
+            s: kennwerte([zahl(r[spalte]) for r in ev if r["schulung"] == s])
+            for s, *_ in SCHULUNGEN}
+    emp = [r["weiterempfehlung"] for r in ev]
+    out["evaluation_schulungen"]["weiterempfehlung"] = {
+        "ja": emp.count("ja"), "nein": emp.count("nein"), "fehlend": emp.count(""),
+        "anteil_ja_unter_antworten": round(emp.count("ja") / (emp.count("ja") + emp.count("nein")), 2)}
+    out["evaluation_schulungen"]["fehlend_nach_zielgruppe"] = {
+        zg: {s: sum(r[s] == "" for r in ev if r["zielgruppe"] == zg)
+             for s in ["zufriedenheit", "verstaendlichkeit", "weiterempfehlung"]}
+        for zg, _ in ZIELGRUPPEN}
+    out["evaluation_schulungen"]["zeilen_nach_zielgruppe"] = {
+        zg: sum(r["zielgruppe"] == zg for r in ev) for zg, _ in ZIELGRUPPEN}
+    out["evaluation_schulungen"]["leere_boegen"] = sorted(
+        r["bogen_nr"] for r in ev if r["zufriedenheit"] == r["verstaendlichkeit"] == r["weiterempfehlung"] == "")
+    return out
+
+
+STAT_README = """<!-- {marker} -->
+
+# verwaltung/statistik/ -- Berichtswesen der Bibliothek
+
+{hinweis}
+
+Das Berichtswesen sammelt die Zahlen, die die Verwaltung jeden Monat zusammenträgt und einmal im Jahr berichtet. Die Dateien liegen als CSV (UTF-8, Komma, Punkt als Dezimalzeichen, Datum als JJJJ-MM-TT) und als Excel-Datei mit demselben Inhalt vor; die Excel-Fassung trägt den Hinweis auf fiktive Daten auf dem zweiten Blatt „Hinweis“. Leere Zellen sind fehlende Werte. Kanon und Begründung: WELT.md, Abschnitt „Berichtswesen“; Sollwerte: loesungen/statistik.golden.json.
+
+| Datei | Inhalt |
+|---|---|
+| `benutzung_monatlich` | Januar 2022 bis Dezember 2025, je Monat und Standort (Hauptstelle, Außenstelle): `besuche` (Eingangszählung), `ausleihen`, `fernleihbestellungen`, `platzauslastung` (Lesesaal, Prozent aus der Sitzplatzbuchung) |
+| `benutzung_2026` | dieselben Spalten für Januar bis Oktober 2026 |
+| `besuche_jahresverlauf` | die Besuche aus `benutzung_monatlich` in Breitform: eine Zeile je Jahr und Standort, Spalten `jan` bis `dez` |
+| `evaluation_schulungen` | Rückmeldebögen zu vier Schulungen 2022 bis 2025: `zielgruppe`, `zufriedenheit` und `verstaendlichkeit` von 1 (gar nicht) bis 5 (sehr), `weiterempfehlung` ja/nein; unbeantwortete Fragen bleiben leer |
+| `fernleihe_dauer` | alle Fernleihbestellungen der Außenstelle 2025 mit `lieferweg`, `medium` und `dauer_tage` (Tage bis zur Bereitstellung); die Anzahl je Monat entspricht `fernleihbestellungen` der Außenstelle |
+| `benutzung_export.csv` | `benutzung_monatlich` als unordentlicher Systemexport: zwei Vorspannzeilen, Semikolon, Dezimalkomma, Tausenderpunkt, „k. A.“ für fehlende Werte |
+| `jahresbericht_besuche.xlsx` | `besuche_jahresverlauf` als Berichtstabelle: Titelzeile, Leerzeile, Summenspalte, Summenzeile, Hinweisblatt |
+
+Bekannte Lücken (feste Positionen): Besuche der Außenstelle Juni bis August 2024 und März 2026 (Zählgerät defekt), Ausleihen der Hauptstelle November 2023 (Systemumstellung).
+"""
 
 
 def pruefe_integritaet():
@@ -427,6 +806,7 @@ def main():
     gen_vermerke();     print("  notizen/ geschrieben")
     gen_magazin();      print("  magazin/ geschrieben")
     gen_loesungen();    print("  loesungen/ geschrieben")
+    gen_statistik();    print("  verwaltung/statistik/ + loesungen/statistik.golden.json geschrieben")
     print("Fertig.")
 
 

@@ -1,0 +1,243 @@
+bogen_nr,datum,jahr,schulung,zielgruppe,zufriedenheit,verstaendlichkeit,weiterempfehlung
+EV-2022-001,2022-01-04,2022,Datenbankrecherche,Studierende,4,4,nein
+EV-2022-002,2022-01-04,2022,Datenbankrecherche,Studierende,4,4,ja
+EV-2022-003,2022-01-04,2022,Datenbankrecherche,Externe,2,2,nein
+EV-2022-004,2022-01-04,2022,Datenbankrecherche,Studierende,3,4,nein
+EV-2022-005,2022-01-06,2022,Katalogrecherche,Externe,5,5,
+EV-2022-006,2022-01-06,2022,Katalogrecherche,Studierende,,5,ja
+EV-2022-007,2022-01-06,2022,Katalogrecherche,Studierende,5,5,
+EV-2022-008,2022-01-18,2022,Fernleihe und Dokumentlieferung,Beschäftigte,5,,ja
+EV-2022-009,2022-01-18,2022,Fernleihe und Dokumentlieferung,Studierende,5,4,ja
+EV-2022-010,2022-01-18,2022,Fernleihe und Dokumentlieferung,Studierende,5,4,ja
+EV-2022-011,2022-01-18,2022,Fernleihe und Dokumentlieferung,Externe,5,3,ja
+EV-2022-012,2022-01-25,2022,Archivführung,Studierende,5,,ja
+EV-2022-013,2022-01-25,2022,Archivführung,Externe,5,,ja
+EV-2022-014,2022-01-25,2022,Archivführung,Beschäftigte,4,4,ja
+EV-2022-015,2022-01-25,2022,Archivführung,Externe,4,3,ja
+EV-2022-016,2022-01-25,2022,Archivführung,Externe,5,5,
+EV-2022-017,2022-02-08,2022,Fernleihe und Dokumentlieferung,Beschäftigte,5,4,ja
+EV-2022-018,2022-02-08,2022,Fernleihe und Dokumentlieferung,Studierende,4,3,ja
+EV-2022-019,2022-02-08,2022,Fernleihe und Dokumentlieferung,Studierende,4,3,ja
+EV-2022-020,2022-02-08,2022,Fernleihe und Dokumentlieferung,Externe,4,4,ja
+EV-2022-021,2022-03-22,2022,Archivführung,Beschäftigte,5,4,ja
+EV-2022-022,2022-03-22,2022,Archivführung,Studierende,5,5,ja
+EV-2022-023,2022-03-22,2022,Archivführung,Beschäftigte,5,5,ja
+EV-2022-024,2022-03-22,2022,Archivführung,Studierende,4,5,ja
+EV-2022-025,2022-03-22,2022,Archivführung,Beschäftigte,,5,ja
+EV-2022-026,2022-05-03,2022,Datenbankrecherche,Externe,3,3,nein
+EV-2022-027,2022-05-03,2022,Datenbankrecherche,Beschäftigte,2,3,nein
+EV-2022-028,2022-05-03,2022,Datenbankrecherche,Externe,5,5,ja
+EV-2022-029,2022-05-03,2022,Katalogrecherche,Studierende,4,4,ja
+EV-2022-030,2022-05-03,2022,Katalogrecherche,Studierende,,4,nein
+EV-2022-031,2022-05-03,2022,Katalogrecherche,Studierende,5,4,ja
+EV-2022-032,2022-06-14,2022,Katalogrecherche,Studierende,5,3,
+EV-2022-033,2022-06-14,2022,Katalogrecherche,Externe,5,4,ja
+EV-2022-034,2022-06-14,2022,Katalogrecherche,Studierende,3,,ja
+EV-2022-035,2022-09-08,2022,Fernleihe und Dokumentlieferung,Beschäftigte,1,4,nein
+EV-2022-036,2022-09-08,2022,Fernleihe und Dokumentlieferung,Externe,4,5,ja
+EV-2022-037,2022-09-08,2022,Fernleihe und Dokumentlieferung,Beschäftigte,3,3,nein
+EV-2022-038,2022-09-08,2022,Fernleihe und Dokumentlieferung,Beschäftigte,4,4,ja
+EV-2022-039,2022-10-13,2022,Katalogrecherche,Beschäftigte,,4,ja
+EV-2022-040,2022-10-13,2022,Katalogrecherche,Beschäftigte,4,5,ja
+EV-2022-041,2022-10-13,2022,Katalogrecherche,Beschäftigte,4,3,nein
+EV-2022-042,2022-10-18,2022,Datenbankrecherche,Studierende,3,4,
+EV-2022-043,2022-10-18,2022,Datenbankrecherche,Beschäftigte,5,,ja
+EV-2022-044,2022-10-18,2022,Datenbankrecherche,Beschäftigte,4,2,ja
+EV-2022-045,2022-10-18,2022,Datenbankrecherche,Studierende,3,4,
+EV-2022-046,2022-11-22,2022,Katalogrecherche,Beschäftigte,5,3,ja
+EV-2022-047,2022-11-22,2022,Katalogrecherche,Beschäftigte,4,4,ja
+EV-2022-048,2022-11-22,2022,Katalogrecherche,Studierende,5,4,ja
+EV-2022-049,2022-11-22,2022,Katalogrecherche,Studierende,4,5,
+EV-2022-050,2022-11-22,2022,Katalogrecherche,Studierende,4,4,nein
+EV-2022-051,2022-12-13,2022,Katalogrecherche,Studierende,4,3,nein
+EV-2022-052,2022-12-13,2022,Katalogrecherche,Externe,5,2,ja
+EV-2022-053,2022-12-13,2022,Katalogrecherche,Studierende,5,5,ja
+EV-2022-054,2022-12-13,2022,Katalogrecherche,Beschäftigte,2,4,nein
+EV-2022-055,2022-12-13,2022,Katalogrecherche,Beschäftigte,3,5,nein
+EV-2022-056,2022-12-20,2022,Datenbankrecherche,Beschäftigte,5,1,ja
+EV-2022-057,2022-12-20,2022,Datenbankrecherche,Studierende,5,3,ja
+EV-2022-058,2022-12-20,2022,Datenbankrecherche,Beschäftigte,4,4,ja
+EV-2022-059,2022-12-20,2022,Datenbankrecherche,Studierende,4,4,nein
+EV-2023-001,2023-01-10,2023,Katalogrecherche,Studierende,4,2,nein
+EV-2023-002,2023-01-10,2023,Katalogrecherche,Studierende,4,4,nein
+EV-2023-003,2023-01-10,2023,Katalogrecherche,Studierende,4,5,
+EV-2023-004,2023-02-16,2023,Archivführung,Beschäftigte,,,ja
+EV-2023-005,2023-02-16,2023,Archivführung,Externe,3,5,nein
+EV-2023-006,2023-02-16,2023,Archivführung,Beschäftigte,4,,ja
+EV-2023-007,2023-02-16,2023,Archivführung,Beschäftigte,2,4,nein
+EV-2023-008,2023-02-16,2023,Archivführung,Beschäftigte,5,5,ja
+EV-2023-009,2023-02-22,2023,Datenbankrecherche,Studierende,5,4,ja
+EV-2023-010,2023-02-22,2023,Datenbankrecherche,Studierende,4,5,ja
+EV-2023-011,2023-02-22,2023,Datenbankrecherche,Externe,5,2,nein
+EV-2023-012,2023-02-22,2023,Datenbankrecherche,Externe,3,3,ja
+EV-2023-013,2023-02-22,2023,Datenbankrecherche,Studierende,5,,
+EV-2023-014,2023-03-07,2023,Datenbankrecherche,Beschäftigte,3,5,
+EV-2023-015,2023-03-07,2023,Datenbankrecherche,Externe,4,,
+EV-2023-016,2023-03-07,2023,Datenbankrecherche,Beschäftigte,4,4,ja
+EV-2023-017,2023-03-07,2023,Datenbankrecherche,Externe,,4,nein
+EV-2023-018,2023-03-23,2023,Fernleihe und Dokumentlieferung,Studierende,5,4,ja
+EV-2023-019,2023-03-23,2023,Fernleihe und Dokumentlieferung,Studierende,3,4,ja
+EV-2023-020,2023-03-23,2023,Fernleihe und Dokumentlieferung,Studierende,3,4,ja
+EV-2023-021,2023-04-20,2023,Katalogrecherche,Studierende,,,
+EV-2023-022,2023-04-20,2023,Katalogrecherche,Beschäftigte,4,3,
+EV-2023-023,2023-04-20,2023,Katalogrecherche,Externe,4,4,ja
+EV-2023-024,2023-04-20,2023,Katalogrecherche,Externe,4,4,ja
+EV-2023-025,2023-05-16,2023,Datenbankrecherche,Externe,4,4,
+EV-2023-026,2023-05-16,2023,Datenbankrecherche,Studierende,4,1,ja
+EV-2023-027,2023-05-16,2023,Datenbankrecherche,Externe,4,4,
+EV-2023-028,2023-05-16,2023,Datenbankrecherche,Beschäftigte,2,3,nein
+EV-2023-029,2023-05-16,2023,Datenbankrecherche,Beschäftigte,5,4,ja
+EV-2023-030,2023-05-23,2023,Fernleihe und Dokumentlieferung,Externe,4,4,ja
+EV-2023-031,2023-05-23,2023,Fernleihe und Dokumentlieferung,Beschäftigte,4,4,ja
+EV-2023-032,2023-05-23,2023,Fernleihe und Dokumentlieferung,Studierende,5,5,
+EV-2023-033,2023-05-23,2023,Fernleihe und Dokumentlieferung,Studierende,3,2,nein
+EV-2023-034,2023-06-06,2023,Katalogrecherche,Externe,3,,ja
+EV-2023-035,2023-06-06,2023,Katalogrecherche,Beschäftigte,5,4,ja
+EV-2023-036,2023-06-06,2023,Katalogrecherche,Beschäftigte,4,4,ja
+EV-2023-037,2023-06-06,2023,Katalogrecherche,Externe,3,,ja
+EV-2023-038,2023-06-06,2023,Katalogrecherche,Studierende,3,4,nein
+EV-2023-039,2023-06-13,2023,Archivführung,Externe,5,3,ja
+EV-2023-040,2023-06-13,2023,Archivführung,Studierende,5,,ja
+EV-2023-041,2023-06-13,2023,Archivführung,Beschäftigte,4,5,ja
+EV-2023-042,2023-06-13,2023,Archivführung,Beschäftigte,5,5,ja
+EV-2023-043,2023-09-19,2023,Datenbankrecherche,Beschäftigte,4,2,ja
+EV-2023-044,2023-09-19,2023,Datenbankrecherche,Studierende,,3,nein
+EV-2023-045,2023-09-19,2023,Datenbankrecherche,Beschäftigte,5,4,ja
+EV-2023-046,2023-10-03,2023,Fernleihe und Dokumentlieferung,Studierende,4,5,ja
+EV-2023-047,2023-10-03,2023,Fernleihe und Dokumentlieferung,Studierende,5,3,ja
+EV-2023-048,2023-10-03,2023,Fernleihe und Dokumentlieferung,Studierende,5,5,ja
+EV-2023-049,2023-10-24,2023,Katalogrecherche,Studierende,2,3,nein
+EV-2023-050,2023-10-24,2023,Katalogrecherche,Studierende,5,4,ja
+EV-2023-051,2023-10-24,2023,Katalogrecherche,Beschäftigte,2,5,nein
+EV-2023-052,2023-10-24,2023,Katalogrecherche,Studierende,4,5,
+EV-2023-053,2023-11-14,2023,Katalogrecherche,Externe,5,5,
+EV-2023-054,2023-11-14,2023,Katalogrecherche,Externe,3,3,nein
+EV-2023-055,2023-11-14,2023,Katalogrecherche,Studierende,5,5,ja
+EV-2023-056,2023-11-14,2023,Katalogrecherche,Beschäftigte,2,5,nein
+EV-2023-057,2023-11-14,2023,Katalogrecherche,Beschäftigte,2,5,nein
+EV-2023-058,2023-12-19,2023,Katalogrecherche,Studierende,4,,ja
+EV-2023-059,2023-12-19,2023,Katalogrecherche,Studierende,4,4,ja
+EV-2023-060,2023-12-19,2023,Katalogrecherche,Beschäftigte,4,4,ja
+EV-2023-061,2023-12-19,2023,Katalogrecherche,Externe,5,5,ja
+EV-2024-001,2024-01-17,2024,Archivführung,Studierende,5,5,ja
+EV-2024-002,2024-01-17,2024,Archivführung,Externe,4,5,
+EV-2024-003,2024-01-17,2024,Archivführung,Externe,5,5,nein
+EV-2024-004,2024-01-23,2024,Fernleihe und Dokumentlieferung,Beschäftigte,4,4,ja
+EV-2024-005,2024-01-23,2024,Fernleihe und Dokumentlieferung,Studierende,5,5,ja
+EV-2024-006,2024-01-23,2024,Fernleihe und Dokumentlieferung,Externe,4,4,ja
+EV-2024-007,2024-01-23,2024,Fernleihe und Dokumentlieferung,Externe,4,5,
+EV-2024-008,2024-01-23,2024,Fernleihe und Dokumentlieferung,Externe,3,,nein
+EV-2024-009,2024-02-20,2024,Katalogrecherche,Studierende,5,2,ja
+EV-2024-010,2024-02-20,2024,Katalogrecherche,Studierende,5,5,ja
+EV-2024-011,2024-02-20,2024,Katalogrecherche,Studierende,5,3,ja
+EV-2024-012,2024-03-26,2024,Datenbankrecherche,Beschäftigte,4,4,
+EV-2024-013,2024-03-26,2024,Datenbankrecherche,Studierende,4,4,ja
+EV-2024-014,2024-03-26,2024,Datenbankrecherche,Studierende,5,5,ja
+EV-2024-015,2024-03-26,2024,Katalogrecherche,Beschäftigte,4,5,ja
+EV-2024-016,2024-03-26,2024,Katalogrecherche,Beschäftigte,4,3,ja
+EV-2024-017,2024-03-26,2024,Katalogrecherche,Externe,,2,ja
+EV-2024-018,2024-03-26,2024,Katalogrecherche,Studierende,4,3,nein
+EV-2024-019,2024-03-26,2024,Katalogrecherche,Externe,4,4,
+EV-2024-020,2024-04-04,2024,Katalogrecherche,Studierende,1,4,nein
+EV-2024-021,2024-04-04,2024,Katalogrecherche,Studierende,4,5,nein
+EV-2024-022,2024-04-04,2024,Katalogrecherche,Studierende,3,4,nein
+EV-2024-023,2024-04-10,2024,Datenbankrecherche,Beschäftigte,5,4,ja
+EV-2024-024,2024-04-10,2024,Datenbankrecherche,Beschäftigte,4,2,ja
+EV-2024-025,2024-04-10,2024,Datenbankrecherche,Beschäftigte,5,3,ja
+EV-2024-026,2024-04-10,2024,Datenbankrecherche,Studierende,4,3,ja
+EV-2024-027,2024-04-10,2024,Datenbankrecherche,Studierende,4,4,
+EV-2024-028,2024-05-14,2024,Katalogrecherche,Beschäftigte,4,4,ja
+EV-2024-029,2024-05-14,2024,Katalogrecherche,Studierende,3,4,ja
+EV-2024-030,2024-05-14,2024,Katalogrecherche,Studierende,3,4,ja
+EV-2024-031,2024-05-14,2024,Katalogrecherche,Externe,4,4,
+EV-2024-032,2024-06-05,2024,Fernleihe und Dokumentlieferung,Studierende,4,4,ja
+EV-2024-033,2024-06-05,2024,Fernleihe und Dokumentlieferung,Externe,4,4,ja
+EV-2024-034,2024-06-05,2024,Fernleihe und Dokumentlieferung,Studierende,5,4,ja
+EV-2024-035,2024-06-05,2024,Fernleihe und Dokumentlieferung,Externe,4,4,
+EV-2024-036,2024-06-05,2024,Fernleihe und Dokumentlieferung,Studierende,4,2,ja
+EV-2024-037,2024-09-10,2024,Datenbankrecherche,Beschäftigte,4,3,ja
+EV-2024-038,2024-09-10,2024,Datenbankrecherche,Studierende,1,4,nein
+EV-2024-039,2024-09-10,2024,Datenbankrecherche,Beschäftigte,3,4,
+EV-2024-040,2024-09-11,2024,Archivführung,Beschäftigte,5,3,ja
+EV-2024-041,2024-09-11,2024,Archivführung,Externe,5,5,ja
+EV-2024-042,2024-09-11,2024,Archivführung,Beschäftigte,4,3,ja
+EV-2024-043,2024-09-11,2024,Archivführung,Beschäftigte,5,5,ja
+EV-2024-044,2024-09-11,2024,Fernleihe und Dokumentlieferung,Beschäftigte,4,2,ja
+EV-2024-045,2024-09-11,2024,Fernleihe und Dokumentlieferung,Studierende,2,3,nein
+EV-2024-046,2024-09-11,2024,Fernleihe und Dokumentlieferung,Externe,3,3,nein
+EV-2024-047,2024-09-11,2024,Fernleihe und Dokumentlieferung,Beschäftigte,4,,nein
+EV-2024-048,2024-09-11,2024,Fernleihe und Dokumentlieferung,Studierende,5,4,ja
+EV-2024-049,2024-10-22,2024,Datenbankrecherche,Beschäftigte,2,3,nein
+EV-2024-050,2024-10-22,2024,Datenbankrecherche,Studierende,4,3,ja
+EV-2024-051,2024-10-22,2024,Datenbankrecherche,Studierende,5,5,ja
+EV-2024-052,2024-11-26,2024,Katalogrecherche,Studierende,4,3,ja
+EV-2024-053,2024-11-26,2024,Katalogrecherche,Externe,3,,
+EV-2024-054,2024-11-26,2024,Katalogrecherche,Beschäftigte,5,2,ja
+EV-2024-055,2024-11-26,2024,Katalogrecherche,Beschäftigte,3,5,nein
+EV-2024-056,2024-12-17,2024,Katalogrecherche,Externe,4,4,nein
+EV-2024-057,2024-12-17,2024,Katalogrecherche,Beschäftigte,,4,ja
+EV-2024-058,2024-12-17,2024,Katalogrecherche,Externe,4,3,ja
+EV-2024-059,2024-12-17,2024,Katalogrecherche,Studierende,4,4,nein
+EV-2024-060,2024-12-17,2024,Katalogrecherche,Externe,5,5,ja
+EV-2025-001,2025-01-07,2025,Datenbankrecherche,Beschäftigte,4,4,ja
+EV-2025-002,2025-01-07,2025,Datenbankrecherche,Beschäftigte,3,5,nein
+EV-2025-003,2025-01-07,2025,Datenbankrecherche,Studierende,4,4,ja
+EV-2025-004,2025-01-07,2025,Datenbankrecherche,Beschäftigte,,1,ja
+EV-2025-005,2025-01-07,2025,Datenbankrecherche,Beschäftigte,5,4,ja
+EV-2025-006,2025-02-25,2025,Archivführung,Beschäftigte,4,5,nein
+EV-2025-007,2025-02-25,2025,Archivführung,Beschäftigte,5,5,ja
+EV-2025-008,2025-02-25,2025,Archivführung,Externe,4,4,ja
+EV-2025-009,2025-03-11,2025,Katalogrecherche,Externe,2,5,ja
+EV-2025-010,2025-03-11,2025,Katalogrecherche,Externe,5,4,ja
+EV-2025-011,2025-03-11,2025,Katalogrecherche,Beschäftigte,4,1,ja
+EV-2025-012,2025-03-11,2025,Katalogrecherche,Studierende,5,3,ja
+EV-2025-013,2025-03-11,2025,Katalogrecherche,Studierende,4,4,ja
+EV-2025-014,2025-03-25,2025,Archivführung,Studierende,5,4,ja
+EV-2025-015,2025-03-25,2025,Archivführung,Beschäftigte,5,4,ja
+EV-2025-016,2025-03-25,2025,Archivführung,Studierende,5,5,ja
+EV-2025-017,2025-03-25,2025,Archivführung,Studierende,5,,ja
+EV-2025-018,2025-03-25,2025,Archivführung,Externe,,5,ja
+EV-2025-019,2025-04-15,2025,Katalogrecherche,Externe,5,2,
+EV-2025-020,2025-04-15,2025,Katalogrecherche,Externe,5,4,ja
+EV-2025-021,2025-04-15,2025,Katalogrecherche,Externe,5,4,
+EV-2025-022,2025-04-15,2025,Katalogrecherche,Beschäftigte,4,,ja
+EV-2025-023,2025-06-24,2025,Katalogrecherche,Beschäftigte,2,4,nein
+EV-2025-024,2025-06-24,2025,Katalogrecherche,Studierende,4,5,ja
+EV-2025-025,2025-06-24,2025,Katalogrecherche,Beschäftigte,5,5,nein
+EV-2025-026,2025-06-24,2025,Katalogrecherche,Studierende,3,5,ja
+EV-2025-027,2025-06-24,2025,Katalogrecherche,Studierende,5,4,ja
+EV-2025-028,2025-09-11,2025,Katalogrecherche,Beschäftigte,3,,ja
+EV-2025-029,2025-09-11,2025,Katalogrecherche,Studierende,4,5,ja
+EV-2025-030,2025-09-11,2025,Katalogrecherche,Studierende,4,5,ja
+EV-2025-031,2025-09-11,2025,Katalogrecherche,Beschäftigte,5,4,ja
+EV-2025-032,2025-09-16,2025,Fernleihe und Dokumentlieferung,Studierende,1,5,nein
+EV-2025-033,2025-09-16,2025,Fernleihe und Dokumentlieferung,Studierende,4,5,ja
+EV-2025-034,2025-09-16,2025,Fernleihe und Dokumentlieferung,Beschäftigte,4,4,ja
+EV-2025-035,2025-09-16,2025,Fernleihe und Dokumentlieferung,Studierende,4,5,ja
+EV-2025-036,2025-09-23,2025,Datenbankrecherche,Beschäftigte,4,4,ja
+EV-2025-037,2025-09-23,2025,Datenbankrecherche,Studierende,,,
+EV-2025-038,2025-09-23,2025,Datenbankrecherche,Studierende,2,5,ja
+EV-2025-039,2025-09-23,2025,Datenbankrecherche,Studierende,5,3,ja
+EV-2025-040,2025-09-23,2025,Datenbankrecherche,Beschäftigte,5,3,ja
+EV-2025-041,2025-10-07,2025,Katalogrecherche,Studierende,5,4,ja
+EV-2025-042,2025-10-07,2025,Katalogrecherche,Beschäftigte,,4,ja
+EV-2025-043,2025-10-07,2025,Katalogrecherche,Beschäftigte,4,3,ja
+EV-2025-044,2025-11-18,2025,Fernleihe und Dokumentlieferung,Beschäftigte,4,3,ja
+EV-2025-045,2025-11-18,2025,Fernleihe und Dokumentlieferung,Beschäftigte,4,5,ja
+EV-2025-046,2025-11-18,2025,Fernleihe und Dokumentlieferung,Beschäftigte,5,,ja
+EV-2025-047,2025-11-19,2025,Datenbankrecherche,Beschäftigte,4,2,ja
+EV-2025-048,2025-11-19,2025,Datenbankrecherche,Beschäftigte,4,4,ja
+EV-2025-049,2025-11-19,2025,Datenbankrecherche,Studierende,4,3,ja
+EV-2025-050,2025-11-19,2025,Datenbankrecherche,Beschäftigte,5,4,ja
+EV-2025-051,2025-12-09,2025,Fernleihe und Dokumentlieferung,Studierende,5,3,ja
+EV-2025-052,2025-12-09,2025,Fernleihe und Dokumentlieferung,Studierende,5,4,ja
+EV-2025-053,2025-12-09,2025,Fernleihe und Dokumentlieferung,Studierende,4,3,ja
+EV-2025-054,2025-12-09,2025,Fernleihe und Dokumentlieferung,Studierende,5,4,ja
+EV-2025-055,2025-12-09,2025,Fernleihe und Dokumentlieferung,Studierende,4,4,ja
+EV-2025-056,2025-12-16,2025,Datenbankrecherche,Beschäftigte,4,1,ja
+EV-2025-057,2025-12-16,2025,Datenbankrecherche,Studierende,3,,nein
+EV-2025-058,2025-12-16,2025,Datenbankrecherche,Studierende,5,4,ja
+EV-2025-059,2025-12-16,2025,Katalogrecherche,Studierende,4,5,ja
+EV-2025-060,2025-12-16,2025,Katalogrecherche,Beschäftigte,5,5,ja
+EV-2025-061,2025-12-16,2025,Katalogrecherche,Externe,4,5,ja
+EV-2025-062,2025-12-16,2025,Katalogrecherche,Studierende,5,5,ja

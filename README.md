@@ -20,4 +20,8 @@ Jedes Notebook öffnet mit einem Klick in Google Colab. Es lädt die Daten direk
 | Datei-Sortieren | Den Scan-Zoo nach Datum ordnen | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pkocmann/messyverse/blob/main/notebooks/04_datei-sortieren.ipynb) |
 | KI-Verschlagwortung | Titel ins kontrollierte Vokabular einordnen | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pkocmann/messyverse/blob/main/notebooks/05_ki-verschlagwortung.ipynb) |
 
+## Statistik-Daten
+
+Unter `verwaltung/statistik/` liegt das Berichtswesen der Bibliothek: Monatswerte 2022 bis 2025 (fortgeschrieben bis Oktober 2026), eine Evaluation von Schulungen und die Dauer von Fernleihbestellungen, je als CSV und als Excel-Datei, dazu zwei absichtlich unordentliche Dateien zum Üben des sauberen Einlesens. Die Spalten beschreibt `verwaltung/statistik/README.md`. Erster Verbraucher ist der WBZ-Kurs „Statistik verstehen und visualisieren“ (Orange, R, Python).
+
 Die Daten erzeugt `generieren.py` reproduzierbar aus den gepinnten Fixtures; die Welt-Definition steht in `WELT.md`, der Aufbauplan in `PLAN.md`.
