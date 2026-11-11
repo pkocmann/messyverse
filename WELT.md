@@ -11,7 +11,7 @@ Arbeitsname (web-geprüft kollisionsfrei, Setting von PK zu bestätigen): Biblio
 - `erwerbung/` — Einkauf: Lieferantenrechnungen, Bestellbestätigungen (PDF)
 - `katalog/` — Verzeichnen: ISBN- und DOI-Listen, Titeldaten, kontrolliertes Schlagwort-Vokabular `schlagworte.csv` (csv/txt)
 - `magazin/` — Ablage: digitalisierte Dokumente mit gewachsenen Dateinamen
-- `verwaltung/` — Haushalt (xlsx), interne Vermerke
+- `verwaltung/` — Haushalt (xlsx), interne Vermerke; darin `verwaltung/statistik/` — Berichtswesen: Benutzungsstatistik, Evaluation der Schulungen, Fernleihdauer (csv/xlsx), siehe Abschnitt „Berichtswesen“
 - `notizen/` — interne Dokumentation (.md)
 - `api-fixtures/` — abgelegte Antworten der Web-Kataloge (Open Library, Crossref) für deterministische Übungen
 
@@ -29,6 +29,7 @@ Werte- und Diversitäts-Leitplanke: Die ganze Welt — Katalogtitel, Autorinnen 
 
 - Lieferant: „Quellmann Fachbuch GmbH" (fiktiv); ein bis zwei weitere folgen.
 - Haushaltsjahr: 2025 (Datumsrahmen siehe unten).
+- Berichtsjahre des Berichtswesens: 2022 bis 2025, fortgeschrieben bis Oktober 2026 (Abschnitt „Berichtswesen“).
 - Katalog: rund 10 bis 13 reale, klassische Titel, kuratiert nach der Werte- und Diversitäts-Leitplanke (verschiedene Kulturkreise, Geschlechter, Epochen, Themen); davon ~8 bis 10 mit vollständiger Querverweis-Kette, 2 bis 3 bewusst unvollständig. Die konkreten ISBNs/DOIs werden in P1 live gegen Open Library/Crossref verifiziert, als Fixtures gepinnt (E14) und PK vor dem Generieren zur Freigabe vorgelegt.
 
 ## Die Querverweis-Kette — das Glaubwürdigkeits-Rückgrat
@@ -43,7 +44,29 @@ Wer in einer Übung die Rechnung ausliest, verbindet über den Schlüssel auf Ka
 
 ## Datumsrahmen
 
-Alle Vorgänge spielen im Haushaltsjahr 2025 (Belege Januar bis Dezember 2025). Die Rohdaten tragen bewusst gemischte Datumsformate (TT.MM.JJJJ, JJJJ-MM-TT, „3. März 2025") — regel-lösbar, der Anlass für eine Vereinheitlichungs-Übung.
+Erwerbung, Katalog-Belege, Haushalt, Vermerke und Magazin spielen im Haushaltsjahr 2025 (Belege Januar bis Dezember 2025). Das Berichtswesen unter `verwaltung/statistik/` reicht als einziger Teil über 2025 hinaus; sein Rahmen steht im Abschnitt „Berichtswesen“. Die Rohdaten tragen bewusst gemischte Datumsformate (TT.MM.JJJJ, JJJJ-MM-TT, „3. März 2025") — regel-lösbar, der Anlass für eine Vereinheitlichungs-Übung.
+
+## Berichtswesen (`verwaltung/statistik/`)
+
+Die Verwaltung trägt jeden Monat die Benutzungszahlen der Bibliothek zusammen und berichtet sie einmal im Jahr. Dieser Teil der Welt ist der einzige, der mehrere Jahre umfasst, weil Trends, Saisonverläufe und Zeitreihen erst über mehrere Jahre sichtbar werden. Erster Verbraucher ist der WBZ-Kurs „Statistik verstehen und visualisieren“ (Orange, dazu R und Python); die Dateien taugen ebenso für Excel-, Power-Query- und Diagramm-Übungen.
+
+Rahmen: Berichtsjahre 2022 bis 2025 mit Monatswerten Januar bis Dezember, dazu eine Fortschreibung Januar bis Oktober 2026 als „neue Daten“, auf die ein fertiger Auswertungsablauf unverändert angewandt wird. Die Fernleihdauer umfasst die Bestellungen der Außenstelle im Jahr 2025, die Evaluation die Schulungen 2022 bis 2025. Neue Eigennamen gibt es in diesem Teil nicht: Standorte (Hauptstelle, Außenstelle) und Schulungen (Katalogrecherche, Datenbankrecherche, Fernleihe und Dokumentlieferung, Archivführung) tragen Gattungsnamen, Personen kommen nicht vor.
+
+Die Dateien (je CSV und Excel mit gleichem Inhalt, Spaltenbeschreibung in `verwaltung/statistik/README.md`):
+
+- `benutzung_monatlich` — je Monat und Standort Besuche (Eingangszählung), Ausleihen, Fernleihbestellungen und Platzauslastung des Lesesaals in Prozent (aus der Sitzplatzbuchung, also unabhängig vom Zählgerät).
+- `benutzung_2026` — dieselben Spalten für Januar bis Oktober 2026.
+- `besuche_jahresverlauf` — die Besuche in Breitform, eine Zeile je Jahr und Standort, zwölf Monatsspalten.
+- `evaluation_schulungen` — ein Rückmeldebogen je Zeile: Zielgruppe (Studierende, Beschäftigte, Externe), Zufriedenheit und Verständlichkeit von 1 (gar nicht) bis 5 (sehr), Weiterempfehlung ja/nein.
+- `fernleihe_dauer` — eine Fernleihbestellung der Außenstelle 2025 je Zeile mit Lieferweg, Medium und Dauer in Tagen. Querverweis: Die Anzahl je Monat entspricht genau `fernleihbestellungen` der Außenstelle in `benutzung_monatlich`.
+
+Gestaltete Eigenschaften, die die Übungen tragen und die Tests absichern: Die Ausleihen sinken über die Jahre, die Besuche steigen; August und Dezember sind die ruhigen Monate, Oktober und November die vollen. Die Fernleihdauer ist rechtsschief, ihr Mittelwert liegt deutlich über dem Median, und drei Buchbestellungen aus dem Ausland brauchen über 90 Tage. Die Bewertungen der Evaluation häufen sich bei 4 und 5.
+
+Feste Lücken, nie verschoben: Besuche der Außenstelle Juni bis August 2024 (Zählgerät defekt) und März 2026 (ebenso), Ausleihen der Hauptstelle November 2023 (Systemumstellung). In der Evaluation fehlen einzelne Antworten, bei Externen häufiger als bei den anderen Gruppen; zwei Bögen (EV-2023-021, EV-2025-037) sind ganz leer abgegeben. Lücken sind leere Zellen, keine Null. Eine Folge ist beabsichtigt: Jahressummen über Lücken fallen zu niedrig aus.
+
+Zwei Dateien sind bewusst unordentlich, als Anlass für sauberes Einlesen: `benutzung_export.csv` ist `benutzung_monatlich` als Systemexport mit zwei Vorspannzeilen, Semikolon, Dezimalkomma, Tausenderpunkt und „k. A.“ für fehlende Werte; `jahresbericht_besuche.xlsx` ist der Jahresverlauf als Berichtstabelle mit Titelzeile, Leerzeile, Summenspalte, Summenzeile und Hinweisblatt. Datumsangaben bleiben auch dort im ISO-Format (JJJJ-MM-TT, im Export JJJJ-MM), weil gängige Werkzeuge deutsche Datumsangaben beim Einlesen still als Monat und Tag vertauschen; ein solcher Fehler wäre für Anfängerinnen und Anfänger nicht zu erkennen.
+
+Kennzeichnung als fiktiv: Die CSV-Dateien tragen keinen Kopfkommentar, weil er das Einlesen stören würde (wie bei `katalog/isbns.txt`); den Hinweis tragen das README des Ordners, das Blatt „Hinweis“ jeder Excel-Datei und die Vorspannzeile des Exports. Die Sollwerte stehen in `loesungen/statistik.golden.json`; sie beschränken sich auf Anzahl, Summe, Mittelwert, Median, Minimum und Maximum, die alle Werkzeuge gleich rechnen.
 
 ## Datei- und Unordnungs-Konventionen (gemustert, regel-lösbar)
 
