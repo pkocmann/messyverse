@@ -198,7 +198,7 @@ def test_export_csv():
     sauber = csv_zeilen("benutzung_monatlich")
 
     def zurueck(feld):
-        if feld == "k. A.":
+        if feld == ".":
             return ""
         if "," in feld:
             return feld.replace(",", ".")
@@ -208,8 +208,9 @@ def test_export_csv():
         and [zurueck(x) for x in d[2:]] == [s["besuche"], s["ausleihen"], s["fernleihbestellungen"],
                                             s["platzauslastung"]]
         for d, s in zip(daten, sauber))
-    pruefe("mit Semikolon, Dezimalkomma, Tausenderpunkt und k. A. gelesen = benutzung_monatlich", gleich)
-    pruefe("k. A. genau so oft wie Luecken", roh.count("k. A.") == sum(
+    pruefe("mit Semikolon, Dezimalkomma, Tausenderpunkt und Punkt gelesen = benutzung_monatlich", gleich)
+    felder = [f for d in daten for f in d[2:]]
+    pruefe("Fehlwert-Punkt genau so oft wie Luecken", felder.count(".") == sum(
         r[s] == "" for r in sauber for s in gen.BENUTZUNG_SPALTEN))
 
 

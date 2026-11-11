@@ -13,7 +13,7 @@ Das Berichtswesen sammelt die Zahlen, die die Verwaltung jeden Monat zusammentr�
 | `besuche_jahresverlauf` | die Besuche aus `benutzung_monatlich` in Breitform: eine Zeile je Jahr und Standort, Spalten `jan` bis `dez` |
 | `evaluation_schulungen` | Rückmeldebögen zu vier Schulungen 2022 bis 2025: `zielgruppe`, `zufriedenheit` und `verstaendlichkeit` von 1 (gar nicht) bis 5 (sehr), `weiterempfehlung` ja/nein; unbeantwortete Fragen bleiben leer |
 | `fernleihe_dauer` | alle Fernleihbestellungen der Außenstelle 2025 mit `lieferweg`, `medium` und `dauer_tage` (Tage bis zur Bereitstellung); die Anzahl je Monat entspricht `fernleihbestellungen` der Außenstelle |
-| `benutzung_export.csv` | `benutzung_monatlich` als unordentlicher Systemexport: zwei Vorspannzeilen, Semikolon, Dezimalkomma, Tausenderpunkt, „k. A.“ für fehlende Werte |
+| `benutzung_export.csv` | `benutzung_monatlich` als unordentlicher Systemexport: zwei Vorspannzeilen, Semikolon, Dezimalkomma, Tausenderpunkt, ein Punkt „.“ für fehlende Werte |
 | `jahresbericht_besuche.xlsx` | `besuche_jahresverlauf` als Berichtstabelle: Titelzeile, Leerzeile, Summenspalte, Summenzeile, Hinweisblatt |
 
 Bekannte Lücken (feste Positionen): Besuche der Außenstelle Juni bis August 2024 und März 2026 (Zählgerät defekt), Ausleihen der Hauptstelle November 2023 (Systemumstellung).
