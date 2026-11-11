@@ -24,6 +24,15 @@ SDIR = WURZEL / "verwaltung" / "statistik"
 sys.path.insert(0, str(WURZEL))
 import generieren as gen  # noqa: E402
 
+# Unabhaengige Erwartungen aus WELT.md, Abschnitt "Berichtswesen" -- bewusst NICHT aus generieren.py
+# uebernommen, damit eine falsche Generator-Aenderung samt Regeneration auffaellt.
+KANON_LUECKEN = {
+    ("Außenstelle", "2024-06-01", "besuche"), ("Außenstelle", "2024-07-01", "besuche"),
+    ("Außenstelle", "2024-08-01", "besuche"), ("Hauptstelle", "2023-11-01", "ausleihen"),
+    ("Außenstelle", "2026-03-01", "besuche"),
+}
+KANON_LEERE_BOEGEN = ["EV-2023-021", "EV-2025-037"]
+KANON_STANDORTE = ["Hauptstelle", "Außenstelle"]
 SAUBER = ["benutzung_monatlich", "benutzung_2026", "besuche_jahresverlauf",
           "evaluation_schulungen", "fernleihe_dauer"]
 WELTORDNER = ["katalog", "erwerbung", "verwaltung", "notizen", "magazin", "loesungen"]
@@ -105,8 +114,8 @@ def test_luecken():
     for name, jahre in [("benutzung_monatlich", "2022-2025"), ("benutzung_2026", "2026")]:
         z = csv_zeilen(name)
         ist = {(r["standort"], r["monat"], s) for r in z for s in gen.BENUTZUNG_SPALTEN if r[s] == ""}
-        soll = {k for k in gen.STAT_LUECKEN if k[1][:4] in ({"2026"} if jahre == "2026"
-                                                            else {"2022", "2023", "2024", "2025"})}
+        soll = {k for k in KANON_LUECKEN if k[1][:4] in ({"2026"} if jahre == "2026"
+                                                          else {"2022", "2023", "2024", "2025"})}
         pruefe(f"{name}: Luecken genau an den festen Stellen ({len(soll)})", ist == soll, str(ist ^ soll))
     breit = csv_zeilen("besuche_jahresverlauf")
     leer = {(r["jahr"], r["standort"], m) for r in breit for m in gen.MONATSNAMEN if r[m] == ""}
@@ -114,6 +123,47 @@ def test_luecken():
            leer == {("2024", "Außenstelle", m) for m in ("jun", "jul", "aug")}, str(leer))
     z = csv_zeilen("benutzung_monatlich")
     pruefe("Platzauslastung auch in Luecken-Monaten vorhanden", all(r["platzauslastung"] != "" for r in z))
+
+
+def test_kalender():
+    print("Kalender und Schluessel:")
+    from datetime import date
+    for name, monate in [("benutzung_monatlich", [(j, m) for j in range(2022, 2026) for m in range(1, 13)]),
+                         ("benutzung_2026", [(2026, m) for m in range(1, 11)])]:
+        z = csv_zeilen(name)
+        soll = [(f"{j}-{m:02d}-01", st) for j, m in monate for st in KANON_STANDORTE]
+        pruefe(f"{name}: lueckenloses Monatsraster, Reihenfolge Monat/Standort, Schluessel eindeutig",
+               [(r["monat"], r["standort"]) for r in z] == soll)
+        pruefe(f"{name}: jahr passt zum Monat", all(r["jahr"] == r["monat"][:4] for r in z))
+    fl = csv_zeilen("fernleihe_dauer")
+    try:
+        ok = all(date.fromisoformat(r["bestelldatum"]).isoformat()[:7] == r["monat"][:7] for r in fl)
+    except ValueError:
+        ok = False
+    pruefe("fernleihe_dauer: Bestelldatum ist ein gueltiges Datum im angegebenen Monat", ok)
+    ev = csv_zeilen("evaluation_schulungen")
+    try:
+        ok = all(date.fromisoformat(r["datum"]).weekday() in (1, 2, 3) and r["jahr"] == r["datum"][:4] for r in ev)
+    except ValueError:
+        ok = False
+    pruefe("evaluation_schulungen: Termine gueltig, Dienstag bis Donnerstag, jahr passt", ok)
+    from datetime import datetime
+    d = gen.stat_werktag_im_monat(datetime(2022, 2, 26))
+    pruefe("Randfall Februarende: Termin bleibt im Februar und faellt auf Di bis Do",
+           d.month == 2 and d.weekday() in (1, 2, 3), d.isoformat())
+
+
+def test_lang_breit():
+    print("Lang- und Breitform:")
+    lang = {(r["jahr"], r["standort"], r["monat"][5:7]): r["besuche"] for r in csv_zeilen("benutzung_monatlich")}
+    breit = csv_zeilen("besuche_jahresverlauf")
+    pruefe("Breitform: Kopf jahr, standort, jan bis dez", list(breit[0].keys()) ==
+           ["jahr", "standort", "jan", "feb", "mrz", "apr", "mai", "jun", "jul", "aug", "sep", "okt", "nov", "dez"])
+    pruefe("Breitform: Zeilen je Jahr und Standort in fester Reihenfolge",
+           [(r["jahr"], r["standort"]) for r in breit] == [(str(j), st) for j in range(2022, 2026) for st in KANON_STANDORTE])
+    namen = list(breit[0].keys())[2:]
+    pruefe("Breitform aus Langform unabhaengig rekonstruiert, alle 96 Zellen gleich",
+           all(r[n] == lang[(r["jahr"], r["standort"], f"{i:02d}")] for r in breit for i, n in enumerate(namen, 1)))
 
 
 def test_eigenschaften():
@@ -125,6 +175,8 @@ def test_eigenschaften():
     a = [summe("Hauptstelle", j, "ausleihen") for j in gen.STAT_JAHRE]
     b = [summe("Hauptstelle", j, "besuche") for j in gen.STAT_JAHRE]
     pruefe("Hauptstelle: Ausleihen 2025 unter 2022, auch 2024 unter 2022", a[3] < a[0] and a[2] < a[0], str(a))
+    a2 = [summe("Außenstelle", j, "ausleihen") for j in gen.STAT_JAHRE]
+    pruefe("Aussenstelle: Ausleihen sinken jedes Jahr", all(x > y for x, y in zip(a2, a2[1:])), str(a2))
     pruefe("Hauptstelle: Besuche steigen jedes Jahr", all(x < y for x, y in zip(b, b[1:])), str(b))
     ok_min, ok_max = True, True
     for st in gen.STANDORTE:
@@ -171,7 +223,7 @@ def test_evaluation():
     pruefe("Bogennummern eindeutig", len({r["bogen_nr"] for r in ev}) == len(ev))
     leer = sorted(r["bogen_nr"] for r in ev if r["zufriedenheit"] == r["verstaendlichkeit"]
                   == r["weiterempfehlung"] == "")
-    pruefe("genau die zwei festen leeren Boegen", leer == gen.EVAL_LEERE_BOEGEN, str(leer))
+    pruefe("genau die zwei festen leeren Boegen", leer == KANON_LEERE_BOEGEN, str(leer))
     pruefe("Bewertungen nur 1 bis 5 oder leer", all(r[s] in ("", "1", "2", "3", "4", "5")
                                                     for r in ev for s in ("zufriedenheit", "verstaendlichkeit")))
     pruefe("Weiterempfehlung nur ja, nein oder leer", {r["weiterempfehlung"] for r in ev} <= {"ja", "nein", ""})
@@ -181,8 +233,9 @@ def test_evaluation():
         return sum(r["weiterempfehlung"] == "" for r in g) / len(g)
     pruefe("Externe lassen die Weiterempfehlung haeufiger offen",
            quote("Externe") > max(quote("Studierende"), quote("Beschäftigte")))
-    zuf = [int(r["zufriedenheit"]) for r in ev if r["zufriedenheit"]]
-    pruefe("Bewertungen haeufen sich bei 4 und 5", sum(v >= 4 for v in zuf) / len(zuf) > 0.6)
+    for s in ("zufriedenheit", "verstaendlichkeit"):
+        w = [int(r[s]) for r in ev if r[s]]
+        pruefe(f"{s}: Bewertungen haeufen sich bei 4 und 5", sum(v >= 4 for v in w) / len(w) > 0.6)
 
 
 def test_export_csv():
@@ -225,13 +278,18 @@ def test_jahresbericht():
            and w[2][0] == "Jahr" and w[2][-1] == "Summe")
     daten = w[3:11]
     breit = csv_zeilen("besuche_jahresverlauf")
-    pruefe("acht Datenzeilen = besuche_jahresverlauf", len(daten) == 8 and all(
+    pruefe("Kopf: Jahr, Standort, zwoelf Monatsnamen, Summe", list(w[2]) == ["Jahr", "Standort",
+           "Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September",
+           "Oktober", "November", "Dezember", "Summe"])
+    pruefe("acht Datenzeilen = besuche_jahresverlauf, mit Jahr und Standort", len(daten) == 8 and all(
+        str(d[0]) == b["jahr"] and d[1] == b["standort"] and
         all(gleicher_wert(v, b[m]) if v is not None else b[m] == "" for v, m in zip(d[2:14], gen.MONATSNAMEN))
         for d, b in zip(daten, breit)))
     pruefe("Summenspalte = Zeilensumme", all(d[14] == sum(v for v in d[2:14] if v is not None) for d in daten))
     summe = w[12]
-    pruefe("Summenzeile = Spaltensummen", summe[0] == "Summe" and all(
-        summe[2 + i] == sum((d[2 + i] or 0) for d in daten) for i in range(12)))
+    pruefe("Summenzeile = Spaltensummen, Gesamtsumme = Summe aller Zellen", summe[0] == "Summe" and all(
+        summe[2 + i] == sum((d[2 + i] or 0) for d in daten) for i in range(12))
+        and summe[14] == sum((v or 0) for d in daten for v in d[2:14]))
 
 
 def test_sollwerte():
@@ -243,12 +301,32 @@ def test_sollwerte():
     pruefe("Stichprobe unabhaengig gerechnet: Median und Mittelwert der Fernleihdauer",
            datei["fernleihe_dauer"]["dauer_tage"]["median"] == statistics.median(fl)
            and datei["fernleihe_dauer"]["dauer_tage"]["mittelwert"] == round(statistics.mean(fl), 2))
+    # Unabhaengig gerechnet: Kennzahl und Vergleich gleicher Monate (eigene Rechenwege, nicht gen.*)
+    z = csv_zeilen("benutzung_monatlich")
+    hs23 = [r for r in z if r["standort"] == "Hauptstelle" and r["jahr"] == "2023" and r["ausleihen"] and r["besuche"]]
+    kz = datei["benutzung_monatlich"]["hauptstelle_ausleihen_je_100_besuche"]
+    pruefe("Kennzahl 2023: 11 Monate, Jahresmittel der Monatswerte und Verhaeltnis der Summen",
+           kz["monate_mit_kennzahl"]["2023"] == len(hs23) == 11
+           and kz["jahresmittel_der_monatswerte"]["2023"] == round(statistics.mean(
+               int(r["ausleihen"]) / int(r["besuche"]) * 100 for r in hs23), 2)
+           and kz["verhaeltnis_der_summen_gemeinsamer_monate"]["2023"] == round(
+               sum(int(r["ausleihen"]) for r in hs23) / sum(int(r["besuche"]) for r in hs23) * 100, 2))
+    z26 = csv_zeilen("benutzung_2026")
+    v = datei["vergleich_gleicher_monate_2025_2026"]
+    pruefe("Vergleich Januar bis Oktober: Hauptstelle Besuche 2025 und 2026 unabhaengig gerechnet",
+           v["2025|Hauptstelle|besuche"]["summe"] == sum(int(r["besuche"]) for r in z if r["standort"] == "Hauptstelle"
+                                                       and r["jahr"] == "2025" and r["monat"][5:7] <= "10")
+           and v["2026|Hauptstelle|besuche"]["summe"] == sum(int(r["besuche"]) for r in z26 if r["standort"] == "Hauptstelle"))
+    pruefe("keine Jahressummen von Prozentwerten",
+           "je_jahr_und_standort_summe" not in datei["benutzung_monatlich"]["platzauslastung"])
     readme = (SDIR / "README.md").read_text(encoding="utf-8")
-    pruefe("README kennzeichnet die Daten als erfunden", "erfunden" in readme and gen.MARKER in readme)
+    pruefe("README kennzeichnet die Daten als erfunden, mit SPDX CC0-1.0 und Marker",
+           "erfunden" in readme and "SPDX-License-Identifier: CC0-1.0" in readme and gen.MARKER in readme)
 
 
 if __name__ == "__main__":
-    for t in [test_reproduzierbar, test_csv_gleich_excel, test_luecken, test_eigenschaften,
+    for t in [test_reproduzierbar, test_csv_gleich_excel, test_luecken, test_kalender, test_lang_breit,
+              test_eigenschaften,
               test_fernleihe, test_evaluation, test_export_csv, test_jahresbericht, test_sollwerte]:
         t()
         print()

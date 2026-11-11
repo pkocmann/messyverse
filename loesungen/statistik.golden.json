@@ -19,6 +19,10 @@
         "n": 10,
         "summe": 12038
       },
+      "je_jahr_und_standort_monate_mit_wert": {
+        "2026|Außenstelle": 10,
+        "2026|Hauptstelle": 10
+      },
       "je_jahr_und_standort_summe": {
         "2026|Außenstelle": 3053,
         "2026|Hauptstelle": 12038
@@ -43,6 +47,10 @@
         "n": 10,
         "summe": 25425
       },
+      "je_jahr_und_standort_monate_mit_wert": {
+        "2026|Außenstelle": 9,
+        "2026|Hauptstelle": 10
+      },
       "je_jahr_und_standort_summe": {
         "2026|Außenstelle": 6216,
         "2026|Hauptstelle": 25425
@@ -66,6 +74,10 @@
         "mittelwert": 89.3,
         "n": 10,
         "summe": 893
+      },
+      "je_jahr_und_standort_monate_mit_wert": {
+        "2026|Außenstelle": 10,
+        "2026|Hauptstelle": 10
       },
       "je_jahr_und_standort_summe": {
         "2026|Außenstelle": 212,
@@ -94,9 +106,13 @@
         "n": 10,
         "summe": 653.8
       },
-      "je_jahr_und_standort_summe": {
-        "2026|Außenstelle": 662.6,
-        "2026|Hauptstelle": 653.8
+      "je_jahr_und_standort_mittel_der_monate": {
+        "2026|Außenstelle": 66.26,
+        "2026|Hauptstelle": 65.38
+      },
+      "je_jahr_und_standort_monate_mit_wert": {
+        "2026|Außenstelle": 10,
+        "2026|Hauptstelle": 10
       }
     },
     "spalten": [
@@ -129,6 +145,16 @@
         "mittelwert": 1327.38,
         "n": 47,
         "summe": 62387
+      },
+      "je_jahr_und_standort_monate_mit_wert": {
+        "2022|Außenstelle": 12,
+        "2022|Hauptstelle": 12,
+        "2023|Außenstelle": 12,
+        "2023|Hauptstelle": 11,
+        "2024|Außenstelle": 12,
+        "2024|Hauptstelle": 12,
+        "2025|Außenstelle": 12,
+        "2025|Hauptstelle": 12
       },
       "je_jahr_und_standort_summe": {
         "2022|Außenstelle": 4345,
@@ -166,6 +192,16 @@
         "n": 48,
         "summe": 115909
       },
+      "je_jahr_und_standort_monate_mit_wert": {
+        "2022|Außenstelle": 12,
+        "2022|Hauptstelle": 12,
+        "2023|Außenstelle": 12,
+        "2023|Hauptstelle": 12,
+        "2024|Außenstelle": 9,
+        "2024|Hauptstelle": 12,
+        "2025|Außenstelle": 12,
+        "2025|Hauptstelle": 12
+      },
       "je_jahr_und_standort_summe": {
         "2022|Außenstelle": 7499,
         "2022|Hauptstelle": 27885,
@@ -196,6 +232,16 @@
         "n": 48,
         "summe": 4480
       },
+      "je_jahr_und_standort_monate_mit_wert": {
+        "2022|Außenstelle": 12,
+        "2022|Hauptstelle": 12,
+        "2023|Außenstelle": 12,
+        "2023|Hauptstelle": 12,
+        "2024|Außenstelle": 12,
+        "2024|Hauptstelle": 12,
+        "2025|Außenstelle": 12,
+        "2025|Hauptstelle": 12
+      },
       "je_jahr_und_standort_summe": {
         "2022|Außenstelle": 265,
         "2022|Hauptstelle": 1163,
@@ -207,11 +253,26 @@
         "2025|Hauptstelle": 1094
       }
     },
-    "hauptstelle_ausleihen_je_100_besuche_je_jahr": {
-      "2022": 61.28,
-      "2023": 55.96,
-      "2024": 54.17,
-      "2025": 50.28
+    "hauptstelle_ausleihen_je_100_besuche": {
+      "definition_je_monat": "ausleihen / besuche * 100; Monate mit fehlendem Wert bleiben ohne Kennzahl",
+      "jahresmittel_der_monatswerte": {
+        "2022": 61.3,
+        "2023": 56.02,
+        "2024": 54.37,
+        "2025": 50.6
+      },
+      "monate_mit_kennzahl": {
+        "2022": 12,
+        "2023": 11,
+        "2024": 12,
+        "2025": 12
+      },
+      "verhaeltnis_der_summen_gemeinsamer_monate": {
+        "2022": 61.28,
+        "2023": 55.96,
+        "2024": 54.17,
+        "2025": 50.28
+      }
     },
     "luecken": [
       "Außenstelle|2024-06-01|besuche",
@@ -238,15 +299,25 @@
         "n": 48,
         "summe": 2971.3
       },
-      "je_jahr_und_standort_summe": {
-        "2022|Außenstelle": 714.4,
-        "2022|Hauptstelle": 721.0,
-        "2023|Außenstelle": 731.9,
-        "2023|Hauptstelle": 734.0,
-        "2024|Außenstelle": 785.2,
-        "2024|Hauptstelle": 738.6,
-        "2025|Außenstelle": 782.0,
-        "2025|Hauptstelle": 777.7
+      "je_jahr_und_standort_mittel_der_monate": {
+        "2022|Außenstelle": 59.53,
+        "2022|Hauptstelle": 60.08,
+        "2023|Außenstelle": 60.99,
+        "2023|Hauptstelle": 61.17,
+        "2024|Außenstelle": 65.43,
+        "2024|Hauptstelle": 61.55,
+        "2025|Außenstelle": 65.17,
+        "2025|Hauptstelle": 64.81
+      },
+      "je_jahr_und_standort_monate_mit_wert": {
+        "2022|Außenstelle": 12,
+        "2022|Hauptstelle": 12,
+        "2023|Außenstelle": 12,
+        "2023|Hauptstelle": 12,
+        "2024|Außenstelle": 12,
+        "2024|Hauptstelle": 12,
+        "2025|Außenstelle": 12,
+        "2025|Hauptstelle": 12
       }
     },
     "spalten": [
@@ -443,5 +514,40 @@
     "ueber_90_tage": 3,
     "zeilen": 260
   },
-  "verfahren": "Sollwerte aus den CSV-Dateien unter verwaltung/statistik/, gerechnet von generieren.py (Python statistics). Fehlende Werte zaehlen nicht mit. Mittelwerte auf zwei Nachkommastellen gerundet."
+  "verfahren": "Sollwerte aus den CSV-Dateien unter verwaltung/statistik/, gerechnet von generieren.py (Python statistics). Fehlende Werte zaehlen nicht mit; wo das eine Jahreszahl verzerrt, steht daneben die Zahl der Monate mit Wert. Mittelwerte und Quotienten auf zwei Nachkommastellen gerundet. Prozentwerte werden nicht summiert. Abgeleitete Kennzahlen (Ausleihen je 100 Besuche, Anteil Weiterempfehlung, Vergleich gleicher Monate) nennen ihre Rechenregel im eigenen Eintrag.",
+  "vergleich_gleicher_monate_2025_2026": {
+    "2025|Außenstelle|ausleihen": {
+      "monate_mit_wert": 10,
+      "summe": 3153
+    },
+    "2025|Außenstelle|besuche": {
+      "monate_mit_wert": 10,
+      "summe": 6753
+    },
+    "2025|Hauptstelle|ausleihen": {
+      "monate_mit_wert": 10,
+      "summe": 12653
+    },
+    "2025|Hauptstelle|besuche": {
+      "monate_mit_wert": 10,
+      "summe": 24657
+    },
+    "2026|Außenstelle|ausleihen": {
+      "monate_mit_wert": 10,
+      "summe": 3053
+    },
+    "2026|Außenstelle|besuche": {
+      "monate_mit_wert": 9,
+      "summe": 6216
+    },
+    "2026|Hauptstelle|ausleihen": {
+      "monate_mit_wert": 10,
+      "summe": 12038
+    },
+    "2026|Hauptstelle|besuche": {
+      "monate_mit_wert": 10,
+      "summe": 25425
+    },
+    "zeitraum": "Januar bis Oktober"
+  }
 }

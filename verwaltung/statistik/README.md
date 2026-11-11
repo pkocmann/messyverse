@@ -2,7 +2,7 @@
 
 # verwaltung/statistik/ -- Berichtswesen der Bibliothek
 
-Fiktive Übungsdaten des messyverse (Bibliothek und Archiv des Instituts für Verwaltungs- und Regionalkunde, Berichtswesen). Alle Werte sind erfunden. Lizenz CC0 1.0.
+Fiktive Übungsdaten des messyverse (Bibliothek und Archiv des Instituts für Verwaltungs- und Regionalkunde, Berichtswesen). Alle Werte sind erfunden. Lizenz CC0 1.0 (SPDX-License-Identifier: CC0-1.0).
 
 Das Berichtswesen sammelt die Zahlen, die die Verwaltung jeden Monat zusammenträgt und einmal im Jahr berichtet. Die Dateien liegen als CSV (UTF-8, Komma, Punkt als Dezimalzeichen, Datum als JJJJ-MM-TT) und als Excel-Datei mit demselben Inhalt vor; die Excel-Fassung trägt den Hinweis auf fiktive Daten auf dem zweiten Blatt „Hinweis“. Leere Zellen sind fehlende Werte. Kanon und Begründung: WELT.md, Abschnitt „Berichtswesen“; Sollwerte: loesungen/statistik.golden.json.
 
