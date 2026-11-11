@@ -63,6 +63,7 @@ Slug `messyverse`: MCP-Server `briefer-messyverse` (`.mcp.json`, `--reviewer cla
 - P1 (nach Review): Generator + Tag-2-Seed-Daten (Katalog, Fixtures, Rechnungssatz, Magazin-Zoo, `haushalt.xlsx`, die Querverweis-Kette).
 - P2 (nach Review): Übungs-Notebooks + erwartete Ergebnisse.
 - P3 (später): Ausschnitte für die anderen Kurse. Erweiterungs-Vertrag (E11): ein neuer Kurs bringt einen neuen WELT-Abschnitt plus Artefakt-Mapping; bestehende Dateien ändern nie still ihre Bedeutung.
+- P3, erster Ausschnitt (2026-11-11): Berichtswesen `verwaltung/statistik/` für den WBZ-Kurs „Statistik verstehen und visualisieren“ (Orange, dazu R und Python). Strukturanforderung in einem Satz: Monatswerte über mehrere Jahre mit festen Lücken, eine Evaluation mit fehlenden Antworten, eine rechtsschiefe Dauerverteilung mit Ausreißern und je eine unordentliche CSV- und Excel-Datei, alles als CSV und Excel. Artefakt-Mapping: Einlesen und Aufbereiten → `benutzung_monatlich`, `benutzung_export.csv`, `jahresbericht_besuche.xlsx`; Verteilungen → `fernleihe_dauer`; Jahresverläufe → `besuche_jahresverlauf`; fehlende Werte → `benutzung_monatlich`, `evaluation_schulungen`; Wiederanwendung → `benutzung_2026`. Kanon: WELT.md, Abschnitt „Berichtswesen“; erzeugt von `generieren.py` mit eigenem Zufallsstrom, Altbestand byte-gleich.
 
 ## 9. Offene Punkte fürs Review
 
