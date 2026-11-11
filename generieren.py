@@ -31,7 +31,7 @@ import pathlib
 import random
 import shutil
 import zipfile
-from datetime import datetime
+from datetime import datetime, timedelta
 
 import reportlab.rl_config
 reportlab.rl_config.invariant = 1  # feste PDF-CreationDate + Doc-ID -> reproduzierbare Bytes
@@ -432,12 +432,25 @@ EVAL_LEERE_BOEGEN = ["EV-2023-021", "EV-2025-037"]   # vollstaendig leer abgegeb
 FERNLEIHE_AUSREISSER = {2: 96, 6: 118, 9: 143}         # Monat 2025 -> Tage (je eine Buchbestellung Ausland)
 STAT_HINWEIS = ("Fiktive Übungsdaten des messyverse (Bibliothek und Archiv des Instituts für "
                 "Verwaltungs- und Regionalkunde, Berichtswesen). Alle Werte sind erfunden. "
-                "Lizenz CC0 1.0.")
+                "Lizenz CC0 1.0 (SPDX-License-Identifier: CC0-1.0).")
 
 
 def stat_rng(teil):
     """Eigener, reproduzierbarer Zufallsstrom je Datenteil (Aenderung an einem Teil verschiebt keinen anderen)."""
     return random.Random(f"{STAT_SEED}-{teil}")
+
+
+def stat_werktag_im_monat(d):
+    """Naechster Dienstag bis Donnerstag ab d; laege er im Folgemonat, der letzte davor im selben Monat."""
+    vor = d
+    while vor.weekday() not in (1, 2, 3):
+        vor = vor + timedelta(days=1)
+    if vor.month == d.month:
+        return vor
+    zurueck = d
+    while zurueck.weekday() not in (1, 2, 3):
+        zurueck = zurueck - timedelta(days=1)
+    return zurueck
 
 
 def stat_monate(bis=None):
@@ -564,9 +577,7 @@ def gen_statistik():
             monate = sorted(rng.sample([1, 2, 3, 4, 5, 6, 9, 10, 11, 12], anzahl))
             for m in monate:
                 tag = rng.randint(2, 26)
-                d = datetime(j, m, tag)
-                while d.weekday() not in (1, 2, 3):   # Dienstag bis Donnerstag
-                    d = d.replace(day=d.day + 1)
+                d = stat_werktag_im_monat(datetime(j, m, tag))
                 termine.append((d.strftime("%Y-%m-%d"), name, w_zuf, w_ver))
         termine.sort()
         nr = 0
@@ -626,7 +637,7 @@ def gen_statistik():
     with (sdir / "benutzung_export.csv").open("w", encoding="utf-8", newline="") as f:
         f.write("Bibliothek und Archiv des Instituts für Verwaltungs- und Regionalkunde – "
                 "Export Benutzungsstatistik\r\n")
-        f.write(f"{STAT_HINWEIS} Erzeugt von generieren.py.\r\n")
+        f.write(f"{STAT_HINWEIS} {MARKER}\r\n")
         f.write("Monat;Standort;Besuche;Ausleihen;Fernleihbestellungen;Platzauslastung (%)\r\n")
         for z in monatlich:
             def feld(v):
@@ -687,8 +698,11 @@ def statistik_sollwerte(sdir):
                 "min": min(w), "max": max(w)}
 
     out = {"verfahren": "Sollwerte aus den CSV-Dateien unter verwaltung/statistik/, gerechnet von "
-                        "generieren.py (Python statistics). Fehlende Werte zaehlen nicht mit. "
-                        "Mittelwerte auf zwei Nachkommastellen gerundet."}
+                        "generieren.py (Python statistics). Fehlende Werte zaehlen nicht mit; wo das eine "
+                        "Jahreszahl verzerrt, steht daneben die Zahl der Monate mit Wert. Mittelwerte und "
+                        "Quotienten auf zwei Nachkommastellen gerundet. Prozentwerte werden nicht summiert. "
+                        "Abgeleitete Kennzahlen (Ausleihen je 100 Besuche, Anteil Weiterempfehlung, "
+                        "Vergleich gleicher Monate) nennen ihre Rechenregel im eigenen Eintrag."}
     for name in ["benutzung_monatlich", "benutzung_2026"]:
         z = lies_csv(sdir / f"{name}.csv")
         teil = {"zeilen": len(z), "spalten": list(z[0].keys())}
@@ -696,10 +710,23 @@ def statistik_sollwerte(sdir):
             teil[spalte] = {}
             for st in STANDORTE:
                 teil[spalte][st] = kennwerte([zahl(r[spalte]) for r in z if r["standort"] == st])
-            teil[spalte]["je_jahr_und_standort_summe"] = {
-                f"{j}|{st}": round(sum(v for v in (zahl(r[spalte]) for r in z
-                                                  if r["jahr"] == str(j) and r["standort"] == st)
-                                       if v is not None), 2)
+            if spalte != "platzauslastung":
+                # Jahressummen nur fuer Zaehlgroessen; "monate_mit_wert" zeigt, ob das Jahr vollstaendig ist.
+                teil[spalte]["je_jahr_und_standort_summe"] = {
+                    f"{j}|{st}": sum(v for v in (zahl(r[spalte]) for r in z
+                                                if r["jahr"] == str(j) and r["standort"] == st)
+                                     if v is not None)
+                    for j in sorted({int(r["jahr"]) for r in z}) for st in STANDORTE}
+            else:
+                # Prozentwerte werden nicht summiert: ungewichteter Mittelwert der Monatswerte je Jahr.
+                teil[spalte]["je_jahr_und_standort_mittel_der_monate"] = {
+                    f"{j}|{st}": round(stx.mean(v for v in (zahl(r[spalte]) for r in z
+                                                           if r["jahr"] == str(j) and r["standort"] == st)
+                                                if v is not None), 2)
+                    for j in sorted({int(r["jahr"]) for r in z}) for st in STANDORTE}
+            teil[spalte]["je_jahr_und_standort_monate_mit_wert"] = {
+                f"{j}|{st}": sum(1 for r in z if r["jahr"] == str(j) and r["standort"] == st
+                                 and r[spalte] != "")
                 for j in sorted({int(r["jahr"]) for r in z}) for st in STANDORTE}
         teil["luecken"] = sorted(f"{r['standort']}|{r['monat']}|{s}" for r in z
                                  for s in BENUTZUNG_SPALTEN if r[s] == "")
@@ -711,13 +738,32 @@ def statistik_sollwerte(sdir):
                  and r["monat"][5:7] in ("06", "07", "08")]
         sommer[str(j)] = None if None in werte else round(stx.mean(werte), 2)
     out["benutzung_monatlich"]["aussenstelle_besuche_sommermittel_jun_aug"] = sommer
-    kz = {}
+    # Kennzahl "Ausleihen je 100 Besuche" (Hauptstelle). Je Monat: ausleihen / besuche * 100, nur Monate
+    # mit beiden Werten. Je Jahr zwei ausdruecklich benannte Verdichtungen, weil sie verschieden ausfallen.
+    kz = {"definition_je_monat": "ausleihen / besuche * 100; Monate mit fehlendem Wert bleiben ohne Kennzahl",
+          "jahresmittel_der_monatswerte": {}, "verhaeltnis_der_summen_gemeinsamer_monate": {},
+          "monate_mit_kennzahl": {}}
     for j in STAT_JAHRE:
         rs = [r for r in z if r["standort"] == "Hauptstelle" and r["jahr"] == str(j)
               and r["ausleihen"] != "" and r["besuche"] != ""]
-        kz[str(j)] = round(sum(int(r["ausleihen"]) for r in rs) / sum(int(r["besuche"]) for r in rs) * 100, 2)
-    out["benutzung_monatlich"]["hauptstelle_ausleihen_je_100_besuche_je_jahr"] = kz
-
+        kz["monate_mit_kennzahl"][str(j)] = len(rs)
+        kz["jahresmittel_der_monatswerte"][str(j)] = round(
+            stx.mean(int(r["ausleihen"]) / int(r["besuche"]) * 100 for r in rs), 2)
+        kz["verhaeltnis_der_summen_gemeinsamer_monate"][str(j)] = round(
+            sum(int(r["ausleihen"]) for r in rs) / sum(int(r["besuche"]) for r in rs) * 100, 2)
+    out["benutzung_monatlich"]["hauptstelle_ausleihen_je_100_besuche"] = kz
+    # Vergleich des Teiljahres 2026 nur mit gleichen Monaten (Januar bis Oktober).
+    z26 = lies_csv(sdir / "benutzung_2026.csv")
+    bis = f"{STAT_FORTSCHREIBUNG[1]:02d}"
+    vgl = {"zeitraum": f"Januar bis {MONATSNAMEN_LANG[STAT_FORTSCHREIBUNG[1] - 1]}"}
+    for st in STANDORTE:
+        for spalte in ["besuche", "ausleihen"]:
+            for jahr, quelle in [("2025", z), ("2026", z26)]:
+                werte = [zahl(r[spalte]) for r in quelle if r["standort"] == st and r["jahr"] == jahr
+                         and r["monat"][5:7] <= bis]
+                vgl[f"{jahr}|{st}|{spalte}"] = {"summe": sum(v for v in werte if v is not None),
+                                               "monate_mit_wert": sum(v is not None for v in werte)}
+    out["vergleich_gleicher_monate_2025_2026"] = vgl
     fl = lies_csv(sdir / "fernleihe_dauer.csv")
     out["fernleihe_dauer"] = {"zeilen": len(fl), "dauer_tage": kennwerte([int(r["dauer_tage"]) for r in fl])}
     for gruppe in ["lieferweg", "medium"]:

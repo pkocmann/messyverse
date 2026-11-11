@@ -1,5 +1,5 @@
 Bibliothek und Archiv des Instituts für Verwaltungs- und Regionalkunde – Export Benutzungsstatistik
-Fiktive Übungsdaten des messyverse (Bibliothek und Archiv des Instituts für Verwaltungs- und Regionalkunde, Berichtswesen). Alle Werte sind erfunden. Lizenz CC0 1.0. Erzeugt von generieren.py.
+Fiktive Übungsdaten des messyverse (Bibliothek und Archiv des Instituts für Verwaltungs- und Regionalkunde, Berichtswesen). Alle Werte sind erfunden. Lizenz CC0 1.0 (SPDX-License-Identifier: CC0-1.0). GENERIERT -- nicht editieren (Quelle: generieren.py). Aenderungen gehen beim naechsten Lauf verloren.
 Monat;Standort;Besuche;Ausleihen;Fernleihbestellungen;Platzauslastung (%)
 2022-01;Hauptstelle;2.478;1.578;90;66,4
 2022-01;Außenstelle;637;394;21;59,8
